@@ -9,12 +9,14 @@ public:
     Patient();
 
 private:
+    //Better separation? to resemble the database table instead
     string socialSecurityNumber;
     string dateOfBirth;
     string gender;
     string address;
     string district;
     string patientStatus;
+
     int bloodPressure;
     int heartRate;
     int pulse;
@@ -27,6 +29,7 @@ private:
     int yearsWithHypertension;
     bool urinatingProblems;
     string bloodType;
+
 //    string urineSampleInfoID;
     string urineLeukocytes;
     string urineNitrite;

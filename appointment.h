@@ -12,7 +12,7 @@ public:
 
 private:
     int appointmentId;
-//    int doctorId;
+//    int doctorId; //IF Friend then you can directly access it, if not then just use a getter!
 //    int patientId;
     Doctor* doctor;
     Patient* patient;

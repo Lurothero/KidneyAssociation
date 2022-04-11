@@ -2,8 +2,8 @@
 #define BASEPERSON_H
 
 #include <iostream>
-#include <string>
-using std::string;
+#include <string>//These should be replaced with QT Equivalent
+using std::string;//These should be replaced with QT Equivalent
 using std::cout;
 using std::endl;
 using std::cin;
@@ -15,10 +15,10 @@ public:
 
 private:
     int personID;
-    string firstName;
-    string lastName;
-    string phoneNumber;
-    string email;
+    string firstName;//These should be replaced with QT Equivalent
+    string lastName;//These should be replaced with QT Equivalent
+    string phoneNumber;//These should be replaced with QT Equivalent
+    string email;//These should be replaced with QT Equivalent
     int status;
 
 public:

@@ -9,8 +9,8 @@ public:
     BaseUser();
 
 private:
-    string userName;
-    string password;
+    string userName;//These should be replaced with QT Equivalent
+    string password;//These should be replaced with QT Equivalent
     int userLevel;
 
 public:

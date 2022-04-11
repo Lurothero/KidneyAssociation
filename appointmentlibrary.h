@@ -2,14 +2,16 @@
 #define APPOINTMENTLIBRARY_H
 
 //#include "appointment.h" //has been forward declared to allow this class's definitions to be added later
-#include <iostream>
-#include <string>
-#include <vector>
-using std::vector;
-using std::string;
-using std::cout;
-using std::endl;
-using std::cin;
+
+#include <iostream>//These should be replaced with QT Equivalent
+#include <string>//These should be replaced with QT Equivalent
+#include <vector>//These should be replaced with QT Equivalent
+
+using std::vector;//These should be replaced with QT Equivalent
+using std::string;//These should be replaced with QT Equivalent
+using std::cout;//These should be replaced with QT Equivalent
+using std::endl;//These should be replaced with QT Equivalent
+using std::cin;//These should be replaced with QT Equivalent
 
 class Appointment; //has been forward declared
 
@@ -19,7 +21,7 @@ public:
     AppointmentLibrary();
 
 private:
-    vector<Appointment*> appointmentList;       //list of appointments
+    vector<Appointment*> appointmentList;       //list of appointments //These should be replaced with QT Equivalent
 
 public:
     void viewAppointment(int id);
