@@ -7,11 +7,7 @@
 #include <string>//These should be replaced with QT Equivalent
 #include <vector>//These should be replaced with QT Equivalent
 
-using std::vector;//These should be replaced with QT Equivalent
-using std::string;//These should be replaced with QT Equivalent
-using std::cout;//These should be replaced with QT Equivalent
-using std::endl;//These should be replaced with QT Equivalent
-using std::cin;//These should be replaced with QT Equivalent
+using namespace std;
 
 class Appointment; //has been forward declared
 

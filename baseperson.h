@@ -3,10 +3,12 @@
 
 #include <iostream>
 #include <string>//These should be replaced with QT Equivalent
-using std::string;//These should be replaced with QT Equivalent
-using std::cout;
-using std::endl;
-using std::cin;
+//using std::string;//These should be replaced with QT Equivalent
+//using std::cout;
+//using std::endl;
+//using std::cin;
+
+using namespace std; // I have used name space instead of using stds for each library
 
 class BasePerson
 {
