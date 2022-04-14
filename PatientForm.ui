@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>719</width>
+    <height>544</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+    font-family: century gothic;
+    font-size: 18px;
+}
+
+QToolButton
+{
+    background: #D1D2D2;
+    border-radius: 30px;
+}
+
+QLabel
+{
+    color: black;
+}
+
+QPushButton
+{
+   border: 2px solid black;
+   background-color: #D1D2D2;
+   border-radius: 15px;
+}
+
+QPushButton:hover
+{
+   color: #D1D2D2;
+   border-radius: 15px;
+   background: #16A5C3;
+}
+
+QFrame
+{
+  background: #C7D1D1;
+  border: 2px solid black
+}
+QWidget
+{
+   background-image: url(:/doctor.jpg);
+   background-attachment: fixed;
+   background-repeat: repeat;
+}</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

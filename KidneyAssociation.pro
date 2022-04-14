@@ -43,7 +43,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 FORMS += \
+    Appointment.ui \
+    DoctorContacts.ui \
     MainMenu.ui \
+    NewRegistrationui.ui \
+    PatientForm.ui \
     login.ui
 
 RESOURCES += \

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>828</width>
-    <height>613</height>
+    <width>726</width>
+    <height>546</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -60,8 +60,8 @@ QWidget
   <widget class="QPushButton" name="registrationButton">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>60</y>
+     <x>510</x>
+     <y>20</y>
      <width>211</width>
      <height>31</height>
     </rect>
@@ -73,7 +73,7 @@ QWidget
   <widget class="QPushButton" name="adminButton">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>10</x>
      <y>360</y>
      <width>211</width>
      <height>31</height>
@@ -86,8 +86,8 @@ QWidget
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>130</y>
+     <x>230</x>
+     <y>90</y>
      <width>381</width>
      <height>381</height>
     </rect>
@@ -207,8 +207,8 @@ QLabel
   <widget class="QPushButton" name="contactButton">
    <property name="geometry">
     <rect>
-     <x>530</x>
-     <y>550</y>
+     <x>490</x>
+     <y>500</y>
      <width>231</width>
      <height>31</height>
     </rect>
@@ -220,8 +220,8 @@ QLabel
   <widget class="QPushButton" name="patientRecButton">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>60</y>
+     <x>10</x>
+     <y>20</y>
      <width>211</width>
      <height>31</height>
     </rect>
@@ -233,8 +233,8 @@ QLabel
   <widget class="QPushButton" name="patientButton">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>540</y>
+     <x>10</x>
+     <y>500</y>
      <width>211</width>
      <height>31</height>
     </rect>
@@ -246,7 +246,7 @@ QLabel
   <widget class="QPushButton" name="reportButton">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>10</x>
      <y>310</y>
      <width>211</width>
      <height>31</height>
@@ -259,7 +259,7 @@ QLabel
   <widget class="QPushButton" name="AppointmentButton">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>10</x>
      <y>260</y>
      <width>211</width>
      <height>31</height>
