@@ -16,8 +16,8 @@ private:
 //    int patientId;
     Doctor* doctor;
     Patient* patient;
-    string treatmentDescription;
-    string AppointmentDate;
+    QString treatmentDescription;
+    QString AppointmentDate;
 
 };
 

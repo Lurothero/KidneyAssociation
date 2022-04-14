@@ -3,26 +3,28 @@
 
 #include "baseperson.h"
 
+#include <QString>
+
 class BaseUser: public BasePerson
 {
 public:
     BaseUser();
 
 private:
-    string userName;//These should be replaced with QT Equivalent
-    string password;//These should be replaced with QT Equivalent
+    QString userName;//These should be replaced with QT Equivalent
+    QString password;//These should be replaced with QT Equivalent
     int userLevel;
 
 public:
     //--------------------------getters
-    string getUserName();
-    string getPassword();
+    QString getUserName();
+    QString getPassword();
     int getUserLevel();
 
     //--------------------------setters
-    void setUserName(string uname);
-    void setPassword(string pwd);
-    void setUserLevel(string userL);
+    void setUserName(QString uname);
+    void setPassword(QString pwd);
+    void setUserLevel(QString userL);
 
 
 

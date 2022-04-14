@@ -5,6 +5,10 @@
 #include "doctor.h"
 #include "deskemployee.h"
 
+
+#include <QString>
+
+
 #include <vector>
 using std::vector;
 
@@ -23,19 +27,19 @@ private:
 public:
 
     void viewDeskEmployee(int id);                    // functions to perform on desk employees(only admins can use these)
-    DeskEmployee* findDeskEmployee(int id, string name);
+    DeskEmployee* findDeskEmployee(int id, QString name);
     void createDeskEmployee();
     void deleteDeskEmployee(int id);
     void updateDeskEmployee(int id);
 
     void viewAdministrator (int id);                  // functions to perform on admins
-    Administrator* findAdministrator(int id, string name);
+    Administrator* findAdministrator(int id, QString name);
     void createAdministrator ();
     void deleteAdministrator (int id);
     void updateAdministrator (int id);
 
     void viewDoctor(int id);                          // functions to perform on doctors
-    Doctor* findDoctor (int id, string name);
+    Doctor* findDoctor (int id, QString name);
     void createDoctor();
     void deleteDoctor (int id);
     void updateDoctor(int id);

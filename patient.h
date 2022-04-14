@@ -10,12 +10,12 @@ public:
 
 private:
     //Better separation? to resemble the database table instead
-    string socialSecurityNumber;
-    string dateOfBirth;
-    string gender;
-    string address;
-    string district;
-    string patientStatus;
+    QString socialSecurityNumber;
+    QString dateOfBirth;
+    QString gender;
+    QString address;
+    QString district;
+    QString patientStatus;
 
     int bloodPressure;
     int heartRate;
@@ -28,18 +28,18 @@ private:
     int yearsWithDiabetes;
     int yearsWithHypertension;
     bool urinatingProblems;
-    string bloodType;
+    QString bloodType;
 
 //    string urineSampleInfoID;
-    string urineLeukocytes;
-    string urineNitrite;
-    string urineProtein;
-    string urinePH;
-    string urineBlood;
-    string urineSG;
-    string urineKetones;
-    string urineGlucose;
-    string urineBilirubin;
+    QString urineLeukocytes;
+    QString urineNitrite;
+    QString urineProtein;
+    QString urinePH;
+    QString urineBlood;
+    QString urineSG;
+    QString urineKetones;
+    QString urineGlucose;
+    QString urineBilirubin;
 
 };
 

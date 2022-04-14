@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
+<<<<<<< HEAD
 <!-- Written by QtCreator 6.0.2, 2022-04-13T23:44:45. -->
+=======
+<!-- Written by QtCreator 6.0.2, 2022-04-11T15:41:20. -->
+>>>>>>> 07a5a0bd94413226221d889bb31695a63d13eb39
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -240,14 +244,23 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/INLAdvisor 2/Documents/GitHub/KidneyAssociation/KidneyAssociation.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/INLAdvisor 2/Documents/GitHub/KidneyAssociation/KidneyAssociation.pro</value>
+=======
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:\Users\renea\Downloads\KidneyAssociation\KidneyAssociation\KidneyAssociation.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:\Users\renea\Downloads\KidneyAssociation\KidneyAssociation\KidneyAssociation.pro</value>
+>>>>>>> 07a5a0bd94413226221d889bb31695a63d13eb39
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/INLAdvisor 2/Documents/GitHub/build-KidneyAssociation-Desktop_Qt_6_2_3_MinGW_64_bit-Debug</value>
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/renea/Downloads/KidneyAssociation/build-C:Usersu000deneaDownloadsKidneyAssociationKidneyAssociationKidneyAssociation-Desktop_Qt_6_2_3_MinGW_64_bit-Debug</value>
+>>>>>>> 07a5a0bd94413226221d889bb31695a63d13eb39
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

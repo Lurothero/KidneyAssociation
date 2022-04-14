@@ -9,6 +9,9 @@
 
 using namespace std;
 
+
+#include <QString>
+
 class Appointment; //has been forward declared
 
 class AppointmentLibrary
@@ -21,7 +24,7 @@ private:
 
 public:
     void viewAppointment(int id);
-    Appointment* findAppointment(int id, string name);
+    Appointment* findAppointment(int id, QString name);
     void createAppointment();
     void deleteAppointment(int id);
     void updateAppointment(int id);
