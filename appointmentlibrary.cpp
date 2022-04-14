@@ -10,7 +10,7 @@ void AppointmentLibrary::viewAppointment(int id)
 
 }
 
-Appointment *AppointmentLibrary::findAppointment(int id, string name)
+Appointment *AppointmentLibrary::findAppointment(int id, QString name)
 {
 
 }
