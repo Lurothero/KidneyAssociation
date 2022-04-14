@@ -8,6 +8,8 @@ using std::cout;
 using std::endl;
 using std::cin;
 
+#include <QString>
+
 class BasePerson
 {
 public:
@@ -15,10 +17,10 @@ public:
 
 private:
     int personID;
-    string firstName;//These should be replaced with QT Equivalent
-    string lastName;//These should be replaced with QT Equivalent
-    string phoneNumber;//These should be replaced with QT Equivalent
-    string email;//These should be replaced with QT Equivalent
+    QString firstName;//These should be replaced with QT Equivalent
+    QString lastName;//These should be replaced with QT Equivalent
+    QString phoneNumber;//These should be replaced with QT Equivalent
+    QString email;//These should be replaced with QT Equivalent
     int status;
 
 public:
@@ -32,10 +34,10 @@ public:
 
     //--------------------------setters
     void setPersonID(int id);
-    void setFirstName(string fname);
+    void setFirstName(QString fname);
     void setLastName(string lname);
-    void setPhoneNumber(string pnumber);
-    void setEmail(string em);
+    void setPhoneNumber(QString pnumber);
+    void setEmail(QString em);
     void setStatus(int flag);
 
 

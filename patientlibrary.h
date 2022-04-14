@@ -15,7 +15,7 @@ private:
 
 public:
     void viewPatient(int id);
-    Patient* findPatient(int id, string name);
+    Patient* findPatient(int id, QString name);
     void createPatient();
     void deletePatient(int id);
     void updatePatientPersonalDetails(int id);

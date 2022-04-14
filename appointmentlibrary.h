@@ -13,6 +13,9 @@ using std::cout;//These should be replaced with QT Equivalent
 using std::endl;//These should be replaced with QT Equivalent
 using std::cin;//These should be replaced with QT Equivalent
 
+
+#include <QString>
+
 class Appointment; //has been forward declared
 
 class AppointmentLibrary
@@ -25,7 +28,7 @@ private:
 
 public:
     void viewAppointment(int id);
-    Appointment* findAppointment(int id, string name);
+    Appointment* findAppointment(int id, QString name);
     void createAppointment();
     void deleteAppointment(int id);
     void updateAppointment(int id);

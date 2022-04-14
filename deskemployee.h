@@ -18,7 +18,7 @@ public:
     friend void AppointmentLibrary::generateAppointmentReport();
 
     //functions deskemployees can perform on patients
-    friend Patient* PatientLibrary::findPatient(int id, string name);
+    friend Patient* PatientLibrary::findPatient(int id, QString name);
     friend void PatientLibrary::createPatient();
     friend void PatientLibrary::deletePatient(int id);
     friend void PatientLibrary::updatePatientPersonalDetails(int id);
