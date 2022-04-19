@@ -48,6 +48,7 @@ FORMS += \
     MainMenu.ui \
     NewRegistrationui.ui \
     PatientForm.ui \
+    Records.ui \
     login.ui
 
 RESOURCES += \
