@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 6.0.2, 2022-04-11T15:41:20. -->
+<!-- Written by QtCreator 6.0.2, 2022-04-14T13:36:18. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -240,8 +240,8 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:\Users\renea\Downloads\KidneyAssociation\KidneyAssociation\KidneyAssociation.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:\Users\renea\Downloads\KidneyAssociation\KidneyAssociation\KidneyAssociation.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/renea/Downloads/KidneyAssociation/KidneyAssociation/KidneyAssociation.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/renea/Downloads/KidneyAssociation/KidneyAssociation/KidneyAssociation.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
