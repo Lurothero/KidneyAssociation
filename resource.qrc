@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>doc.png</file>
+        <file>doctor.jpg</file>
+        <file>Key.png</file>
+        <file>keys.png</file>
+        <file>kidneyIcon.png</file>
+        <file>maleDoc.png</file>
+    </qresource>
+</RCC>
