@@ -17,6 +17,7 @@ SOURCES += \
     database.cpp \
     deskemployee.cpp \
     doctor.cpp \
+    login.cpp \
     main.cpp \
     patient.cpp \
     patientlibrary.cpp \
@@ -31,6 +32,7 @@ HEADERS += \
     database.h \
     deskemployee.h \
     doctor.h \
+    login.h \
     patient.h \
     patientlibrary.h \
     userlibrary.h
@@ -39,3 +41,15 @@ HEADERS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+FORMS += \
+    Appointment.ui \
+    DoctorContacts.ui \
+    MainMenu.ui \
+    NewRegistrationui.ui \
+    PatientForm.ui \
+    Records.ui \
+    login.ui
+
+RESOURCES += \
+    resource.qrc

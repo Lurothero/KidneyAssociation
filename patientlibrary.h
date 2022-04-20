@@ -3,7 +3,8 @@
 
 #include "patient.h"
 #include <vector>
-using std::vector;
+
+using namespace std;
 
 class PatientLibrary
 {
