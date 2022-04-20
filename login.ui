@@ -55,7 +55,7 @@ QWidget
    <widget class="QToolButton" name="loginTool">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>320</x>
       <y>10</y>
       <width>71</width>
       <height>71</height>
@@ -84,7 +84,7 @@ QWidget
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>50</x>
       <y>80</y>
       <width>571</width>
       <height>391</height>
@@ -302,7 +302,7 @@ PasswordTool
      <x>0</x>
      <y>0</y>
      <width>727</width>
-     <height>34</height>
+     <height>33</height>
     </rect>
    </property>
   </widget>

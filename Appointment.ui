@@ -62,7 +62,7 @@ QWidget
      <x>160</x>
      <y>50</y>
      <width>353</width>
-     <height>36</height>
+     <height>33</height>
     </rect>
    </property>
    <property name="orientation">
@@ -73,7 +73,11 @@ QWidget
      <string>Appointment ID:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit"/>
+   <widget class="QLineEdit" name="ID_LineEdit">
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter">
    <property name="geometry">
@@ -81,7 +85,7 @@ QWidget
      <x>160</x>
      <y>110</y>
      <width>411</width>
-     <height>33</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="orientation">
@@ -100,7 +104,7 @@ QWidget
      <x>162</x>
      <y>170</y>
      <width>411</width>
-     <height>36</height>
+     <height>33</height>
     </rect>
    </property>
    <property name="orientation">
@@ -119,13 +123,13 @@ QWidget
      <x>160</x>
      <y>220</y>
      <width>241</width>
-     <height>33</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="TreatmentLabel">
     <property name="text">
      <string>Treatment:</string>
     </property>
@@ -138,18 +142,18 @@ QWidget
      <x>160</x>
      <y>280</y>
      <width>353</width>
-     <height>36</height>
+     <height>33</height>
     </rect>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="DoctorNameLabel">
     <property name="text">
      <string>Doctor Name:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3"/>
+   <widget class="QLineEdit" name="Doctor_LineEdit"/>
   </widget>
   <widget class="QSplitter" name="splitter_6">
    <property name="geometry">
@@ -157,18 +161,18 @@ QWidget
      <x>160</x>
      <y>350</y>
      <width>353</width>
-     <height>36</height>
+     <height>33</height>
     </rect>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="DoctorID_Label">
     <property name="text">
      <string>Doctor Name:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4"/>
+   <widget class="QLineEdit" name="DoctorMaybeID_LineEdit"/>
   </widget>
   <widget class="QPushButton" name="PrintRecordButton">
    <property name="geometry">

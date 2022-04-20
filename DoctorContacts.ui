@@ -62,20 +62,20 @@ QWidget
      <x>130</x>
      <y>300</y>
      <width>409</width>
-     <height>36</height>
+     <height>33</height>
     </rect>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="Email_Label">
     <property name="text">
      <string>Email Address:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4"/>
+   <widget class="QLineEdit" name="Email_LineEdit"/>
   </widget>
-  <widget class="QPushButton" name="AppointmentButton">
+  <widget class="QPushButton" name="AddRecord_BTN">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -88,7 +88,7 @@ QWidget
     <string>Add Record</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="AppointmentButton_2">
+  <widget class="QPushButton" name="DeleteRecord_BTN">
    <property name="geometry">
     <rect>
      <x>440</x>
@@ -107,18 +107,18 @@ QWidget
      <x>130</x>
      <y>40</y>
      <width>411</width>
-     <height>33</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="Search_Label">
     <property name="text">
      <string>Search:</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox"/>
+   <widget class="QComboBox" name="Search_Combo"/>
   </widget>
   <widget class="QSplitter" name="splitter_2">
    <property name="geometry">
@@ -126,18 +126,18 @@ QWidget
      <x>132</x>
      <y>102</y>
      <width>353</width>
-     <height>36</height>
+     <height>33</height>
     </rect>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="FirstName_Label">
     <property name="text">
      <string>First Name:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit"/>
+   <widget class="QLineEdit" name="FirstName_LineEdit"/>
   </widget>
   <widget class="QSplitter" name="splitter_3">
    <property name="geometry">
@@ -145,18 +145,18 @@ QWidget
      <x>132</x>
      <y>162</y>
      <width>357</width>
-     <height>36</height>
+     <height>33</height>
     </rect>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="LastName_Label">
     <property name="text">
      <string>Last Name:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2"/>
+   <widget class="QLineEdit" name="LastName_LineEdit"/>
   </widget>
   <widget class="QSplitter" name="splitter_4">
    <property name="geometry">
@@ -164,18 +164,18 @@ QWidget
      <x>132</x>
      <y>232</y>
      <width>409</width>
-     <height>36</height>
+     <height>33</height>
     </rect>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="Phone_Label">
     <property name="text">
      <string>Phone Number:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3"/>
+   <widget class="QLineEdit" name="Phone_LineEdit"/>
   </widget>
  </widget>
  <resources/>

@@ -13,9 +13,20 @@ class login : public QMainWindow
 
 public:
     explicit login(QWidget *parent = nullptr);
+
+
+
     ~login();
 
+
+private slots:
+
+    void validateLoginCredentials();
+
+
+
 private:
+
     Ui::login *ui;
 };
 
