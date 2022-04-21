@@ -174,7 +174,7 @@ QLabel
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>Today's Date</string>
     </property>
    </widget>
    <widget class="QLabel" name="logOutButton">

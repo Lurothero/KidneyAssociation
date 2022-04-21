@@ -85,21 +85,14 @@ QWidget
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
->>>>>>> Updated upstream
-     <x>190</x>
-     <y>380</y>
-     <width>331</width>
-     <height>61</height>
-=======
-     <x>120</x>
-     <y>360</y>
-     <width>461</width>
-     <height>131</height>
->>>>>>> Stashed changes
+     <x>20</x>
+     <y>240</y>
+     <width>80</width>
+     <height>18</height>
     </rect>
    </property>
    <property name="text">
-    <string>Patients in need of blood</string>
+    <string>PushButton</string>
    </property>
   </widget>
  </widget>

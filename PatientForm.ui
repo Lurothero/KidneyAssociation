@@ -144,12 +144,12 @@ QWidget
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QLabel" name="FNameLabel_3">
+   <widget class="QLabel" name="PhoneLabel">
     <property name="text">
      <string>Telephone Number:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="FNameEdit_3"/>
+   <widget class="QLineEdit" name="PhoneEdit"/>
   </widget>
   <widget class="QSplitter" name="splitter_6">
    <property name="geometry">
