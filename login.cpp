@@ -24,6 +24,7 @@ void login::validateLoginCredentials()
     //Pass in the password and user
     //Send this data to the database
 
+
     qDebug() <<  "Pass: " << ui->PasswordEdit->text();
     qDebug() << "User: " << ui->UsernameEdit->text();
 
