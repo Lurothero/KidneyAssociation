@@ -52,6 +52,12 @@ QFrame
 QWidget
 {
    background-color:   #6dd5ed;
+}
+
+QMessageBox
+{
+   color: black;
+   background-color: white;
 }</string>
   </property>
   <widget class="QSplitter" name="splitter">
@@ -573,6 +579,13 @@ QWidget
 {
     color: black;
     background-color: white;
+}
+
+QPushButton:hover
+{
+   color: #D1D2D2;
+   border-radius: 15px;
+   background: #426a78;
 }</string>
    </property>
    <property name="text">

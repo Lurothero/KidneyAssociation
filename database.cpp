@@ -46,11 +46,9 @@ int Database::loginUser(QString user, QString pass)
 
         return idReturn;
 
-
-       HomeMenu * mainMenu = new HomeMenu;
-       mainMenu->show();
-
-    }else{
+    }
+    else
+    {
         return -1;
     }
 

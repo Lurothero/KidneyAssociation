@@ -54,7 +54,12 @@ QWidget
 {
   background-color:   #6dd5ed;
 }
-</string>
+
+QMessageBox
+{
+   color: black;
+   background-color: white;
+}</string>
   </property>
   <widget class="QSplitter" name="SearchSplitter">
    <property name="geometry">

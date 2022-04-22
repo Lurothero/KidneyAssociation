@@ -1,5 +1,6 @@
 #include "login.h"
 #include "ui_login.h"
+#include "homemenu.h"
 
 #include <QMessageBox>
 #include <QSqlDatabase>
@@ -12,11 +13,6 @@ login::login(QWidget *parent) :
 
     //Validate what is currently entered!
     connect(ui->loginButton,SIGNAL(clicked()),this,SLOT(validateLoginCredentials()));
-
-
-
-
-
 
 }
 
@@ -64,8 +60,11 @@ void login::validateLoginCredentials()
 
         //User logged in as ADMIN
         QMessageBox::information(this,tr("Welcome ADMIN"),tr("Successfully logged in as %1").arg(username),QMessageBox::Ok);
-        //Create a main menu
 
+
+        //Create a main menu
+        HomeMenu * mainMenu = new HomeMenu();
+        mainMenu->show();
         this->close();
 
         break;
@@ -74,12 +73,24 @@ void login::validateLoginCredentials()
     case 2:{
         //User logged in as DESK
         QMessageBox::information(this,tr("Welcome DESK"),tr("Successfully logged in as %1").arg(username),QMessageBox::Ok);
+
+        //Create a main menu with restricted features
+        HomeMenu * mainMenu = new HomeMenu();
+        mainMenu->show();
+        mainMenu->displayDeskMenu();
+
+        //this->close();
         break;
     }
 
     case 3:{
         //User logged in as DOCTOR
         QMessageBox::information(this,tr("Welcome DOCTOR"),tr("Successfully logged in as %1").arg(username),QMessageBox::Ok);
+
+        //Create a main menu with restricted features
+        HomeMenu * mainMenu = new HomeMenu();
+        mainMenu->show();
+        mainMenu->displayDoctorMenu();
         break;
     }
 

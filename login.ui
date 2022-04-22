@@ -44,7 +44,11 @@ QWidget
    background-color:   #6dd5ed;
 }
 
-
+QMessageBox
+{
+   color: black;
+   background-color: white;
+}
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
