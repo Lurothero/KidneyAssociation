@@ -2,7 +2,7 @@
 #define LOGIN_H
 
 #include <QMainWindow>
-
+#include <database.h>
 namespace Ui {
 class login;
 }
@@ -18,6 +18,8 @@ public:
 
     ~login();
 
+private:
+
 
 private slots:
 
@@ -26,7 +28,7 @@ private slots:
 
 
 private:
-
+    Database db;
     Ui::login *ui;
 };
 
