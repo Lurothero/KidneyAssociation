@@ -51,9 +51,7 @@ QFrame
 }
 QWidget
 {
-   background-image: url(:/doctor.jpg);
-   background-attachment: fixed;
-   background-repeat: repeat;
+   background-color:   #6dd5ed;
 }</string>
   </property>
   <widget class="QSplitter" name="splitter">
@@ -69,11 +67,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="FNameLabel">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>First Name:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="FNameEdit"/>
+   <widget class="QLineEdit" name="FNameEdit">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_2">
    <property name="geometry">
@@ -88,11 +101,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="LNameLabel">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Last Name:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="LNameEdit"/>
+   <widget class="QLineEdit" name="LNameEdit">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_3">
    <property name="geometry">
@@ -107,11 +135,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="label">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Telephone #:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit"/>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_4">
    <property name="geometry">
@@ -126,11 +169,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="DOBLabel">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Date of Birth:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="DOBEdit"/>
+   <widget class="QLineEdit" name="DOBEdit">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QCheckBox" name="eyeDamageBox">
    <property name="geometry">
@@ -140,6 +198,14 @@ QWidget
      <width>251</width>
      <height>18</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox
+{
+    color: black;
+    background-color: white;
+    border: 2px solid black
+}</string>
    </property>
    <property name="text">
     <string>Eye Damage Due to DM</string>
@@ -153,6 +219,14 @@ QWidget
      <width>141</width>
      <height>18</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox
+{
+    color: black;
+    background-color: white;
+    border: 2px solid black
+}</string>
    </property>
    <property name="text">
     <string>Hypertension</string>
@@ -171,11 +245,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="label_5">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Pulse:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4"/>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_15">
    <property name="geometry">
@@ -190,11 +279,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="label_6">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Blood Sugar</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_5"/>
+   <widget class="QLineEdit" name="lineEdit_5">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_16">
    <property name="geometry">
@@ -209,11 +313,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="label_7">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Urine-Leukocytes:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_6"/>
+   <widget class="QLineEdit" name="lineEdit_6">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_17">
    <property name="geometry">
@@ -228,11 +347,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="label_8">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Urine-Nitrite:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_7"/>
+   <widget class="QLineEdit" name="lineEdit_7">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_18">
    <property name="geometry">
@@ -247,11 +381,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="label_9">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Urine-SG(Specific Gravity):</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_8"/>
+   <widget class="QLineEdit" name="lineEdit_8">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_19">
    <property name="geometry">
@@ -266,11 +415,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="label_10">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Urine-Glucose:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_9"/>
+   <widget class="QLineEdit" name="lineEdit_9">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_20">
    <property name="geometry">
@@ -285,11 +449,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="label_11">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Urine-Bilirubin</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_10"/>
+   <widget class="QLineEdit" name="lineEdit_10">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_21">
    <property name="geometry">
@@ -304,11 +483,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="label_12">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Urine-PH:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_11"/>
+   <widget class="QLineEdit" name="lineEdit_11">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_22">
    <property name="geometry">
@@ -323,11 +517,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="label_13">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Urine-Keytones:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_12"/>
+   <widget class="QLineEdit" name="lineEdit_12">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QCheckBox" name="checkBox_3">
    <property name="geometry">
@@ -337,6 +546,14 @@ QWidget
      <width>101</width>
      <height>18</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox
+{
+    color: black;
+    background-color: white;
+    border: 2px solid black
+}</string>
    </property>
    <property name="text">
     <string>Urine-Blood</string>
@@ -350,6 +567,13 @@ QWidget
      <width>201</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    color: black;
+    background-color: white;
+}</string>
    </property>
    <property name="text">
     <string>Add Record</string>
@@ -403,11 +627,25 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="DistrictLabel">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>District:</string>
     </property>
    </widget>
    <widget class="QComboBox" name="DistrictCombo">
+    <property name="styleSheet">
+     <string notr="true">QComboBox
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <item>
      <property name="text">
       <string>Orange Walk</string>
@@ -458,11 +696,25 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="GenderLabel">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Gender:</string>
     </property>
    </widget>
    <widget class="QComboBox" name="GenderCombo">
+    <property name="styleSheet">
+     <string notr="true">QComboBox
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <item>
      <property name="text">
       <string>Female</string>
@@ -488,11 +740,25 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="PatientLabel">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Patient Status:</string>
     </property>
    </widget>
    <widget class="QComboBox" name="PatientCombo">
+    <property name="styleSheet">
+     <string notr="true">QComboBox
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <item>
      <property name="text">
       <string>In need of Blood</string>
@@ -528,11 +794,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="diabetesLabel">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Years w/ Diabetes</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="diabetesEdit"/>
+   <widget class="QLineEdit" name="diabetesEdit">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_9">
    <property name="geometry">
@@ -547,11 +828,25 @@ QWidget
     <enum>Qt::Vertical</enum>
    </property>
    <widget class="QCheckBox" name="Type1Box">
+    <property name="styleSheet">
+     <string notr="true">QCheckBox
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Diabetes Type 1</string>
     </property>
    </widget>
    <widget class="QCheckBox" name="Type2Box">
+    <property name="styleSheet">
+     <string notr="true">QCheckBox
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Diabetes Type 2</string>
     </property>
@@ -570,11 +865,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="hyperLabel">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Years w/ Hypertension</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="hyperEdit"/>
+   <widget class="QLineEdit" name="hyperEdit">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_11">
    <property name="geometry">
@@ -589,16 +899,38 @@ QWidget
     <enum>Qt::Vertical</enum>
    </property>
    <widget class="QCheckBox" name="checkBox_2">
+    <property name="styleSheet">
+     <string notr="true">QCheckBox
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Problem Urinating?</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>If yes, describe urine</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit"/>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="styleSheet">
+     <string notr="true">QTextEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_12">
    <property name="geometry">
@@ -613,11 +945,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="label_4">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Blood Pressure</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3"/>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter_13">
    <property name="geometry">
@@ -632,11 +979,26 @@ QWidget
     <enum>Qt::Horizontal</enum>
    </property>
    <widget class="QLabel" name="label_2">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
     <property name="text">
      <string>Heart Rate:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2"/>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
