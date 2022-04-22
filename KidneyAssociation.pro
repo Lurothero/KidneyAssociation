@@ -17,6 +17,7 @@ SOURCES += \
     database.cpp \
     deskemployee.cpp \
     doctor.cpp \
+    homemenu.cpp \
     login.cpp \
     main.cpp \
     patient.cpp \
@@ -32,6 +33,7 @@ HEADERS += \
     database.h \
     deskemployee.h \
     doctor.h \
+    homemenu.h \
     login.h \
     patient.h \
     patientlibrary.h \
@@ -45,10 +47,10 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 FORMS += \
     Appointment.ui \
     DoctorContacts.ui \
-    MainMenu.ui \
     NewRegistrationui.ui \
     PatientForm.ui \
     Records.ui \
+    homemenu.ui \
     login.ui
 
 RESOURCES += \

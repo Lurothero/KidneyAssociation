@@ -39,16 +39,16 @@ QPushButton
    
 }
 
-
-
 QWidget
 {
-   background-image: url(:/doctor.jpg);
-   background-attachment: fixed;
-   background-repeat: repeat;
+   background-color:   #6dd5ed;
 }
 
-
+QMessageBox
+{
+   color: black;
+   background-color: white;
+}
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -302,7 +302,7 @@ PasswordTool
      <x>0</x>
      <y>0</y>
      <width>727</width>
-     <height>33</height>
+     <height>34</height>
     </rect>
    </property>
   </widget>

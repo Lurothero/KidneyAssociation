@@ -6,21 +6,9 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>726</width>
-    <height>546</height>
+    <width>856</width>
+    <height>653</height>
    </rect>
-  </property>
-  <property name="minimumSize">
-   <size>
-    <width>726</width>
-    <height>546</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>726</width>
-    <height>546</height>
-   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -65,13 +53,56 @@ QFrame
 QWidget
 {
    background-color:   #6dd5ed;
-}</string>
+}
+</string>
   </property>
+  <widget class="QPushButton" name="contactButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>520</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Organization Contacts</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="reportButton">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>330</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Reports</string>
+   </property>
+  </widget>
   <widget class="QPushButton" name="registrationButton">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>20</y>
+     <x>630</x>
+     <y>150</y>
      <width>211</width>
      <height>31</height>
     </rect>
@@ -88,10 +119,10 @@ QWidget
     <string>New Registration</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="adminButton">
+  <widget class="QPushButton" name="AppointmentButton">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>130</x>
      <y>270</y>
      <width>211</width>
      <height>31</height>
@@ -106,14 +137,14 @@ QWidget
 }</string>
    </property>
    <property name="text">
-    <string>Admin Only</string>
+    <string>Appointments</string>
    </property>
   </widget>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>80</y>
+     <x>390</x>
+     <y>210</y>
      <width>381</width>
      <height>381</height>
     </rect>
@@ -244,12 +275,12 @@ QLabel
     </property>
    </widget>
   </widget>
-  <widget class="QPushButton" name="contactButton">
+  <widget class="QPushButton" name="patientButton">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>390</y>
-     <width>231</width>
+     <x>130</x>
+     <y>460</y>
+     <width>211</width>
      <height>31</height>
     </rect>
    </property>
@@ -262,14 +293,14 @@ QLabel
 }</string>
    </property>
    <property name="text">
-    <string>Organization Contacts</string>
+    <string>Patient Records</string>
    </property>
   </widget>
   <widget class="QPushButton" name="patientRecButton">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>20</y>
+     <x>130</x>
+     <y>150</y>
      <width>211</width>
      <height>31</height>
     </rect>
@@ -286,11 +317,11 @@ QLabel
     <string>Patient Records</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="patientButton">
+  <widget class="QPushButton" name="adminButton">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>330</y>
+     <x>130</x>
+     <y>400</y>
      <width>211</width>
      <height>31</height>
     </rect>
@@ -304,49 +335,7 @@ QLabel
 }</string>
    </property>
    <property name="text">
-    <string>Patient Records</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="reportButton">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>200</y>
-     <width>211</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton
-{
-   border: 2px solid black;
-   background-color: white;
-   border-radius: 15px;
-}</string>
-   </property>
-   <property name="text">
-    <string>Reports</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="AppointmentButton">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>140</y>
-     <width>211</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton
-{
-   border: 2px solid black;
-   background-color: white;
-   border-radius: 15px;
-}</string>
-   </property>
-   <property name="text">
-    <string>Appointments</string>
+    <string>Admin Only</string>
    </property>
   </widget>
  </widget>
