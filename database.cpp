@@ -1,5 +1,5 @@
 #include "database.h"
-
+#include "homemenu.h"
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QtDebug>
@@ -13,7 +13,7 @@ Database::Database()
 
     //setting connection credentials
     db.setHostName("127.0.0.1");
-    db.setUserName("root");
+    db.setUserName("jahmur");
     db.setPassword("mysql");
     db.setDatabaseName("guiproject");
 
@@ -32,7 +32,7 @@ int Database::loginUser(QString user, QString pass)
 {
 
     QSqlQuery q;
-    q.prepare("SELECT UserLevel_id FROM user WHERE User_name = :user AND Password = :pass ;");
+    q.prepare("SELECT userlevel_id FROM user WHERE User_name = :user AND Password = :pass ;");
     q.bindValue(":user",user);
     q.bindValue(":pass",pass);
 
@@ -45,6 +45,11 @@ int Database::loginUser(QString user, QString pass)
         int idReturn = q.value("UserLevel_id").toInt();
 
         return idReturn;
+
+
+       HomeMenu * mainMenu = new HomeMenu;
+       mainMenu->show();
+
     }else{
         return -1;
     }
