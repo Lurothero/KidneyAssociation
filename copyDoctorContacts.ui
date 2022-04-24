@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>843</width>
-    <height>438</height>
+    <width>876</width>
+    <height>570</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -60,87 +60,11 @@ QMessageBox
    background-color: white;
 }</string>
   </property>
-  <widget class="QPushButton" name="DeleteRecord_BTN">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>370</y>
-     <width>241</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton
-{
-   border: 2px solid black;
-   background-color: white;
-   border-radius: 15px;
-}</string>
-   </property>
-   <property name="text">
-    <string>Delete Record</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="AddRecord_BTN">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>370</y>
-     <width>211</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton
-{
-   border: 2px solid black;
-   background-color: white;
-   border-radius: 15px;
-}</string>
-   </property>
-   <property name="text">
-    <string>Add Record</string>
-   </property>
-  </widget>
-  <widget class="QSplitter" name="splitter">
-   <property name="geometry">
-    <rect>
-     <x>198</x>
-     <y>28</y>
-     <width>411</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="Search_Label">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Search:</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="Search_Combo">
-    <property name="styleSheet">
-     <string notr="true">QComboBox
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
   <widget class="QSplitter" name="splitter_3">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>150</y>
+     <x>212</x>
+     <y>172</y>
      <width>357</width>
      <height>33</height>
     </rect>
@@ -170,11 +94,53 @@ QMessageBox
     </property>
    </widget>
   </widget>
+  <widget class="QPushButton" name="DeleteRecord_BTN">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>450</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Delete Record</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AddRecord_BTN">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>450</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Add Record</string>
+   </property>
+  </widget>
   <widget class="QSplitter" name="splitter_4">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>220</y>
+     <x>212</x>
+     <y>242</y>
      <width>409</width>
      <height>33</height>
     </rect>
@@ -207,8 +173,8 @@ QMessageBox
   <widget class="QSplitter" name="splitter_2">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>90</y>
+     <x>212</x>
+     <y>112</y>
      <width>353</width>
      <height>33</height>
     </rect>
@@ -238,11 +204,45 @@ QMessageBox
     </property>
    </widget>
   </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>50</y>
+     <width>411</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="Search_Label">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Search:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Search_Combo">
+    <property name="styleSheet">
+     <string notr="true">QComboBox
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
+  </widget>
   <widget class="QSplitter" name="splitter_5">
    <property name="geometry">
     <rect>
-     <x>198</x>
-     <y>288</y>
+     <x>210</x>
+     <y>310</y>
      <width>409</width>
      <height>33</height>
     </rect>

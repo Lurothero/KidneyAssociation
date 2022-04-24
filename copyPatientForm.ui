@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>PatientForm</class>
- <widget class="QWidget" name="PatientForm">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>808</width>
-    <height>621</height>
+    <width>880</width>
+    <height>632</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -61,19 +61,19 @@ QMessageBox
    background-color: white;
 }</string>
   </property>
-  <widget class="QSplitter" name="PhoneSplitter">
+  <widget class="QSplitter" name="splitter_9">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>240</y>
-     <width>411</width>
-     <height>29</height>
+     <x>200</x>
+     <y>430</y>
+     <width>221</width>
+     <height>26</height>
     </rect>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QLabel" name="PhoneLabel">
+   <widget class="QLabel" name="label_4">
     <property name="styleSheet">
      <string notr="true">QLabel
 {
@@ -82,10 +82,44 @@ QMessageBox
 }</string>
     </property>
     <property name="text">
-     <string>Telephone Number:</string>
+     <string>Patient Status:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="PhoneEdit">
+   <widget class="QComboBox" name="comboBox_4">
+    <property name="styleSheet">
+     <string notr="true">QComboBox
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QSplitter" name="splitter_7">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>300</y>
+     <width>411</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="FNameLabel_5">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Address:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FNameEdit_5">
     <property name="styleSheet">
      <string notr="true">QLineEdit
 {
@@ -98,8 +132,8 @@ QMessageBox
   <widget class="QSplitter" name="LNameSplitter">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>130</y>
+     <x>200</x>
+     <y>140</y>
      <width>411</width>
      <height>29</height>
     </rect>
@@ -132,8 +166,8 @@ QMessageBox
   <widget class="QSplitter" name="splitter_8">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>380</y>
+     <x>200</x>
+     <y>390</y>
      <width>141</width>
      <height>26</height>
     </rect>
@@ -166,8 +200,8 @@ QMessageBox
   <widget class="QSplitter" name="splitter_6">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>340</y>
+     <x>200</x>
+     <y>350</y>
      <width>411</width>
      <height>29</height>
     </rect>
@@ -197,79 +231,11 @@ QMessageBox
     </property>
    </widget>
   </widget>
-  <widget class="QSplitter" name="splitter_7">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>290</y>
-     <width>411</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="FNameLabel_5">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Address:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="FNameEdit_5">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_9">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>420</y>
-     <width>221</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label_4">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Patient Status:</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox_4">
-    <property name="styleSheet">
-     <string notr="true">QComboBox
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
   <widget class="QSplitter" name="FNAmeSplitter">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>90</y>
+     <x>200</x>
+     <y>100</y>
      <width>411</width>
      <height>29</height>
     </rect>
@@ -302,8 +268,8 @@ QMessageBox
   <widget class="QSplitter" name="SearchSplitter">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>50</y>
+     <x>200</x>
+     <y>60</y>
      <width>411</width>
      <height>26</height>
     </rect>
@@ -333,11 +299,45 @@ QMessageBox
     </property>
    </widget>
   </widget>
+  <widget class="QSplitter" name="BTypeSplitter">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>470</y>
+     <width>221</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="BTypeLabel">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Blood Type:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="BTypeCombo">
+    <property name="styleSheet">
+     <string notr="true">QComboBox
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
+  </widget>
   <widget class="QSplitter" name="SSNSplitter">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>190</y>
+     <x>200</x>
+     <y>200</y>
      <width>411</width>
      <height>26</height>
     </rect>
@@ -367,19 +367,19 @@ QMessageBox
     </property>
    </widget>
   </widget>
-  <widget class="QSplitter" name="BTypeSplitter">
+  <widget class="QSplitter" name="PhoneSplitter">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>460</y>
-     <width>221</width>
-     <height>26</height>
+     <x>200</x>
+     <y>250</y>
+     <width>411</width>
+     <height>29</height>
     </rect>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
-   <widget class="QLabel" name="BTypeLabel">
+   <widget class="QLabel" name="PhoneLabel">
     <property name="styleSheet">
      <string notr="true">QLabel
 {
@@ -388,12 +388,12 @@ QMessageBox
 }</string>
     </property>
     <property name="text">
-     <string>Blood Type:</string>
+     <string>Telephone Number:</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="BTypeCombo">
+   <widget class="QLineEdit" name="PhoneEdit">
     <property name="styleSheet">
-     <string notr="true">QComboBox
+     <string notr="true">QLineEdit
 {
     color: black;
     background-color: white;

@@ -21,7 +21,11 @@ SOURCES += \
     login.cpp \
     main.cpp \
     patient.cpp \
+    patientappointment.cpp \
+    patientform.cpp \
     patientlibrary.cpp \
+    patientrecords.cpp \
+    patientregistration.cpp \
     userlibrary.cpp
 
 HEADERS += \
@@ -36,7 +40,11 @@ HEADERS += \
     homemenu.h \
     login.h \
     patient.h \
+    patientappointment.h \
+    patientform.h \
     patientlibrary.h \
+    patientrecords.h \
+    patientregistration.h \
     userlibrary.h
 
 # Default rules for deployment.
@@ -45,13 +53,13 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 FORMS += \
-    Appointment.ui \
     DoctorContacts.ui \
-    NewRegistrationui.ui \
-    PatientForm.ui \
-    Records.ui \
     homemenu.ui \
-    login.ui
+    login.ui \
+    patientappointment.ui \
+    patientform.ui \
+    patientrecords.ui \
+    patientregistration.ui
 
 RESOURCES += \
     resource.qrc
