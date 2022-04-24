@@ -6,9 +6,15 @@ PatientForm::PatientForm(QWidget *parent) :
     ui(new Ui::PatientForm)
 {
     ui->setupUi(this);
+
+
+
+
+
 }
 
 PatientForm::~PatientForm()
 {
     delete ui;
 }
+

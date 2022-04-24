@@ -15,6 +15,8 @@ public:
     explicit PatientForm(QWidget *parent = nullptr);
     ~PatientForm();
 
+
+
 private:
     Ui::PatientForm *ui;
 };

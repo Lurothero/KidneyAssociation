@@ -15,6 +15,8 @@ public:
     //Create Database functions here
     int loginUser(QString user, QString pass);//We are not concern about hiding data at this time
 
+    bool addPatient();
+
 
 private:
     UserLibrary* UserLib;

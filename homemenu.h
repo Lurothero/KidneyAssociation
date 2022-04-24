@@ -23,6 +23,10 @@ public:
     void displayDoctorMenu();
     void updateTime(); // updates time from the O.S.
 
+
+private slots:
+    void createPatientRecord();
+
 private:
     Ui::HomeMenu *ui;
     QLCDNumber * clock; // private object created for lcd widget

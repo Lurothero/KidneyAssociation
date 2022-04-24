@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>836</width>
-    <height>560</height>
+    <width>1117</width>
+    <height>1037</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -60,694 +60,11 @@ QMessageBox
    background-color: white;
 }</string>
   </property>
-  <widget class="QSplitter" name="splitter">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>290</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="FNameLabel">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>First Name:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="FNameEdit">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QCheckBox" name="checkBox">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>100</y>
-     <width>141</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QCheckBox
-{
-    color: black;
-    background-color: white;
-    border: 2px solid black
-}</string>
-   </property>
-   <property name="text">
-    <string>Hypertension</string>
-   </property>
-  </widget>
-  <widget class="QSplitter" name="splitter_18">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>310</y>
-     <width>241</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label_9">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Urine-SG(Specific Gravity):</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_8">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QCheckBox" name="eyeDamageBox">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>130</y>
-     <width>251</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QCheckBox
-{
-    color: black;
-    background-color: white;
-    border: 2px solid black
-}</string>
-   </property>
-   <property name="text">
-    <string>Eye Damage Due to DM</string>
-   </property>
-  </widget>
-  <widget class="QSplitter" name="splitter_7">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>130</y>
-     <width>361</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="PatientLabel">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Patient Status:</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="PatientCombo">
-    <property name="styleSheet">
-     <string notr="true">QComboBox
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>In need of Blood</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>On Treatment</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Deceased</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>New Patient</string>
-     </property>
-    </item>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_10">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>70</y>
-     <width>271</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="hyperLabel">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Years w/ Hypertension</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="hyperEdit">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_13">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>280</y>
-     <width>151</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label_2">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Heart Rate:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_19">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>460</y>
-     <width>151</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label_10">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Urine-Glucose:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_9">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_11">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>160</y>
-     <width>256</width>
-     <height>141</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="QCheckBox" name="checkBox_2">
-    <property name="styleSheet">
-     <string notr="true">QCheckBox
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Problem Urinating?</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>If yes, describe urine</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="textEdit">
-    <property name="styleSheet">
-     <string notr="true">QTextEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_12">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>250</y>
-     <width>161</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label_4">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Blood Pressure</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_22">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>430</y>
-     <width>151</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label_13">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Urine-Keytones:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_12">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_21">
-   <property name="geometry">
-    <rect>
-     <x>560</x>
-     <y>370</y>
-     <width>111</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label_12">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Urine-PH:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_11">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_20">
-   <property name="geometry">
-    <rect>
-     <x>540</x>
-     <y>340</y>
-     <width>151</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label_11">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Urine-Bilirubin</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_10">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_3">
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>410</y>
-     <width>101</width>
-     <height>18</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QCheckBox
-{
-    color: black;
-    background-color: white;
-    border: 2px solid black
-}</string>
-   </property>
-   <property name="text">
-    <string>Urine-Blood</string>
-   </property>
-  </widget>
-  <widget class="QSplitter" name="splitter_16">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>370</y>
-     <width>181</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label_7">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Urine-Leukocytes:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_6">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_2">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>10</y>
-     <width>301</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="LNameLabel">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Last Name:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="LNameEdit">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_15">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>340</y>
-     <width>151</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label_6">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Blood Sugar</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_5">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_17">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>400</y>
-     <width>151</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label_8">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Urine-Nitrite:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_7">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_6">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>100</y>
-     <width>161</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="GenderLabel">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Gender:</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="GenderCombo">
-    <property name="styleSheet">
-     <string notr="true">QComboBox
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>Female</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Male</string>
-     </property>
-    </item>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_4">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>40</y>
-     <width>315</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="DOBLabel">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Date of Birth:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="DOBEdit">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>410</y>
+     <x>270</x>
+     <y>740</y>
      <width>351</width>
      <height>81</height>
     </rect>
@@ -769,54 +86,23 @@ QMessageBox
      <rect>
       <x>10</x>
       <y>5</y>
-      <width>331</width>
+      <width>329</width>
       <height>71</height>
      </rect>
     </property>
     <property name="text">
-     <string>                    New Registration</string>
+     <string>New Registration</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>
-  <widget class="QSplitter" name="splitter_3">
+  <widget class="QPushButton" name="patient_add_record_btn">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>60</y>
-     <width>319</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Telephone #:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>510</y>
+     <x>350</x>
+     <y>840</y>
      <width>201</width>
      <height>31</height>
     </rect>
@@ -839,179 +125,906 @@ QPushButton:hover
     <string>Add Record</string>
    </property>
   </widget>
-  <widget class="QSplitter" name="splitter_8">
+  <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>40</x>
+     <y>0</y>
+     <width>311</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Patient Personal Information</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="FNameLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>First Name:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="FNameEdit">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="LNameLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Last Name:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="LNameEdit">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Telephone #:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_23">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="Email">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Email</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="DOBEdit_2">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="DOBLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Date of Birth:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="DOBEdit">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="GenderLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Gender:</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="GenderCombo">
+       <property name="styleSheet">
+        <string notr="true">QComboBox
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Female</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Male</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_7">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="PatientLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Patient Status:</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="PatientCombo">
+       <property name="styleSheet">
+        <string notr="true">QComboBox
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>In need of Blood</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>On Treatment</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Deceased</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>New Patient</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>0</y>
+     <width>280</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Patient Residences</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QSplitter" name="splitter_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="DistrictLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>District:</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="DistrictCombo">
+       <property name="styleSheet">
+        <string notr="true">QComboBox
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Orange Walk</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cayo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Belize</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Stann Creek</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Toledo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Corozal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Other</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_24">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QLabel" name="label_16">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Address</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_3">
+       <property name="styleSheet">
+        <string notr="true">QTextEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>10</y>
+     <width>268</width>
+     <height>205</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Blood Information</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QLabel" name="label_15">
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Blood Type</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="bloodtype_combobox"/>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_12">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Blood Pressure</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_14">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Pulse:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_4">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_13">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Heart Rate:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_15">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Blood Sugar</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_5">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>350</y>
+     <width>335</width>
+     <height>129</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Risk Factors</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_6">
+    <item>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="title">
+       <string>HyperTension</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QCheckBox" name="checkBox">
+         <property name="styleSheet">
+          <string notr="true">QCheckBox
+{
+    color: black;
+    background-color: white;
+    border: 2px solid black
+}</string>
+         </property>
+         <property name="text">
+          <string>Hypertension</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSplitter" name="splitter_10">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QLabel" name="hyperLabel">
+          <property name="styleSheet">
+           <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+          </property>
+          <property name="text">
+           <string>Years w/ Hypertension</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="hyperEdit">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_7">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
      <y>220</y>
-     <width>231</width>
-     <height>22</height>
+     <width>421</width>
+     <height>521</height>
     </rect>
    </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
+   <property name="title">
+    <string>Diabetes</string>
    </property>
-   <widget class="QLabel" name="diabetesLabel">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Years w/ Diabetes</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="diabetesEdit">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_14">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>310</y>
-     <width>101</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="label_5">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Pulse:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_9">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>160</y>
-     <width>231</width>
-     <height>50</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="QCheckBox" name="Type1Box">
-    <property name="styleSheet">
-     <string notr="true">QCheckBox
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Diabetes Type 1</string>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="Type2Box">
-    <property name="styleSheet">
-     <string notr="true">QCheckBox
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Diabetes Type 2</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_5">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>100</y>
-     <width>191</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="DistrictLabel">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>District:</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="DistrictCombo">
-    <property name="styleSheet">
-     <string notr="true">QComboBox
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
+   <layout class="QVBoxLayout" name="verticalLayout_7">
     <item>
-     <property name="text">
-      <string>Orange Walk</string>
-     </property>
+     <widget class="QSplitter" name="splitter_9">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QCheckBox" name="Type1Box">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Diabetes Type 1</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="Type2Box">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Diabetes Type 2</string>
+       </property>
+      </widget>
+     </widget>
     </item>
     <item>
-     <property name="text">
-      <string>Cayo</string>
-     </property>
+     <widget class="QSplitter" name="splitter_8">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="diabetesLabel">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Years w/ Diabetes</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="diabetesEdit">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
     </item>
     <item>
-     <property name="text">
-      <string>Belize</string>
-     </property>
+     <widget class="QCheckBox" name="eyeDamageBox">
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;diabetic macular edema&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox
+{
+    color: black;
+    background-color: white;
+    border: 2px solid black
+}</string>
+      </property>
+      <property name="text">
+       <string>Eye Damage Due to DM</string>
+      </property>
+     </widget>
     </item>
     <item>
-     <property name="text">
-      <string>Stann Creek</string>
-     </property>
+     <widget class="QSplitter" name="splitter_18">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_9">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Urine-SG(Specific Gravity):</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_8">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
     </item>
     <item>
-     <property name="text">
-      <string>Toledo</string>
-     </property>
+     <widget class="QSplitter" name="splitter_20">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_11">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Urine-Bilirubin</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_10">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
     </item>
     <item>
-     <property name="text">
-      <string>Corozal</string>
-     </property>
+     <widget class="QSplitter" name="splitter_11">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QCheckBox" name="checkBox_2">
+       <property name="styleSheet">
+        <string notr="true">QCheckBox
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Problem Urinating?</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>If yes, describe urine</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="styleSheet">
+        <string notr="true">QTextEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
     </item>
     <item>
-     <property name="text">
-      <string>Other</string>
-     </property>
+     <widget class="QSplitter" name="splitter_21">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_12">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Urine-PH:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_11">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
     </item>
-   </widget>
+    <item>
+     <widget class="QSplitter" name="splitter_22">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_13">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Urine-Keytones:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_12">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_16">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_7">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Urine-Leukocytes:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_6">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox_3">
+      <property name="styleSheet">
+       <string notr="true">QCheckBox
+{
+    color: black;
+    background-color: white;
+    border: 2px solid black
+}</string>
+      </property>
+      <property name="text">
+       <string>Urine-Blood</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_19">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_10">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Urine-Glucose:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_9">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_17">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_8">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Urine-Nitrite:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_7">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

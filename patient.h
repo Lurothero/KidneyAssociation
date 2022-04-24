@@ -8,8 +8,20 @@ class Patient : public BasePerson
 public:
     Patient();
 
+
+
+
+
+
 private:
-    //Better separation? to resemble the database table instead
+
+    //Get all of the patient details
+
+    QString firstName;
+    QString lastName;
+    QString telephoneNumber;
+    QString email;
+    int status; //IDk whats the difference is
     QString socialSecurityNumber;
     QString dateOfBirth;
     QString gender;

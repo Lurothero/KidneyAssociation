@@ -15,6 +15,11 @@ public:
     explicit PatientRecords(QWidget *parent = nullptr);
     ~PatientRecords();
 
+
+
+
+
+
 private:
     Ui::PatientRecords *ui;
 };
