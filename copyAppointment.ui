@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>727</width>
-    <height>548</height>
+    <width>782</width>
+    <height>507</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -60,10 +60,72 @@ QMessageBox
    background-color: white;
 }</string>
   </property>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>228</x>
+     <y>110</y>
+     <width>411</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="SocialLabel">
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Social Security Number:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="SocialCombo">
+    <property name="styleSheet">
+     <string notr="true">QComboBox
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="AddRecordButton">
+   <property name="geometry">
+    <rect>
+     <x>138</x>
+     <y>440</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
+}
+
+QPushButton:hover
+{
+   color: #D1D2D2;
+   border-radius: 15px;
+   background: #426a78;
+}</string>
+   </property>
+   <property name="text">
+    <string>Add Record</string>
+   </property>
+  </widget>
   <widget class="QSplitter" name="splitter_2">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>228</x>
      <y>50</y>
      <width>353</width>
      <height>33</height>
@@ -97,78 +159,10 @@ QMessageBox
     </property>
    </widget>
   </widget>
-  <widget class="QSplitter" name="splitter">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>110</y>
-     <width>411</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="SocialLabel">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Social Security Number:</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="SocialCombo">
-    <property name="styleSheet">
-     <string notr="true">QComboBox
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QSplitter" name="splitter_3">
-   <property name="geometry">
-    <rect>
-     <x>162</x>
-     <y>170</y>
-     <width>411</width>
-     <height>33</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QLabel" name="PatientLabel">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Patient Name: </string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="PatientEdit">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
-  </widget>
   <widget class="QSplitter" name="splitter_4">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>228</x>
      <y>220</y>
      <width>241</width>
      <height>31</height>
@@ -202,7 +196,7 @@ QMessageBox
   <widget class="QSplitter" name="splitter_5">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>228</x>
      <y>280</y>
      <width>353</width>
      <height>33</height>
@@ -236,7 +230,7 @@ QMessageBox
   <widget class="QSplitter" name="splitter_6">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>228</x>
      <y>350</y>
      <width>353</width>
      <height>33</height>
@@ -270,7 +264,7 @@ QMessageBox
   <widget class="QPushButton" name="PrintRecordButton">
    <property name="geometry">
     <rect>
-     <x>400</x>
+     <x>468</x>
      <y>440</y>
      <width>211</width>
      <height>31</height>
@@ -295,33 +289,39 @@ QPushButton:hover
     <string>Print Record</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="AddRecordButton">
+  <widget class="QSplitter" name="splitter_3">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>440</y>
-     <width>211</width>
-     <height>31</height>
+     <x>230</x>
+     <y>170</y>
+     <width>411</width>
+     <height>33</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="PatientLabel">
+    <property name="styleSheet">
+     <string notr="true">QLabel
 {
-   border: 2px solid black;
-   background-color: white;
-   border-radius: 15px;
-}
-
-QPushButton:hover
-{
-   color: #D1D2D2;
-   border-radius: 15px;
-   background: #426a78;
+    color: black;
+    background-color: white;
 }</string>
-   </property>
-   <property name="text">
-    <string>Add Record</string>
-   </property>
+    </property>
+    <property name="text">
+     <string>Patient Name: </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="PatientEdit">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
