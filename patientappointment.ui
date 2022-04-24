@@ -198,7 +198,7 @@ QPushButton:hover
     <rect>
      <x>220</x>
      <y>350</y>
-     <width>353</width>
+     <width>411</width>
      <height>33</height>
     </rect>
    </property>
@@ -214,7 +214,7 @@ QPushButton:hover
 }</string>
     </property>
     <property name="text">
-     <string>Doctor Name:</string>
+     <string>Appointment Date:</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="DoctorMaybeID_LineEdit">
