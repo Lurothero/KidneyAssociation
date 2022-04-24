@@ -16,7 +16,7 @@ class BasePerson
 {
 public:
     BasePerson();
-    BasePerson(int,QString,QString,QString,QString,int);
+    BasePerson(QString fname,QString lname,QString phone,QString email,int status);
 
 private:
     int personID;
