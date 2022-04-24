@@ -17,9 +17,6 @@ public:
 
 
 
-
-
-
 private:
     Ui::PatientRecords *ui;
 };

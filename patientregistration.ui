@@ -364,6 +364,34 @@ QPushButton:hover
       </widget>
      </widget>
     </item>
+    <item>
+     <widget class="QSplitter" name="splitter_25">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="patient_weight_label">
+       <property name="styleSheet">
+        <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Weigh(lb)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="patient_weight_textbox">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QGroupBox" name="groupBox_2">
