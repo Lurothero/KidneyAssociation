@@ -17,6 +17,7 @@ SOURCES += \
     database.cpp \
     deskemployee.cpp \
     doctor.cpp \
+    doctorinformation.cpp \
     homemenu.cpp \
     login.cpp \
     main.cpp \
@@ -37,6 +38,7 @@ HEADERS += \
     database.h \
     deskemployee.h \
     doctor.h \
+    doctorinformation.h \
     homemenu.h \
     login.h \
     patient.h \
@@ -53,7 +55,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 FORMS += \
-    DoctorContacts.ui \
+    doctorinformation.ui \
     homemenu.ui \
     login.ui \
     patientappointment.ui \
