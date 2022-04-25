@@ -54,3 +54,16 @@ int Database::loginUser(QString user, QString pass)
 
 
 }
+
+void Database::addDoctorInformation(QString FirstName, QString LastName, QString phoneNumber, QString emailAddress)
+{
+  QSqlQuery q;
+  q.prepare("INSERT INTO `doctor` (`First Name`, `Last Name`, `Phone Number`, `Email Address`) VALUES (:FName, :LName, :PhoneNum, :Email)");
+  q.bindValue(":FName",FirstName);
+  q.bindValue(":LName",LastName);
+  q.bindValue(":PhoneNum",phoneNumber);
+  q.bindValue(":Email",emailAddress);
+
+  q.exec();
+  //q.first();
+}
