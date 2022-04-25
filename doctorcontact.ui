@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>DoctorContact</class>
+ <widget class="QDialog" name="DoctorContact">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>843</width>
-    <height>438</height>
+    <width>879</width>
+    <height>493</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Dialog</string>
   </property>
   <property name="styleSheet">
    <string notr="true">*{
     font-family: century gothic;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 QToolButton
@@ -60,54 +60,46 @@ QMessageBox
    background-color: white;
 }</string>
   </property>
-  <widget class="QPushButton" name="DeleteRecord_BTN">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>370</y>
-     <width>241</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton
-{
-   border: 2px solid black;
-   background-color: white;
-   border-radius: 15px;
-}</string>
-   </property>
-   <property name="text">
-    <string>Delete Record</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="AddRecord_BTN">
+  <widget class="QSplitter" name="splitter_2">
    <property name="geometry">
     <rect>
      <x>150</x>
-     <y>370</y>
-     <width>211</width>
-     <height>31</height>
+     <y>90</y>
+     <width>491</width>
+     <height>33</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="FirstName_Label">
+    <property name="styleSheet">
+     <string notr="true">QLabel
 {
-   border: 2px solid black;
-   background-color: white;
-   border-radius: 15px;
+    color: black;
+    background-color: white;
 }</string>
-   </property>
-   <property name="text">
-    <string>Add Record</string>
-   </property>
+    </property>
+    <property name="text">
+     <string>First Name:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FirstName_LineEdit">
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QSplitter" name="splitter">
    <property name="geometry">
     <rect>
-     <x>198</x>
-     <y>28</y>
-     <width>411</width>
+     <x>20</x>
+     <y>30</y>
+     <width>841</width>
      <height>31</height>
     </rect>
    </property>
@@ -139,9 +131,9 @@ QMessageBox
   <widget class="QSplitter" name="splitter_3">
    <property name="geometry">
     <rect>
-     <x>200</x>
+     <x>150</x>
      <y>150</y>
-     <width>357</width>
+     <width>491</width>
      <height>33</height>
     </rect>
    </property>
@@ -170,12 +162,33 @@ QMessageBox
     </property>
    </widget>
   </widget>
+  <widget class="QPushButton" name="AddRecord_BTN">
+   <property name="geometry">
+    <rect>
+     <x>172</x>
+     <y>372</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Add Record</string>
+   </property>
+  </widget>
   <widget class="QSplitter" name="splitter_4">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>220</y>
-     <width>409</width>
+     <x>150</x>
+     <y>210</y>
+     <width>491</width>
      <height>33</height>
     </rect>
    </property>
@@ -204,46 +217,33 @@ QMessageBox
     </property>
    </widget>
   </widget>
-  <widget class="QSplitter" name="splitter_2">
+  <widget class="QPushButton" name="DeleteRecord_BTN">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>90</y>
-     <width>353</width>
-     <height>33</height>
+     <x>472</x>
+     <y>372</y>
+     <width>241</width>
+     <height>31</height>
     </rect>
    </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
+}</string>
    </property>
-   <widget class="QLabel" name="FirstName_Label">
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-    <property name="text">
-     <string>First Name:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="FirstName_LineEdit">
-    <property name="styleSheet">
-     <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-    </property>
-   </widget>
+   <property name="text">
+    <string>Delete Record</string>
+   </property>
   </widget>
   <widget class="QSplitter" name="splitter_5">
    <property name="geometry">
     <rect>
-     <x>198</x>
-     <y>288</y>
-     <width>409</width>
+     <x>150</x>
+     <y>270</y>
+     <width>491</width>
      <height>33</height>
     </rect>
    </property>

@@ -2,7 +2,8 @@
 #define LOGIN_H
 
 #include <QMainWindow>
-
+#include "homemenu.h"
+#include <database.h>
 namespace Ui {
 class login;
 }
@@ -13,10 +14,13 @@ class login : public QMainWindow
 
 public:
     explicit login(QWidget *parent = nullptr);
+    friend class HomeMenu;
 
 
 
     ~login();
+
+private:
 
 
 private slots:
@@ -26,7 +30,7 @@ private slots:
 
 
 private:
-
+    Database db;
     Ui::login *ui;
 };
 

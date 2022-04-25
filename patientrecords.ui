@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>PatientRecords</class>
+ <widget class="QWidget" name="PatientRecords">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>722</width>
-    <height>544</height>
+    <width>812</width>
+    <height>511</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -60,13 +60,13 @@ QMessageBox
    background-color: white;
 }</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>129</x>
-     <y>40</y>
-     <width>441</width>
-     <height>111</height>
+     <x>171</x>
+     <y>330</y>
+     <width>461</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -85,14 +85,14 @@ QPushButton:hover
 }</string>
    </property>
    <property name="text">
-    <string>Patients who are deceased</string>
+    <string>Patients in need of blood</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>210</y>
+     <x>181</x>
+     <y>180</y>
      <width>451</width>
      <height>111</height>
     </rect>
@@ -116,13 +116,13 @@ QPushButton:hover
     <string>Patients on treatment</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>360</y>
-     <width>461</width>
-     <height>131</height>
+     <x>180</x>
+     <y>10</y>
+     <width>441</width>
+     <height>111</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -141,7 +141,7 @@ QPushButton:hover
 }</string>
    </property>
    <property name="text">
-    <string>Patients in need of blood</string>
+    <string>Patients who are deceased</string>
    </property>
   </widget>
  </widget>
