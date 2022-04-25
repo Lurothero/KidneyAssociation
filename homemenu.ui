@@ -89,11 +89,11 @@ QPushButton:hover
     <string>Reports</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="patientButton">
+  <widget class="QPushButton" name="patientAddButton">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>350</y>
+     <x>50</x>
+     <y>60</y>
      <width>211</width>
      <height>31</height>
     </rect>
@@ -114,7 +114,7 @@ QPushButton:hover
 }</string>
    </property>
    <property name="text">
-    <string>Patient Records</string>
+    <string>Add a new Patient</string>
    </property>
   </widget>
   <widget class="QPushButton" name="AppointmentButton">
@@ -340,7 +340,7 @@ QLabel
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>40</y>
+     <y>350</y>
      <width>211</width>
      <height>31</height>
     </rect>

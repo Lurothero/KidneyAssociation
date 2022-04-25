@@ -16,6 +16,7 @@ class BasePerson
 {
 public:
     BasePerson();
+    BasePerson(QString fname,QString lname,QString phone,QString email,int status);
 
 private:
     int personID;
@@ -28,16 +29,16 @@ private:
 public:
     //--------------------------getters
     int getPersonID();
-    string getFirstName();
-    string getLastName();
-    string getPhoneNumber();
-    string getEmail();
+    QString getFirstName();
+    QString getLastName();
+    QString getPhoneNumber();
+    QString getEmail();
     int getStatus();
 
     //--------------------------setters
     void setPersonID(int id);
     void setFirstName(QString fname);
-    void setLastName(string lname);
+    void setLastName(QString lname);
     void setPhoneNumber(QString pnumber);
     void setEmail(QString em);
     void setStatus(int flag);

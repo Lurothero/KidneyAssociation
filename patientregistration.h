@@ -2,7 +2,7 @@
 #define PATIENTREGISTRATION_H
 
 #include <QWidget>
-
+#include <database.h>
 namespace Ui {
 class PatientRegistration;
 }
@@ -15,8 +15,17 @@ public:
     explicit PatientRegistration(QWidget *parent = nullptr);
     ~PatientRegistration();
 
+
+private slots:
+
+    void addRecord();
+
+
+
 private:
     Ui::PatientRegistration *ui;
+
+    Database db;
 };
 
 #endif // PATIENTREGISTRATION_H

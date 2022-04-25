@@ -31,6 +31,10 @@ public:
 private slots:
     void on_contactButton_clicked();
 
+
+private slots:
+    void createPatientRecord();
+
 private:
     Ui::HomeMenu *ui;
     QLCDNumber * clock; // private object created for lcd widget

@@ -17,6 +17,8 @@ public:
     void addDoctorInformation(QString FirstName, QString LastName, QString phoneNumber, QString emailAddress);
     friend class Ui_DoctorContact;
 
+    bool addPatient();
+
 
 private:
     UserLibrary* UserLib;

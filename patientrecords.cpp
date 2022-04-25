@@ -6,6 +6,8 @@ PatientRecords::PatientRecords(QWidget *parent) :
     ui(new Ui::PatientRecords)
 {
     ui->setupUi(this);
+
+
 }
 
 PatientRecords::~PatientRecords()

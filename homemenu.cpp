@@ -1,11 +1,20 @@
 #include "homemenu.h"
 #include "ui_homemenu.h"
 
+
+#include "patientregistration.h"
+
 HomeMenu::HomeMenu(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::HomeMenu)
 {
     ui->setupUi(this);
+
+
+    //Connects
+    connect(ui->patientAddButton,SIGNAL(clicked()),this,SLOT(createPatientRecord()));
+
+
 
     QTimer * timer = new QTimer(this);
     timer->start(1000);
@@ -37,7 +46,7 @@ void HomeMenu::displayDeskMenu()
 void HomeMenu::displayDoctorMenu()
 {
   ui->adminButton->setEnabled(false);
-  ui->patientButton->setEnabled(false);
+  ui->patientAddButton->setEnabled(false);
   ui->reportButton->setEnabled(false);
   ui->registrationButton->setEnabled(false);
 }
@@ -54,6 +63,7 @@ void HomeMenu::updateTime()
         ui->clock->display(text);
 }
 
+<<<<<<< HEAD
 void HomeMenu::on_contactButton_clicked()
 {
     DoctorContact * docInfo = new DoctorContact(this);
@@ -61,3 +71,20 @@ void HomeMenu::on_contactButton_clicked()
     this->hide();
 }
 
+=======
+void HomeMenu::createPatientRecord()
+{
+
+    //Call the addRecord window
+
+    PatientRegistration *addPatient = new PatientRegistration;
+
+
+    addPatient->show();
+
+
+
+
+
+}
+>>>>>>> c39e3a9437cdfb0bacc02e6463d26f2b21523801
