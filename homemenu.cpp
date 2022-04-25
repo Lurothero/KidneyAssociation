@@ -53,3 +53,11 @@ void HomeMenu::updateTime()
 
         ui->clock->display(text);
 }
+
+void HomeMenu::on_contactButton_clicked()
+{
+    DoctorContact * docInfo = new DoctorContact(this);
+    docInfo->show();
+    this->hide();
+}
+
