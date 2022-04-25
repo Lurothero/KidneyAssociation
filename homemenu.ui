@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>874</width>
-    <height>608</height>
+    <height>523</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -301,7 +301,7 @@ QLabel
      <string>Today's Date</string>
     </property>
    </widget>
-   <widget class="QLabel" name="logOutButton">
+   <widget class="QLabel" name="Welcome">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -314,7 +314,7 @@ QLabel
      <string>Welcome to the main menu</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="LogOutButton">
     <property name="geometry">
      <rect>
       <x>170</x>
