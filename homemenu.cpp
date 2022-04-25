@@ -63,7 +63,6 @@ void HomeMenu::updateTime()
         ui->clock->display(text);
 }
 
-<<<<<<< HEAD
 void HomeMenu::createPatientRecord()
 {
 
@@ -79,7 +78,7 @@ void HomeMenu::createPatientRecord()
 
 
 }
-=======
+
 void HomeMenu::on_contactButton_clicked()
 {
     DoctorContact * docInfo = new DoctorContact(this);
@@ -87,4 +86,4 @@ void HomeMenu::on_contactButton_clicked()
     this->hide();
 }
 
->>>>>>> 5b3fcdd1d999ef9164337c05f98b86d0156e8df7
+
