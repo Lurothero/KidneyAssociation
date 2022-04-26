@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "database.h"
+#include <QStringList>
 
 namespace Ui {
 class DoctorContact;
@@ -18,11 +19,12 @@ public:
     friend class Database;
 
 private slots:
-    //void AddDoctorRecord();
+    //void listDoctorRecord();
     void on_AddRecord_BTN_clicked();
 
 private:
     Ui::DoctorContact *ui;
+    QStringList doctorData;
 };
 
 #endif // DOCTORCONTACT_H

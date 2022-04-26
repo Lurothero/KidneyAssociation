@@ -44,11 +44,20 @@ void DoctorContact::on_AddRecord_BTN_clicked()
 
            QMessageBox::information(this,tr("Database Query"),tr("Doctor contact was added successfully"));
 
+           doctorData.append(ui->FirstName_LineEdit->text() + " " + ui->LastName_LineEdit->text() + "-" + ui->Phone_LineEdit->text() + "-" + ui->Email_LineEdit->text());
+
            ui->Search_Combo->addItem(ui->FirstName_LineEdit->text() + " " + ui->LastName_LineEdit->text() + "-" + ui->Phone_LineEdit->text() + "-" + ui->Email_LineEdit->text());
+
+           //ui->Search_Combo->addItem(docDatabase.loadDoctorInformation(ui->FirstName_LineEdit->text(),ui->LastName_LineEdit->text(),ui->Phone_LineEdit->text(),ui->Email_LineEdit->text()))
+           docDatabase.loadDoctorInformation(ui->FirstName_LineEdit->text(),ui->LastName_LineEdit->text(),ui->Phone_LineEdit->text(),ui->Email_LineEdit->text());
            ui->FirstName_LineEdit->clear();
            ui->LastName_LineEdit->clear();
            ui->Phone_LineEdit->clear();
            ui->Email_LineEdit->clear();
+
+
+           qDebug() << "List of records " <<doctorData << "\n";
+           //ui->Search_Combo.
 
        }
 

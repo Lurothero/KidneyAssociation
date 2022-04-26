@@ -14,7 +14,7 @@ Database::Database()
     //setting connection credentials
     db.setHostName("127.0.0.1");
     db.setUserName("root");
-    db.setPassword("mysql");
+    db.setPassword("");
     db.setDatabaseName("guiproject");
 
     if(db.open()){
@@ -67,3 +67,16 @@ void Database::addDoctorInformation(QString FirstName, QString LastName, QString
   q.exec();
   //q.first();
 }
+
+void Database::loadDoctorInformation(QString FirstName, QString LastName, QString phoneNumber, QString emailAddress)
+{
+ QSqlQuery q;
+ q.prepare("SELECT * FROM doctor WHERE First Name = :FirstName AND Last Name = :LastName AND Phone Number = :phoneNumber AND Email Address = :emailAddress");
+ q.bindValue(":FirstName", FirstName);
+ q.bindValue(":LastName", LastName);
+ q.bindValue(":phoneNumber",phoneNumber);
+ q.bindValue(":emailAddress",emailAddress);
+
+ q.exec();
+}
+
