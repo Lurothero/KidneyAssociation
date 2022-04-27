@@ -57,7 +57,9 @@ int Database::loginUser(QString user, QString pass)
 
 void Database::addDoctorInformation(QString FirstName, QString LastName, QString phoneNumber, QString emailAddress)
 {
-  QSqlQuery q;
+  QSqlQuery q; // QSqlQuery object created
+
+  // prepares to insert data from doctor contact form and updates the database
   q.prepare("INSERT INTO `doctor` (`First Name`, `Last Name`, `Phone Number`, `Email Address`) VALUES (:FName, :LName, :PhoneNum, :Email)");
   q.bindValue(":FName",FirstName);
   q.bindValue(":LName",LastName);
@@ -65,18 +67,25 @@ void Database::addDoctorInformation(QString FirstName, QString LastName, QString
   q.bindValue(":Email",emailAddress);
 
   q.exec();
-  //q.first();
 }
 
-void Database::loadDoctorInformation(QString FirstName, QString LastName, QString phoneNumber, QString emailAddress)
+void Database::loadDoctorInformation()
 {
- QSqlQuery q;
- q.prepare("SELECT * FROM doctor WHERE First Name = :FirstName AND Last Name = :LastName AND Phone Number = :phoneNumber AND Email Address = :emailAddress");
- q.bindValue(":FirstName", FirstName);
- q.bindValue(":LastName", LastName);
- q.bindValue(":phoneNumber",phoneNumber);
- q.bindValue(":emailAddress",emailAddress);
+ QSqlQuery q; // declare query object
 
- q.exec();
+ if(q.exec("SELECT * FROM doctor")) // checks if query is selecting all records
+ {
+     while(q.next()) // cycling through each row
+     {
+         // adds each record to the QList vector
+         docRecord.append(q.value(0).toString() + " " + q.value(1).toString() + " " + q.value(2).toString() + " " + q.value(3).toString());
+     }
+ }
+ else
+ {
+     qDebug() << "The query didnt work";
+ }
+
+  qDebug() << "List of items" << docRecord << "\n"; // outputs to the console
 }
 

@@ -15,6 +15,7 @@ class DoctorContact : public QDialog
 
 public:
     explicit DoctorContact(QWidget *parent = nullptr);
+    void loadRecords();
     ~DoctorContact();
     friend class Database;
 
