@@ -71,6 +71,7 @@ void HomeMenu::on_contactButton_clicked()
     this->hide();
 }
 
+
 void HomeMenu::createPatientRecord()
 {
 
@@ -81,3 +82,14 @@ void HomeMenu::createPatientRecord()
     addPatient->show();
 
 }
+
+
+void HomeMenu::on_contactButton_clicked()
+{
+    DoctorContact * docInfo = new DoctorContact(this);
+    docInfo->show();
+    this->hide();
+}
+
+
+
