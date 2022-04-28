@@ -9,7 +9,7 @@ DoctorContact::DoctorContact(QWidget *parent) :
     Database record;
     ui->setupUi(this);
     connect(this,SIGNAL(clicked()),this,SLOT(AddDoctorRecord()));
-    //connect(this,SIGNAL(currentText()),this,SLOT(indexConversion()));
+    //connect(this,SIGNAL(clicked()),this,SLOT(refreshButton()));
     loadRecords();
     indexConversion();
 }
@@ -114,5 +114,16 @@ void DoctorContact::on_DeleteRecord_BTN_clicked()
     }
     tokenizeList.clear();
 
+}
+
+void DoctorContact::on_Refresh_BTN_clicked()
+{
+    DoctorContact * docForm = new DoctorContact();
+    this->close();
+    docForm->show();
+
+    qDebug() << "Refresh Button";
+
+    //int id = ui->AddRecord_BTN.;
 }
 
