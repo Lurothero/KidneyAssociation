@@ -17,7 +17,7 @@ public:
     friend void AppointmentLibrary::generateAppointmentReport();
 
     //functions doctors can perform on patients
-    friend Patient* PatientLibrary::findPatient(int id, string name);
+    friend Patient* PatientLibrary::findPatient(int id, QString name);
     friend void PatientLibrary::updatePatientMedicalDetails(int id);
 };
 

@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,9 +17,16 @@ SOURCES += \
     database.cpp \
     deskemployee.cpp \
     doctor.cpp \
+    doctorcontact.cpp \
+    homemenu.cpp \
+    login.cpp \
     main.cpp \
     patient.cpp \
+    patientappointment.cpp \
+    patientform.cpp \
     patientlibrary.cpp \
+    patientrecords.cpp \
+    patientregistration.cpp \
     userlibrary.cpp
 
 HEADERS += \
@@ -31,11 +38,30 @@ HEADERS += \
     database.h \
     deskemployee.h \
     doctor.h \
+    doctorcontact.h \
+    homemenu.h \
+    login.h \
     patient.h \
+    patientappointment.h \
+    patientform.h \
     patientlibrary.h \
+    patientrecords.h \
+    patientregistration.h \
     userlibrary.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+FORMS += \
+    doctorcontact.ui \
+    homemenu.ui \
+    login.ui \
+    patientappointment.ui \
+    patientform.ui \
+    patientrecords.ui \
+    patientregistration.ui
+
+RESOURCES += \
+    resource.qrc

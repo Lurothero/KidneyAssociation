@@ -3,39 +3,44 @@
 
 #include <iostream>
 #include <string>//These should be replaced with QT Equivalent
-using std::string;//These should be replaced with QT Equivalent
-using std::cout;
-using std::endl;
-using std::cin;
+//using std::string;//These should be replaced with QT Equivalent
+//using std::cout;
+//using std::endl;
+//using std::cin;
+
+using namespace std; // I have used name space instead of using stds for each library
+
+#include <QString>
 
 class BasePerson
 {
 public:
     BasePerson();
+    BasePerson(QString fname,QString lname,QString phone,QString email,int status);
 
 private:
     int personID;
-    string firstName;//These should be replaced with QT Equivalent
-    string lastName;//These should be replaced with QT Equivalent
-    string phoneNumber;//These should be replaced with QT Equivalent
-    string email;//These should be replaced with QT Equivalent
+    QString firstName;//These should be replaced with QT Equivalent
+    QString lastName;//These should be replaced with QT Equivalent
+    QString phoneNumber;//These should be replaced with QT Equivalent
+    QString email;//These should be replaced with QT Equivalent
     int status;
 
 public:
     //--------------------------getters
     int getPersonID();
-    string getFirstName();
-    string getLastName();
-    string getPhoneNumber();
-    string getEmail();
+    QString getFirstName();
+    QString getLastName();
+    QString getPhoneNumber();
+    QString getEmail();
     int getStatus();
 
     //--------------------------setters
     void setPersonID(int id);
-    void setFirstName(string fname);
-    void setLastName(string lname);
-    void setPhoneNumber(string pnumber);
-    void setEmail(string em);
+    void setFirstName(QString fname);
+    void setLastName(QString lname);
+    void setPhoneNumber(QString pnumber);
+    void setEmail(QString em);
     void setStatus(int flag);
 
 

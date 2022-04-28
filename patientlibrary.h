@@ -3,7 +3,8 @@
 
 #include "patient.h"
 #include <vector>
-using std::vector;
+
+using namespace std;
 
 class PatientLibrary
 {
@@ -15,7 +16,7 @@ private:
 
 public:
     void viewPatient(int id);
-    Patient* findPatient(int id, string name);
+    Patient* findPatient(int id, QString name);
     void createPatient();
     void deletePatient(int id);
     void updatePatientPersonalDetails(int id);
