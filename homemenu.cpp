@@ -71,6 +71,7 @@ void HomeMenu::on_contactButton_clicked()
     docInfo->show();
 }
 
+
 void HomeMenu::createPatientRecord()
 {
 
@@ -82,6 +83,7 @@ void HomeMenu::createPatientRecord()
 
 }
 
+<<<<<<< HEAD
 void HomeMenu::on_AppointmentButton_clicked()
 {
     Appointment * appointForm = new Appointment(this);
@@ -94,4 +96,15 @@ void HomeMenu::on_registrationButton_clicked()
     PatientRegistration * registerForm = new PatientRegistration(this);
     registerForm->show();
 }
+=======
+
+void HomeMenu::on_contactButton_clicked()
+{
+    DoctorContact * docInfo = new DoctorContact(this);
+    docInfo->show();
+    this->hide();
+}
+
+
+>>>>>>> 37a1a5269affd52618f112913f1dc2b7b4f8ff8d
 
