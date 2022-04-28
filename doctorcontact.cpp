@@ -6,9 +6,12 @@ DoctorContact::DoctorContact(QWidget *parent) :
     ui(new Ui::DoctorContact)
 {
 
+    Database record;
     ui->setupUi(this);
     connect(this,SIGNAL(clicked()),this,SLOT(AddDoctorRecord()));
+    //connect(this,SIGNAL(currentText()),this,SLOT(indexConversion()));
     loadRecords();
+    indexConversion();
 }
 
 void DoctorContact::loadRecords()
@@ -16,6 +19,19 @@ void DoctorContact::loadRecords()
     Database record;
     record.loadDoctorInformation();
     ui->Search_Combo->addItems(record.docRecord);
+}
+
+void DoctorContact::indexConversion()
+{
+    QList<QString>tokenizeList;
+
+    if(ui->Search_Combo->currentText().isSimpleText())
+    {
+        tokenizeList.append(ui->Search_Combo->currentText().split(" "));
+
+        qDebug() <<"List of tokenize stuff: "<< tokenizeList;
+    }
+
 }
 
 DoctorContact::~DoctorContact()
@@ -53,9 +69,7 @@ void DoctorContact::on_AddRecord_BTN_clicked()
 
            docDatabase.addDoctorInformation(ui->FirstName_LineEdit->text(),ui->LastName_LineEdit->text(),ui->Phone_LineEdit->text(),ui->Email_LineEdit->text());
 
-           QMessageBox::information(this,tr("Database Query"),tr("Doctor contact was added successfully"));
-
-           //doctorData.append(ui->FirstName_LineEdit->text() + " " + ui->LastName_LineEdit->text() + "-" + ui->Phone_LineEdit->text() + "-" + ui->Email_LineEdit->text());
+           QMessageBox::information(this,tr("Doctor Record"),tr("Doctor contact was added successfully"));
 
            docDatabase.loadDoctorInformation();
            ui->Search_Combo->addItem(ui->FirstName_LineEdit->text() + " " + ui->LastName_LineEdit->text() + " " + ui->Phone_LineEdit->text() + " " + ui->Email_LineEdit->text());
@@ -79,5 +93,26 @@ void DoctorContact::on_AddRecord_BTN_clicked()
 
 
     qDebug() << "Button Clicked";
+}
+
+
+void DoctorContact::on_DeleteRecord_BTN_clicked()
+{
+    Database dataRecord;
+    stringstream intConverter;
+    QList<QString>tokenizeList;
+
+    qDebug() <<"List of tokenize stuff: "<< tokenizeList;
+    if(ui->Search_Combo->currentIndex())
+    {
+      QMessageBox::information(this,tr("Doctor Record"),tr("Selected record was deleted"));
+      tokenizeList.append(ui->Search_Combo->currentText().split(" "));
+      dataRecord.deleteDoctorInformation(tokenizeList.begin()->toInt());
+      ui->Search_Combo->removeItem(ui->Search_Combo->currentIndex());
+
+      qDebug() << "Current List" << tokenizeList;
+    }
+    tokenizeList.clear();
+
 }
 
