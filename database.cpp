@@ -14,7 +14,7 @@ Database::Database()
     //setting connection credentials
     db.setHostName("127.0.0.1");
     db.setUserName("root");
-    db.setPassword("mysql");
+    db.setPassword("");
     db.setDatabaseName("guiproject");
 
     if(db.open()){
@@ -57,7 +57,9 @@ int Database::loginUser(QString user, QString pass)
 
 void Database::addDoctorInformation(QString FirstName, QString LastName, QString phoneNumber, QString emailAddress)
 {
-  QSqlQuery q;
+  QSqlQuery q; // QSqlQuery object created
+
+  // prepares to insert data from doctor contact form and updates the database
   q.prepare("INSERT INTO `doctor` (`First Name`, `Last Name`, `Phone Number`, `Email Address`) VALUES (:FName, :LName, :PhoneNum, :Email)");
   q.bindValue(":FName",FirstName);
   q.bindValue(":LName",LastName);
@@ -65,5 +67,25 @@ void Database::addDoctorInformation(QString FirstName, QString LastName, QString
   q.bindValue(":Email",emailAddress);
 
   q.exec();
-  //q.first();
 }
+
+void Database::loadDoctorInformation()
+{
+ QSqlQuery q; // declare query object
+
+ if(q.exec("SELECT * FROM doctor")) // checks if query is selecting all records
+ {
+     while(q.next()) // cycling through each row
+     {
+         // adds each record to the QList vector
+         docRecord.append(q.value(0).toString() + " " + q.value(1).toString() + " " + q.value(2).toString() + " " + q.value(3).toString());
+     }
+ }
+ else
+ {
+     qDebug() << "The query didnt work";
+ }
+
+  qDebug() << "List of items" << docRecord << "\n"; // outputs to the console
+}
+

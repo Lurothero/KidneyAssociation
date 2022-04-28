@@ -63,21 +63,6 @@ void HomeMenu::updateTime()
         ui->clock->display(text);
 }
 
-void HomeMenu::createPatientRecord()
-{
-
-    //Call the addRecord window
-
-    PatientRegistration *addPatient = new PatientRegistration;
-
-
-    addPatient->show();
-
-
-
-
-
-}
 
 void HomeMenu::on_contactButton_clicked()
 {
@@ -85,5 +70,26 @@ void HomeMenu::on_contactButton_clicked()
     docInfo->show();
     this->hide();
 }
+
+
+void HomeMenu::createPatientRecord()
+{
+
+    //Call the addRecord window
+
+    PatientRegistration *addPatient = new PatientRegistration;
+
+    addPatient->show();
+
+}
+
+
+void HomeMenu::on_contactButton_clicked()
+{
+    DoctorContact * docInfo = new DoctorContact(this);
+    docInfo->show();
+    this->hide();
+}
+
 
 

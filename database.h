@@ -6,6 +6,9 @@
 #include "patientlibrary.h"
 #include <QMessageBox>
 #include "ui_doctorcontact.h"
+#include <QStringList>
+#include <QList>
+#include <QDebug>
 class Database
 {
 public:
@@ -15,7 +18,8 @@ public:
     //Create Database functions here
     int loginUser(QString user, QString pass);//We are not concern about hiding data at this time
     void addDoctorInformation(QString FirstName, QString LastName, QString phoneNumber, QString emailAddress);
-    friend class Ui_DoctorContact;
+    void loadDoctorInformation();
+    QList<QString> docRecord;
 
     bool addPatient();
 
@@ -24,6 +28,9 @@ private:
     UserLibrary* UserLib;
     AppointmentLibrary* AppLib;
     PatientLibrary* PatLib;
+
+protected:
+
 
 
 
