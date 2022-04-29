@@ -15,8 +15,6 @@ HomeMenu::HomeMenu(QWidget *parent) :
     connect(ui->patientAddButton,SIGNAL(clicked()),this,SLOT(createPatientRecord()));
     connect(ui->AppointmentButton,SIGNAL(clicked()),this,SLOT(opentPatientForm()));
 
-
-
     QTimer * timer = new QTimer(this);
     timer->start(1000);
     updateTime();
@@ -49,7 +47,6 @@ void HomeMenu::displayDoctorMenu()
   ui->adminButton->setEnabled(false);
   ui->patientAddButton->setEnabled(false);
   ui->reportButton->setEnabled(false);
-  ui->registrationButton->setEnabled(false);
 }
 
 void HomeMenu::updateTime()
@@ -83,12 +80,15 @@ void HomeMenu::createPatientRecord()
 
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 36ff01e8a2810a2d665a11ab6d4462cd2673d8ba
 void HomeMenu::on_AppointmentButton_clicked()
 {
     Appointment * appointForm = new Appointment(this);
     appointForm->show();
 }
-
 
 void HomeMenu::on_registrationButton_clicked()
 {
@@ -96,9 +96,19 @@ void HomeMenu::on_registrationButton_clicked()
     registerForm->show();
 }
 
-void HomeMenu::on_contactButton_clicked()
+void HomeMenu::on_reportButton_clicked()
 {
-    DoctorContact * docInfo = new DoctorContact(this);
-    docInfo->show();
-    this->hide();
+  PatientReports * pRecords = new PatientReports(this);
+  pRecords->show();
 }
+<<<<<<< HEAD
+=======
+
+
+void HomeMenu::on_patientRecButton_clicked()
+{
+    PatientForm * pForm = new PatientForm(this);
+    pForm->show();
+}
+
+>>>>>>> 36ff01e8a2810a2d665a11ab6d4462cd2673d8ba

@@ -12,6 +12,8 @@
 #include "Patientform.h"
 #include "appointment.h"
 #include "patientregistration.h"
+#include "patientreports.h"
+#include "Patientform.h"
 
 namespace Ui {
 class HomeMenu;
@@ -29,6 +31,8 @@ public:
     friend class PatientForm;
     friend class Appointment;
     friend class PatientRegistration;
+    friend class PatientReports;
+    friend class PatientForm;
     void displayDeskMenu();
     void displayDoctorMenu();
     void updateTime(); // updates time from the O.S.
@@ -38,8 +42,9 @@ private slots:
     void on_contactButton_clicked();
     void createPatientRecord();
     void on_AppointmentButton_clicked();
-
     void on_registrationButton_clicked();
+    void on_reportButton_clicked();
+    void on_patientRecButton_clicked();
 
 private:
     Ui::HomeMenu *ui;
