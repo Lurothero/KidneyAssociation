@@ -9,6 +9,9 @@
 #include <QLabel>
 #include "doctorcontact.h"
 #include "database.h"
+#include "Patientform.h"
+#include "appointment.h"
+#include "patientregistration.h"
 
 namespace Ui {
 class HomeMenu;
@@ -23,6 +26,9 @@ public:
     ~HomeMenu();
     friend class DoctorContact;
     friend class Database;
+    friend class PatientForm;
+    friend class Appointment;
+    friend class PatientRegistration;
     void displayDeskMenu();
     void displayDoctorMenu();
     void updateTime(); // updates time from the O.S.
@@ -30,10 +36,10 @@ public:
 
 private slots:
     void on_contactButton_clicked();
-
-
-private slots:
     void createPatientRecord();
+    void on_AppointmentButton_clicked();
+
+    void on_registrationButton_clicked();
 
 private:
     Ui::HomeMenu *ui;

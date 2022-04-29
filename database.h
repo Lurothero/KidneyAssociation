@@ -19,7 +19,10 @@ public:
     int loginUser(QString user, QString pass);//We are not concern about hiding data at this time
     void addDoctorInformation(QString FirstName, QString LastName, QString phoneNumber, QString emailAddress);
     void loadDoctorInformation();
+    void deleteDoctorInformation(int row);
+    void indexingDoctorData();
     QList<QString> docRecord;
+    int currentID = 0;
 
     bool addPatient();
 
@@ -28,13 +31,6 @@ private:
     UserLibrary* UserLib;
     AppointmentLibrary* AppLib;
     PatientLibrary* PatLib;
-
-protected:
-
-
-
-
-
 
 };
 

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Appointment</class>
+ <widget class="QDialog" name="Appointment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>826</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+    font-family: century gothic;
+    font-size: 24px;
+}
+
+QToolButton
+{
+    background: #D1D2D2;
+    border-radius: 30px;
+}
+
+QLabel
+{
+    color: black;
+}
+
+QPushButton
+{
+   border: 2px solid black;
+   background-color: #D1D2D2;
+   border-radius: 15px;
+}
+
+QPushButton:hover
+{
+   color: #D1D2D2;
+   border-radius: 15px;
+   background: #16A5C3;
+}
+
+QFrame
+{
+  background: #C7D1D1;
+  border: 2px solid black
+}
+QWidget
+{
+  background-color:   #6dd5ed;
+}
+
+QMessageBox
+{
+   color: black;
+   background-color: white;
+}</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>821</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>817</width>
+      <height>567</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="PrintRecord_BTN">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>500</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Print Record</string>
+     </property>
+    </widget>
+    <widget class="QSplitter" name="splitter_5">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>370</y>
+       <width>371</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="FirstName_Label_4">
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Appointment cost:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="FirstName_LineEdit_2">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="AddRecord_BTN">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>500</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Add Record</string>
+     </property>
+    </widget>
+    <widget class="QSplitter" name="splitter_2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>20</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="FirstName_Label">
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Appointment ID:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="FirstName_LineEdit">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QSplitter" name="splitter_3">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>130</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="FirstName_Label_3">
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Patient ID:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="styleSheet">
+       <string notr="true">QComboBox
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QSplitter" name="splitter_4">
+     <property name="geometry">
+      <rect>
+       <x>196</x>
+       <y>190</y>
+       <width>278</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Treatment Description:</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="styleSheet">
+       <string notr="true">QTextEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QSplitter" name="splitter">
+     <property name="geometry">
+      <rect>
+       <x>192</x>
+       <y>70</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="FirstName_Label_2">
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Doctor ID:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="styleSheet">
+       <string notr="true">QComboBox
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QSplitter" name="splitter_6">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>430</y>
+       <width>371</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QLabel" name="FirstName_Label_5">
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Appointment date:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="FirstName_LineEdit_3">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

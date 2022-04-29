@@ -13,6 +13,7 @@ HomeMenu::HomeMenu(QWidget *parent) :
 
     //Connects
     connect(ui->patientAddButton,SIGNAL(clicked()),this,SLOT(createPatientRecord()));
+    connect(ui->AppointmentButton,SIGNAL(clicked()),this,SLOT(opentPatientForm()));
 
 
 
@@ -68,7 +69,6 @@ void HomeMenu::on_contactButton_clicked()
 {
     DoctorContact * docInfo = new DoctorContact(this);
     docInfo->show();
-    this->hide();
 }
 
 
@@ -83,5 +83,22 @@ void HomeMenu::createPatientRecord()
 
 }
 
+void HomeMenu::on_AppointmentButton_clicked()
+{
+    Appointment * appointForm = new Appointment(this);
+    appointForm->show();
+}
 
 
+void HomeMenu::on_registrationButton_clicked()
+{
+    PatientRegistration * registerForm = new PatientRegistration(this);
+    registerForm->show();
+}
+
+void HomeMenu::on_contactButton_clicked()
+{
+    DoctorContact * docInfo = new DoctorContact(this);
+    docInfo->show();
+    this->hide();
+}

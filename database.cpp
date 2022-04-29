@@ -59,14 +59,17 @@ void Database::addDoctorInformation(QString FirstName, QString LastName, QString
 {
   QSqlQuery q; // QSqlQuery object created
 
+  int id = int();
+
   // prepares to insert data from doctor contact form and updates the database
-  q.prepare("INSERT INTO `doctor` (`First Name`, `Last Name`, `Phone Number`, `Email Address`) VALUES (:FName, :LName, :PhoneNum, :Email)");
+  q.prepare("INSERT INTO `doctor` (`doctor_id`,`First Name`, `Last Name`, `Phone Number`, `Email Address`) VALUES (:ID, :FName, :LName, :PhoneNum, :Email)");
+  q.bindValue(":ID",id);
   q.bindValue(":FName",FirstName);
   q.bindValue(":LName",LastName);
   q.bindValue(":PhoneNum",phoneNumber);
   q.bindValue(":Email",emailAddress);
-
   q.exec();
+
 }
 
 void Database::loadDoctorInformation()
@@ -78,7 +81,7 @@ void Database::loadDoctorInformation()
      while(q.next()) // cycling through each row
      {
          // adds each record to the QList vector
-         docRecord.append(q.value(0).toString() + " " + q.value(1).toString() + " " + q.value(2).toString() + " " + q.value(3).toString());
+         docRecord.append(q.value(0).toString() + " " + q.value(1).toString() + " " + q.value(2).toString() + " " + q.value(3).toString() + " " + q.value(4).toString());
      }
  }
  else
@@ -86,6 +89,20 @@ void Database::loadDoctorInformation()
      qDebug() << "The query didnt work";
  }
 
-  qDebug() << "List of items" << docRecord << "\n"; // outputs to the console
+   //docRecord.removeDuplicates();
+
+ qDebug() << "List of items" << docRecord << "\n"; // outputs to the console
 }
+
+void Database::deleteDoctorInformation(int row)
+{
+  QSqlQuery q; // declare query object
+
+  q.prepare("DELETE FROM doctor WHERE doctor_id = :id");
+  q.bindValue(":id",row);
+  q.exec();
+
+  qDebug() << "Current row deleted: " << row;
+}
+
 

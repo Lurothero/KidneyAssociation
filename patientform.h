@@ -1,21 +1,19 @@
 #ifndef PATIENTFORM_H
 #define PATIENTFORM_H
 
-#include <QWidget>
+#include <QDialog>
 
 namespace Ui {
 class PatientForm;
 }
 
-class PatientForm : public QWidget
+class PatientForm : public QDialog
 {
     Q_OBJECT
 
 public:
     explicit PatientForm(QWidget *parent = nullptr);
     ~PatientForm();
-
-
 
 private:
     Ui::PatientForm *ui;

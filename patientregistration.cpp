@@ -1,14 +1,11 @@
 #include "patientregistration.h"
 #include "ui_patientregistration.h"
 
-
 PatientRegistration::PatientRegistration(QWidget *parent) :
-    QWidget(parent),
+    QDialog(parent),
     ui(new Ui::PatientRegistration)
 {
     ui->setupUi(this);
-
-
     connect(ui->patient_add_record_btn,SIGNAL(clicked()),this,SLOT(addRecord()));
 }
 
@@ -19,10 +16,7 @@ PatientRegistration::~PatientRegistration()
 
 void PatientRegistration::addRecord()
 {
+    //Call the database to add record!
 
-//Call the database to add record!
-
-//Return a bool to indicate success or failure
-
-
+    //Return a bool to indicate success or failure
 }
