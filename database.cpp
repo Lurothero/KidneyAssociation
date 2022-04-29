@@ -14,7 +14,7 @@ Database::Database()
     //setting connection credentials
     db.setHostName("127.0.0.1");
     db.setUserName("root");
-    db.setPassword("");
+    db.setPassword("mysql");
     db.setDatabaseName("guiproject");
 
     if(db.open()){
