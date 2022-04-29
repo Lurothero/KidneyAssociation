@@ -73,8 +73,8 @@ QMessageBox
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1212</width>
-        <height>1212</height>
+        <width>1222</width>
+        <height>1222</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -193,7 +193,7 @@ QPushButton:hover
                <string>First Name:</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="FNameEdit_3">
+             <widget class="QLineEdit" name="FNameEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -221,7 +221,7 @@ QPushButton:hover
                <string>Last Name:</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="LNameEdit_3">
+             <widget class="QLineEdit" name="LNameEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -249,7 +249,7 @@ QPushButton:hover
                <string>Telephone #:</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="lineEdit_36">
+             <widget class="QLineEdit" name="PhoneEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -277,7 +277,7 @@ QPushButton:hover
                <string>Email</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="DOBEdit_5">
+             <widget class="QLineEdit" name="Email_Edit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -305,7 +305,7 @@ QPushButton:hover
                <string>Date of Birth:</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="DOBEdit_6">
+             <widget class="QLineEdit" name="DOBEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -333,7 +333,7 @@ QPushButton:hover
                <string>Gender:</string>
               </property>
              </widget>
-             <widget class="QComboBox" name="GenderCombo_3">
+             <widget class="QComboBox" name="GenderCombo">
               <property name="styleSheet">
                <string notr="true">QComboBox
 {
@@ -371,7 +371,7 @@ QPushButton:hover
                <string>Patient Status:</string>
               </property>
              </widget>
-             <widget class="QComboBox" name="PatientCombo_3">
+             <widget class="QComboBox" name="PatientStatus_Combo">
               <property name="styleSheet">
                <string notr="true">QComboBox
 {
@@ -419,7 +419,7 @@ QPushButton:hover
                <string>Weigh(lb)</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="patient_weight_textbox_3">
+             <widget class="QLineEdit" name="weigthEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -452,7 +452,7 @@ QPushButton:hover
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_19">
               <item>
-               <widget class="QCheckBox" name="checkBox_9">
+               <widget class="QCheckBox" name="hyper_CheckBox">
                 <property name="styleSheet">
                  <string notr="true">QCheckBox
 {
@@ -483,7 +483,7 @@ QPushButton:hover
                   <string>Years w/ Hypertension</string>
                  </property>
                 </widget>
-                <widget class="QLineEdit" name="hyperEdit_3">
+                <widget class="QLineEdit" name="HyperYears_Edit">
                  <property name="styleSheet">
                   <string notr="true">QLineEdit
 {
@@ -529,7 +529,7 @@ QPushButton:hover
                <string>District:</string>
               </property>
              </widget>
-             <widget class="QComboBox" name="DistrictCombo_3">
+             <widget class="QComboBox" name="DistrictCombo">
               <property name="styleSheet">
                <string notr="true">QComboBox
 {
@@ -592,7 +592,7 @@ QPushButton:hover
                <string>Address</string>
               </property>
              </widget>
-             <widget class="QTextEdit" name="textEdit_6">
+             <widget class="QTextEdit" name="Address_Text_Box">
               <property name="styleSheet">
                <string notr="true">QTextEdit
 {
@@ -623,7 +623,7 @@ QPushButton:hover
              <property name="orientation">
               <enum>Qt::Vertical</enum>
              </property>
-             <widget class="QCheckBox" name="Type1Box_3">
+             <widget class="QCheckBox" name="DiabetesType1Box">
               <property name="styleSheet">
                <string notr="true">QCheckBox
 {
@@ -635,7 +635,7 @@ QPushButton:hover
                <string>Diabetes Type 1</string>
               </property>
              </widget>
-             <widget class="QCheckBox" name="Type2Box_3">
+             <widget class="QCheckBox" name="DiabetesType2Box">
               <property name="styleSheet">
                <string notr="true">QCheckBox
 {
@@ -666,7 +666,7 @@ QPushButton:hover
                <string>Years w/ Diabetes</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="diabetesEdit_3">
+             <widget class="QLineEdit" name="DiabetesYearsEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -678,7 +678,7 @@ QPushButton:hover
             </widget>
            </item>
            <item>
-            <widget class="QCheckBox" name="eyeDamageBox_3">
+            <widget class="QCheckBox" name="eyeDamageBox">
              <property name="whatsThis">
               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;diabetic macular edema&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
@@ -712,7 +712,7 @@ QPushButton:hover
                <string>Urine-SG(Specific Gravity):</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="lineEdit_25">
+             <widget class="QLineEdit" name="Urine_SG_Edit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -728,7 +728,7 @@ QPushButton:hover
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
-             <widget class="QLabel" name="label_34">
+             <widget class="QLabel" name="UrineBilEdit">
               <property name="styleSheet">
                <string notr="true">QLabel
 {
@@ -756,7 +756,7 @@ QPushButton:hover
              <property name="orientation">
               <enum>Qt::Vertical</enum>
              </property>
-             <widget class="QCheckBox" name="checkBox_7">
+             <widget class="QCheckBox" name="UrineProblemCheck">
               <property name="styleSheet">
                <string notr="true">QCheckBox
 {
@@ -780,9 +780,37 @@ QPushButton:hover
                <string>If yes, describe urine</string>
               </property>
              </widget>
-             <widget class="QTextEdit" name="textEdit_5">
+             <widget class="QTextEdit" name="UrineProblemEdit">
               <property name="styleSheet">
                <string notr="true">QTextEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSplitter" name="splitter_76">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QLabel" name="label_49">
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+              </property>
+              <property name="text">
+               <string>Urine-Protein</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="UrineProteinEdit">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit
 {
     color: black;
     background-color: white;
@@ -808,7 +836,7 @@ QPushButton:hover
                <string>Urine-PH:</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="lineEdit_27">
+             <widget class="QLineEdit" name="Urine_PH_Edit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -836,7 +864,7 @@ QPushButton:hover
                <string>Urine-Keytones:</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="lineEdit_28">
+             <widget class="QLineEdit" name="Urine_KeytonesEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -864,7 +892,7 @@ QPushButton:hover
                <string>Urine-Leukocytes:</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="lineEdit_29">
+             <widget class="QLineEdit" name="Urine_LeukocytesEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -876,7 +904,7 @@ QPushButton:hover
             </widget>
            </item>
            <item>
-            <widget class="QCheckBox" name="checkBox_8">
+            <widget class="QCheckBox" name="UrineBloodCheck">
              <property name="styleSheet">
               <string notr="true">QCheckBox
 {
@@ -907,7 +935,7 @@ QPushButton:hover
                <string>Urine-Glucose:</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="lineEdit_30">
+             <widget class="QLineEdit" name="UrineGlucoseEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -935,7 +963,7 @@ QPushButton:hover
                <string>Urine-Nitrite:</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="lineEdit_31">
+             <widget class="QLineEdit" name="UrineNitriteEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -976,7 +1004,7 @@ QPushButton:hover
             </widget>
            </item>
            <item>
-            <widget class="QComboBox" name="bloodtype_combobox_3"/>
+            <widget class="QComboBox" name="bloodtypeCombo"/>
            </item>
            <item>
             <widget class="QSplitter" name="splitter_61">
@@ -995,7 +1023,7 @@ QPushButton:hover
                <string>Blood Pressure</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="lineEdit_32">
+             <widget class="QLineEdit" name="BloodPressureEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -1023,7 +1051,7 @@ QPushButton:hover
                <string>Pulse:</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="lineEdit_33">
+             <widget class="QLineEdit" name="PulseEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -1051,7 +1079,7 @@ QPushButton:hover
                <string>Heart Rate:</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="lineEdit_34">
+             <widget class="QLineEdit" name="HeartRateEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -1079,7 +1107,7 @@ QPushButton:hover
                <string>Blood Sugar</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="lineEdit_35">
+             <widget class="QLineEdit" name="SugarEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {

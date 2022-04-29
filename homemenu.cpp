@@ -80,10 +80,7 @@ void HomeMenu::createPatientRecord()
 
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 36ff01e8a2810a2d665a11ab6d4462cd2673d8ba
 void HomeMenu::on_AppointmentButton_clicked()
 {
     Appointment * appointForm = new Appointment(this);
@@ -101,8 +98,6 @@ void HomeMenu::on_reportButton_clicked()
   PatientReports * pRecords = new PatientReports(this);
   pRecords->show();
 }
-<<<<<<< HEAD
-=======
 
 
 void HomeMenu::on_patientRecButton_clicked()
@@ -111,4 +106,3 @@ void HomeMenu::on_patientRecButton_clicked()
     pForm->show();
 }
 
->>>>>>> 36ff01e8a2810a2d665a11ab6d4462cd2673d8ba

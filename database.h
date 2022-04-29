@@ -24,7 +24,16 @@ public:
     QList<QString> docRecord;
     int currentID = 0;
 
-    bool addPatient();
+    bool addPatientRecord(QString firstName, QString lastName, QString phoneNumber,
+                          QString email, int status, QString socialSecurityNumber,
+                          QString dateOfBirth, QString gender, QString address,
+                          QString district, QString patientStatus, int bloodPressure,
+                          int heartRate, int pulse, float bloodSugar, float weight,
+                          bool diabetesType1, bool diabetesType2, bool eyeDamage,
+                          int yearsWithDiabetes, int yearsWithHypertension, bool urinatingProblems,
+                          QString bloodType, QString urineLeukocytes, QString urineNitrite,
+                          QString urineProtein, QString urinePH, bool urineBlood, QString urineSG,
+                          QString urineKetones, QString urineGlucose, QString urineBilirubin);
 
 
 private:
