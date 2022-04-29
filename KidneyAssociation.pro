@@ -25,8 +25,8 @@ SOURCES += \
     patient.cpp \
     patientappointment.cpp \
     patientlibrary.cpp \
-    patientrecords.cpp \
     patientregistration.cpp \
+    patientreports.cpp \
     userlibrary.cpp
 
 HEADERS += \
@@ -45,8 +45,8 @@ HEADERS += \
     patient.h \
     patientappointment.h \
     patientlibrary.h \
-    patientrecords.h \
     patientregistration.h \
+    patientreports.h \
     userlibrary.h
 
 # Default rules for deployment.
@@ -61,8 +61,8 @@ FORMS += \
     homemenu.ui \
     login.ui \
     patientappointment.ui \
-    patientrecords.ui \
-    patientregistration.ui
+    patientregistration.ui \
+    patientreports.ui
 
 RESOURCES += \
     resource.qrc
