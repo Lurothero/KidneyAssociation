@@ -14,7 +14,7 @@ Database::Database()
     //setting connection credentials
     db.setHostName("127.0.0.1");
     db.setUserName("root");
-    db.setPassword("");
+    db.setPassword("mysql");
     db.setDatabaseName("guiproject");
 
     if(db.open()){
@@ -23,6 +23,7 @@ Database::Database()
     }else{
 
          qDebug() << "Database connection refused, please check your credentials...";
+
 
     }
 
@@ -38,6 +39,9 @@ int Database::loginUser(QString user, QString pass)
 
     q.exec();
     q.first();
+
+
+
     if(q.lastError().text().isEmpty()){//Success
 
         //return the user permission id
@@ -144,5 +148,51 @@ void Database::insertingAppointmentData(int appoint_id, int doc_id, int patient_
   q.exec();
 
 }
+
+bool Database::addPatientRecord(QString firstName, QString lastName, QString phoneNumber, QString email, int status, QString socialSecurityNumber, QString dateOfBirth, QString gender, QString address, QString district, QString patientStatus, int bloodPressure, int heartRate, int pulse, float bloodSugar, float weight, bool diabetesType1, bool diabetesType2, bool eyeDamage, int yearsWithDiabetes, int yearsWithHypertension, bool urinatingProblems, QString bloodType, QString urineLeukocytes, QString urineNitrite, QString urineProtein, QString urinePH, bool urineBlood, QString urineSG, QString urineKetones, QString urineGlucose, QString urineBilirubin)
+{
+    /*
+
+            firstName
+            lastName
+            phoneNumber
+
+            email
+            status
+            socialSecurityNumber
+
+            dateOfBirth
+            gender
+            address
+
+            district
+            patientStatus
+            bloodPressure
+
+            heartRate
+            pulse,  bloodSugar
+            weight
+
+            diabetesType1
+            diabetesType2
+            eyeDamage,
+            yearsWithDiabetes
+            yearsWithHypertension
+            urinatingProblems
+            bloodType
+            urineLeukocytes
+            urineNitrite
+            urineProtein
+            urinePH
+            urineBlood
+            urineSG
+            urineKetones
+            urineGlucose
+            urineBilirubin
+
+
+*/
+}
+
 
 
