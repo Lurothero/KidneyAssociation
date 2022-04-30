@@ -94,6 +94,31 @@ void Database::loadDoctorInformation()
  qDebug() << "List of items" << docRecord << "\n"; // outputs to the console
 }
 
+void Database::loadDoctorIds()
+{
+  QSqlQuery q;
+
+  if(q.exec("SELECT * FROM doctor"))
+  {
+     while(q.next())
+     {
+         docIds.append(q.value(0).toString());
+     }
+  }
+}
+
+void Database::loadPatientIds()
+{
+    QSqlQuery q;
+    if(q.exec("SELECT * FROM patient"))
+    {
+        while(q.next())
+        {
+           patientIds.append(q.value(0).toString());
+        }
+    }
+}
+
 void Database::deleteDoctorInformation(int row)
 {
   QSqlQuery q; // declare query object
@@ -103,6 +128,21 @@ void Database::deleteDoctorInformation(int row)
   q.exec();
 
   qDebug() << "Current row deleted: " << row;
+}
+
+void Database::insertingAppointmentData(int appoint_id, int doc_id, int patient_id, QString description, float cost, QString date)
+{
+  QSqlQuery q;
+  // prepares to insert data from doctor contact form and updates the database
+  q.prepare("INSERT INTO `appointment` (`Appointment_id`,`Doctor_id`, `Patient_id`, `Treatment_description`, `Appointment_cost` ,`Appointment_date`) VALUES (:ID, :docID, :patID, :description, :cost, :date)");
+  q.bindValue(":ID",appoint_id);
+  q.bindValue(":docID",doc_id);
+  q.bindValue("patID",patient_id);
+  q.bindValue(":description",description);
+  q.bindValue(":cost",cost);
+  q.bindValue(":date",date);
+  q.exec();
+
 }
 
 

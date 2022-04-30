@@ -63,8 +63,8 @@ QMessageBox
   <widget class="QScrollArea" name="scrollArea">
    <property name="geometry">
     <rect>
-     <x>-1</x>
-     <y>-1</y>
+     <x>-10</x>
+     <y>-20</y>
      <width>821</width>
      <height>571</height>
     </rect>
@@ -114,7 +114,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="FirstName_Label_4">
+     <widget class="QLabel" name="AppointCostLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -126,7 +126,7 @@ QMessageBox
        <string>Appointment cost:</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="FirstName_LineEdit_2">
+     <widget class="QLineEdit" name="AppointCostEdit">
       <property name="styleSheet">
        <string notr="true">QLineEdit
 {
@@ -169,7 +169,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="FirstName_Label">
+     <widget class="QLabel" name="AppointLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -181,7 +181,7 @@ QMessageBox
        <string>Appointment ID:</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="FirstName_LineEdit">
+     <widget class="QLineEdit" name="AppointEdit">
       <property name="styleSheet">
        <string notr="true">QLineEdit
 {
@@ -203,7 +203,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="FirstName_Label_3">
+     <widget class="QLabel" name="PatientIDLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -215,7 +215,7 @@ QMessageBox
        <string>Patient ID:</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_2">
+     <widget class="QComboBox" name="PatientIDCombo">
       <property name="styleSheet">
        <string notr="true">QComboBox
 {
@@ -237,7 +237,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="DescriptLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -249,7 +249,7 @@ QMessageBox
        <string>Treatment Description:</string>
       </property>
      </widget>
-     <widget class="QTextEdit" name="textEdit">
+     <widget class="QTextEdit" name="DescriptEdit">
       <property name="styleSheet">
        <string notr="true">QTextEdit
 {
@@ -271,7 +271,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="FirstName_Label_2">
+     <widget class="QLabel" name="DoctorIDLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -283,7 +283,7 @@ QMessageBox
        <string>Doctor ID:</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="DocIDCombo">
       <property name="styleSheet">
        <string notr="true">QComboBox
 {
@@ -305,7 +305,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="FirstName_Label_5">
+     <widget class="QLabel" name="AppointDateLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -317,7 +317,7 @@ QMessageBox
        <string>Appointment date:</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="FirstName_LineEdit_3">
+     <widget class="QLineEdit" name="AppointDateEdit">
       <property name="styleSheet">
        <string notr="true">QLineEdit
 {
