@@ -23,7 +23,7 @@ public:
     void loadPatientIds();
     void deleteDoctorInformation(int row);
     void indexingDoctorData();
-    void insertingAppointmentData(int appoint_id,int doc_id, int patient_id, QString description, float cost, QString date);
+    void insertingAppointmentData(int appoint_id, int doc_id, int patient_id, QString description, float cost, QString date);
     QList<QString> docRecord;
     QList<QString>docIds;
     QList<QString>patientIds;

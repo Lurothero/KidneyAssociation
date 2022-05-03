@@ -42,13 +42,21 @@ void Appointment::on_AddRecord_BTN_clicked()
     int id;
     float cost;
 
-    floatConverter << ui->AppointCostEdit;
-    floatConverter >> cost;
+//    floatConverter << ui->AppointCostEdit;
+//    floatConverter >> cost;
 
-    intConverter << ui->AppointEdit;
-    intConverter >> id;
-    QMessageBox::information(this,tr("Appointment"),tr("Appointment was added successfully"));
-    db.insertingAppointmentData(id,ui->DocIDCombo->currentIndex(),ui->PatientIDCombo->currentIndex(),
+//    intConverter << ui->AppointIDEdit;
+//    intConverter >> id;
+
+    id = ui->AppointIDEdit->text().toInt();
+    cost = ui->AppointCostEdit->text().toFloat();
+    db.insertingAppointmentData(id,ui->DocIDCombo->currentText().toInt(),ui->PatientIDCombo->currentText().toInt(),
                                  ui->DescriptEdit->toPlainText(),cost,ui->AppointDateEdit->text());
+
+    QMessageBox::information(this,tr("Appointment"),tr("Appointment was added successfully"));
+
+    ui->AppointIDEdit->clear();
+    ui->AppointCostEdit->clear();
+    ui->AppointDateEdit->clear();
 }
 

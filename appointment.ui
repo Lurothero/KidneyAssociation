@@ -169,7 +169,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="AppointLabel">
+     <widget class="QLabel" name="AppointIDLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -181,7 +181,7 @@ QMessageBox
        <string>Appointment ID:</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="AppointEdit">
+     <widget class="QLineEdit" name="AppointIDEdit">
       <property name="styleSheet">
        <string notr="true">QLineEdit
 {

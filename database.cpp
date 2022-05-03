@@ -13,7 +13,7 @@ Database::Database()
 
     //setting connection credentials
     db.setHostName("127.0.0.1");
-    db.setUserName("root");
+    db.setUserName("jahmur");
     db.setPassword("mysql");
     db.setDatabaseName("guiproject");
 
@@ -138,10 +138,10 @@ void Database::insertingAppointmentData(int appoint_id, int doc_id, int patient_
 {
   QSqlQuery q;
   // prepares to insert data from doctor contact form and updates the database
-  q.prepare("INSERT INTO `appointment` (`Appointment_id`,`Doctor_id`, `Patient_id`, `Treatment_description`, `Appointment_cost` ,`Appointment_date`) VALUES (:ID, :docID, :patID, :description, :cost, :date)");
+  q.prepare("INSERT INTO appointment (Appointment_id,Doctor_id, Patient_id, Treatment_description, Appointment_cost,Appointment_date) VALUES (:ID, :docID, :patID, :description, :cost, :date)");
   q.bindValue(":ID",appoint_id);
   q.bindValue(":docID",doc_id);
-  q.bindValue("patID",patient_id);
+  q.bindValue(":patID",patient_id);
   q.bindValue(":description",description);
   q.bindValue(":cost",cost);
   q.bindValue(":date",date);
