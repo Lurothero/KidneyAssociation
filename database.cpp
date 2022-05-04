@@ -13,7 +13,7 @@ Database::Database()
 
     //setting connection credentials
     db.setHostName("127.0.0.1");
-    db.setUserName("root");
+    db.setUserName("jahmur");
     db.setPassword("mysql");
     db.setDatabaseName("guiproject");
 
@@ -98,6 +98,31 @@ void Database::loadDoctorInformation()
  qDebug() << "List of items" << docRecord << "\n"; // outputs to the console
 }
 
+void Database::loadDoctorIds()
+{
+  QSqlQuery q;
+
+  if(q.exec("SELECT * FROM doctor"))
+  {
+     while(q.next())
+     {
+         docIds.append(q.value(0).toString());
+     }
+  }
+}
+
+void Database::loadPatientIds()
+{
+    QSqlQuery q;
+    if(q.exec("SELECT * FROM patient"))
+    {
+        while(q.next())
+        {
+           patientIds.append(q.value(0).toString());
+        }
+    }
+}
+
 void Database::deleteDoctorInformation(int row)
 {
   QSqlQuery q; // declare query object
@@ -107,6 +132,21 @@ void Database::deleteDoctorInformation(int row)
   q.exec();
 
   qDebug() << "Current row deleted: " << row;
+}
+
+void Database::insertingAppointmentData(int appoint_id, int doc_id, int patient_id, QString description, float cost, QString date)
+{
+  QSqlQuery q;
+  // prepares to insert data from doctor contact form and updates the database
+  q.prepare("INSERT INTO appointment (Appointment_id,Doctor_id, Patient_id, Treatment_description, Appointment_cost,Appointment_date) VALUES (:ID, :docID, :patID, :description, :cost, :date)");
+  q.bindValue(":ID",appoint_id);
+  q.bindValue(":docID",doc_id);
+  q.bindValue(":patID",patient_id);
+  q.bindValue(":description",description);
+  q.bindValue(":cost",cost);
+  q.bindValue(":date",date);
+  q.exec();
+
 }
 
 bool Database::addPatientRecord(QString firstName, QString lastName, QString phoneNumber, QString email, int status, QString socialSecurityNumber, QString dateOfBirth, QString gender, QString address, QString district, QString patientStatus, int bloodPressure, int heartRate, int pulse, float bloodSugar, float weight, bool diabetesType1, bool diabetesType2, bool eyeDamage, int yearsWithDiabetes, int yearsWithHypertension, bool urinatingProblems, QString bloodType, QString urineLeukocytes, QString urineNitrite, QString urineProtein, QString urinePH, bool urineBlood, QString urineSG, QString urineKetones, QString urineGlucose, QString urineBilirubin)
