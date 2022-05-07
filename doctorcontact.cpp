@@ -12,6 +12,9 @@ DoctorContact::DoctorContact(QWidget *parent) :
     //connect(this,SIGNAL(clicked()),this,SLOT(refreshButton()));
     loadRecords();
     indexConversion();
+
+    setWindowTitle("Kidney's Association");
+    this->setWindowIcon(QIcon(":/kidneyIcon.png"));
 }
 
 void DoctorContact::loadRecords()

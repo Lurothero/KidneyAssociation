@@ -7,6 +7,15 @@
 #include "appointmentlibrary.h"
 #include "database.h"
 #include "sstream"
+#include <QFile>
+#include <QTextStream>
+#include <QPrinter>
+#include <QPrintDialog>
+#include <QTextStream>
+#include <QList>
+#include <QStringTokenizer>
+#include <QTableWidget>
+#include <QMainWindow>
 
 namespace Ui {
 class Appointment;
@@ -23,6 +32,7 @@ public:
     int appointmentId;
     //    int doctorId; //IF Friend then you can directly access it, if not then just use a getter!
     //    int patientId;
+
     Doctor* doctor;
     Patient* patient;
     QString treatmentDescription;
@@ -34,9 +44,10 @@ public:
     double appCost;
     QString appDate;
 
-
 private slots:
     void on_AddRecord_BTN_clicked();
+    void on_GenerateReport_BTN_clicked();
+    void on_PrintRecord_BTN_clicked();
 
 private:
     Ui::Appointment *ui;

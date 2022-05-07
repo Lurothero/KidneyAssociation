@@ -6,6 +6,9 @@ PatientReports::PatientReports(QWidget *parent) :
     ui(new Ui::PatientReports)
 {
     ui->setupUi(this);
+
+    setWindowTitle("Kidney's Association");
+    this->setWindowIcon(QIcon(":/kidneyIcon.png"));
 }
 
 PatientReports::~PatientReports()

@@ -84,7 +84,7 @@ QMessageBox
     <widget class="QPushButton" name="PrintRecord_BTN">
      <property name="geometry">
       <rect>
-       <x>370</x>
+       <x>270</x>
        <y>500</y>
        <width>211</width>
        <height>31</height>
@@ -139,7 +139,7 @@ QMessageBox
     <widget class="QPushButton" name="AddRecord_BTN">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>20</x>
        <y>500</y>
        <width>211</width>
        <height>31</height>
@@ -326,6 +326,27 @@ QMessageBox
 }</string>
       </property>
      </widget>
+    </widget>
+    <widget class="QPushButton" name="GenerateReport_BTN">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>500</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Generate Report</string>
+     </property>
     </widget>
    </widget>
   </widget>
