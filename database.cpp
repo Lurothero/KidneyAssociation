@@ -241,6 +241,7 @@ bool Database::addPatientRecord(QString firstName, QString lastName, QString pho
     q.bindValue(":urineGlucose",urineGlucose);
     q.bindValue(":urineBilirubin",urineBilirubin);
 
+    q.exec();
 
     if(!q.lastError().text().isEmpty()){
 

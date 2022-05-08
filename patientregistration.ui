@@ -748,7 +748,7 @@ QPushButton:hover
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
-             <widget class="QLabel" name="UrineBilEdit">
+             <widget class="QLabel" name="UrineBilLabel">
               <property name="styleSheet">
                <string notr="true">QLabel
 {
@@ -760,7 +760,7 @@ QPushButton:hover
                <string>Urine-Bilirubin</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="lineEdit_26">
+             <widget class="QLineEdit" name="UrineBilEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
