@@ -18,6 +18,8 @@ public:
 
 private slots:
     void addRecord();
+    void toggleHypertention();
+    void toggleUrineProblemDescription();
 
 private:
     Ui::PatientRegistration *ui;

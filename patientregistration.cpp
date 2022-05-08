@@ -6,7 +6,21 @@ PatientRegistration::PatientRegistration(QWidget *parent) :
     ui(new Ui::PatientRegistration)
 {
     ui->setupUi(this);
+
+    //Setting format for string
+    ui->DOB_Date_Edit->setDisplayFormat(QString("dd-MMMM-yyyy"));
+
+    //Hidding areas
+    ui->UrineProblemEdit->hide();
+    ui->UrineProblemLabel->hide();
+
+    ui->Hypertention_Splitter->hide();
+
     connect(ui->patient_add_record_btn,SIGNAL(clicked()),this,SLOT(addRecord()));
+    connect(ui->hyper_CheckBox,SIGNAL(clicked()),this,SLOT(toggleHypertention()));
+    connect (ui->UrineProblemCheck,SIGNAL(clicked()),this,SLOT(toggleUrineProblemDescription()));
+
+
 
     setWindowTitle("Kidney's Association");
     this->setWindowIcon(QIcon(":/kidneyIcon.png"));
@@ -27,16 +41,18 @@ void PatientRegistration::addRecord()
             QString lastName = ui->LNameEdit->text();
             QString phoneNumber = ui->PhoneEdit->text();
             QString email = ui->Email_Edit->text();
-            int status  = -1;//WARNING WHERE STATUS COMES FROM???
+            int status  = ui->PatientStatus_Combo->currentIndex();
             QString socialSecurityNumber  =  ui->patient_ssn_Box->text();
-            QString dateOfBirth  = ui->DOBEdit->text();
+            QString dateOfBirth  = ui->DOB_Date_Edit->date().toString("yyyy-dd-MM");
+
+            qDebug() << dateOfBirth;
+
             QString gender  = ui->GenderCombo->currentText();
             QString address  = ui->Address_Text_Box->toPlainText();
             QString district  = ui->DistrictCombo->currentText();
             QString patientStatus  =  ui->PatientStatus_Combo->currentText();
             int bloodPressure  = ui->BloodPressureEdit->text().toInt();
             int heartRate  = ui->HeartRateEdit->text().toInt();
-            int pulse  = ui->PulseEdit->text().toInt();
             float bloodSugar  = ui->SugarEdit->text().toFloat();
             float weight  = ui->weigthEdit->text().toFloat();
             bool diabetesType1  = ui->DiabetesType1Box->isChecked();
@@ -45,6 +61,7 @@ void PatientRegistration::addRecord()
             int yearsWithDiabetes  = ui->DiabetesYearsEdit->text().toInt();
             int yearsWithHypertension  = ui->HyperYears_Edit->text().toInt();
             bool urinatingProblems  = ui->UrineProblemCheck->isChecked();
+            QString urineProblemDescription = ui->UrineProblemEdit->toPlainText();
             QString bloodType  = ui->bloodtypeCombo->currentText();
             QString urineLeukocytes  = ui->Urine_LeukocytesEdit->text();
             QString urineNitrite  = ui->UrineNitriteEdit->text();
@@ -71,7 +88,6 @@ void PatientRegistration::addRecord()
                                 patientStatus,
                                 bloodPressure,
                                 heartRate,
-                                pulse, //Not used!!!
                                 bloodSugar,
                                 weight,
                                 diabetesType1,
@@ -80,6 +96,7 @@ void PatientRegistration::addRecord()
                                 yearsWithDiabetes,
                                 yearsWithHypertension,
                                 urinatingProblems,
+                                urineProblemDescription,
                                 bloodType,
                                 urineLeukocytes,
                                 urineNitrite,
@@ -92,5 +109,35 @@ void PatientRegistration::addRecord()
                                 urineBilirubin
                                 );
 
-    //Return a bool to indicate success or failure
+            //Return a bool to indicate success or failure
+}
+
+void PatientRegistration::toggleHypertention()
+{
+
+    if (ui->hyper_CheckBox->isChecked()){
+
+           ui->Hypertention_Splitter->show();
+
+    }else{
+            ui->Hypertention_Splitter->hide();
+    }
+
+
+
+}
+
+void PatientRegistration::toggleUrineProblemDescription()
+{
+
+    if (ui->UrineProblemCheck->isChecked()){
+
+        ui->UrineProblemEdit->show();
+        ui->UrineProblemLabel-> show();
+
+    }else{
+        ui->UrineProblemEdit->hide();
+        ui->UrineProblemLabel->hide();
+    }
+
 }

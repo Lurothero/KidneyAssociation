@@ -293,7 +293,7 @@ QPushButton:hover
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
-             <widget class="QLabel" name="DOBLabel_3">
+             <widget class="QLabel" name="DOBLabel">
               <property name="styleSheet">
                <string notr="true">QLabel
 {
@@ -305,15 +305,7 @@ QPushButton:hover
                <string>Date of Birth:</string>
               </property>
              </widget>
-             <widget class="QLineEdit" name="DOBEdit">
-              <property name="styleSheet">
-               <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-              </property>
-             </widget>
+             <widget class="QDateEdit" name="DOB_Date_Edit"/>
             </widget>
            </item>
            <item>
@@ -495,7 +487,7 @@ QPushButton:hover
                </widget>
               </item>
               <item>
-               <widget class="QSplitter" name="splitter_73">
+               <widget class="QSplitter" name="Hypertention_Splitter">
                 <property name="orientation">
                  <enum>Qt::Horizontal</enum>
                 </property>
@@ -796,7 +788,7 @@ QPushButton:hover
                <string>Problem Urinating?</string>
               </property>
              </widget>
-             <widget class="QLabel" name="label_35">
+             <widget class="QLabel" name="UrineProblemLabel">
               <property name="styleSheet">
                <string notr="true">QLabel
 {
@@ -805,7 +797,7 @@ QPushButton:hover
 }</string>
               </property>
               <property name="text">
-               <string>If yes, describe urine</string>
+               <string>Urine Problem Description</string>
               </property>
              </widget>
              <widget class="QTextEdit" name="UrineProblemEdit">
@@ -1032,7 +1024,65 @@ QPushButton:hover
             </widget>
            </item>
            <item>
-            <widget class="QComboBox" name="bloodtypeCombo"/>
+            <widget class="QSplitter" name="splitter_62">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QLabel" name="label_50">
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+              </property>
+              <property name="text">
+               <string>Blood Type</string>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="bloodtypeCombo">
+              <item>
+               <property name="text">
+                <string>A-</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>A+</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>AB-</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>AB+</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>B-</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>B+</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>O-</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>O+</string>
+               </property>
+              </item>
+             </widget>
+            </widget>
            </item>
            <item>
             <widget class="QSplitter" name="splitter_61">
@@ -1052,34 +1102,6 @@ QPushButton:hover
               </property>
              </widget>
              <widget class="QLineEdit" name="BloodPressureEdit">
-              <property name="styleSheet">
-               <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-              </property>
-             </widget>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSplitter" name="splitter_62">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <widget class="QLabel" name="label_43">
-              <property name="styleSheet">
-               <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-              </property>
-              <property name="text">
-               <string>Pulse:</string>
-              </property>
-             </widget>
-             <widget class="QLineEdit" name="PulseEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
