@@ -28,7 +28,7 @@ void PatientRegistration::addRecord()
             QString phoneNumber = ui->PhoneEdit->text();
             QString email = ui->Email_Edit->text();
             int status  = -1;//WARNING WHERE STATUS COMES FROM???
-            QString socialSecurityNumber  =  "BLANK";//Doesnt Exist
+            QString socialSecurityNumber  =  ui->patient_ssn_Box->text();
             QString dateOfBirth  = ui->DOBEdit->text();
             QString gender  = ui->GenderCombo->currentText();
             QString address  = ui->Address_Text_Box->toPlainText();
@@ -56,6 +56,41 @@ void PatientRegistration::addRecord()
             QString urineGlucose  = ui->UrineGlucoseEdit->text();
             QString urineBilirubin  = ui->UrineBilEdit->text();
 
+            qDebug() << "Called add patient";
+
+            db.addPatientRecord(firstName,
+                                lastName,
+                                phoneNumber,
+                                email,
+                                status,
+                                socialSecurityNumber,
+                                dateOfBirth,
+                                gender,
+                                address,
+                                district,
+                                patientStatus,
+                                bloodPressure,
+                                heartRate,
+                                pulse, //Not used!!!
+                                bloodSugar,
+                                weight,
+                                diabetesType1,
+                                diabetesType2,
+                                eyeDamage,
+                                yearsWithDiabetes,
+                                yearsWithHypertension,
+                                urinatingProblems,
+                                bloodType,
+                                urineLeukocytes,
+                                urineNitrite,
+                                urineProtein,
+                                urinePH,
+                                urineBlood,
+                                urineSG,
+                                urineKetones,
+                                urineGlucose,
+                                urineBilirubin
+                                );
 
     //Return a bool to indicate success or failure
 }
