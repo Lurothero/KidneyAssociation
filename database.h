@@ -6,9 +6,16 @@
 #include "patientlibrary.h"
 #include <QMessageBox>
 #include "ui_doctorcontact.h"
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QtDebug>
+#include <QSqlError>
 #include <QStringList>
 #include <QList>
 #include <QDebug>
+#include <iomanip>
+using std::setw;
+
 class Database
 {
 public:
@@ -21,12 +28,16 @@ public:
     void loadDoctorInformation();
     void loadDoctorIds();
     void loadPatientIds();
+    void loadAppointmentRecords();
+    void loadAppointDescription();
     void deleteDoctorInformation(int row);
     void indexingDoctorData();
     void insertingAppointmentData(int appoint_id, int doc_id, int patient_id, QString description, float cost, QString date);
     QList<QString> docRecord;
     QList<QString>docIds;
     QList<QString>patientIds;
+    QList<QString>appointRecord;
+    QList<QString>AppointDescription;
     int currentID = 0;
 
     bool addPatientRecord(QString firstName, QString lastName, QString phoneNumber,

@@ -30,6 +30,9 @@ HomeMenu::HomeMenu(QWidget *parent) :
     strftime(dateString, 50, "Current Date: %d/%m/%Y", currTm);
 
     ui->dateLabel->setText(dateString);
+
+    setWindowTitle("Kidney's Association");
+    this->setWindowIcon(QIcon(":/kidneyIcon.png"));
 }
 
 HomeMenu::~HomeMenu()
@@ -104,5 +107,13 @@ void HomeMenu::on_patientRecButton_clicked()
 {
     PatientForm * pForm = new PatientForm(this);
     pForm->show();
+}
+
+
+void HomeMenu::on_LogOutButton_clicked()
+{
+   login * loginScreen = new login(this);
+   loginScreen->show();
+   this->hide();
 }
 

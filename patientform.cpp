@@ -6,6 +6,9 @@ PatientForm::PatientForm(QWidget *parent) :
     ui(new Ui::PatientForm)
 {
     ui->setupUi(this);
+
+    setWindowTitle("Kidney's Association");
+    this->setWindowIcon(QIcon(":/kidneyIcon.png"));
 }
 
 PatientForm::~PatientForm()

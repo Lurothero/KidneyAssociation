@@ -15,9 +15,6 @@ class login : public QMainWindow
 public:
     explicit login(QWidget *parent = nullptr);
     friend class HomeMenu;
-
-
-
     ~login();
 
 private:

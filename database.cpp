@@ -1,9 +1,6 @@
 #include "database.h"
 #include "homemenu.h"
-#include <QSqlDatabase>
-#include <QSqlQuery>
-#include <QtDebug>
-#include <QSqlError>
+
 Database::Database()
 {
 
@@ -119,6 +116,31 @@ void Database::loadPatientIds()
         while(q.next())
         {
            patientIds.append(q.value(0).toString());
+        }
+    }
+}
+
+void Database::loadAppointmentRecords()
+{
+  QSqlQuery q;
+  if(q.exec("SELECT * FROM appointment"))
+  {
+      while(q.next())
+      {
+          appointRecord.append(q.value(0).toString() + " " + q.value(1).toString() + " " + q.value(2).toString() + " " + q.value(3).toString() + " "
+                               + q.value(4).toString() + " "+ q.value(5).toString());
+      }
+  }
+}
+
+void Database::loadAppointDescription()
+{
+    QSqlQuery q;
+    if(q.exec("SELECT * FROM appointment"))
+    {
+        while(q.next())
+        {
+            AppointDescription.append(q.value(3).toString());
         }
     }
 }

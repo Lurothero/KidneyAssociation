@@ -7,6 +7,9 @@ PatientRegistration::PatientRegistration(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->patient_add_record_btn,SIGNAL(clicked()),this,SLOT(addRecord()));
+
+    setWindowTitle("Kidney's Association");
+    this->setWindowIcon(QIcon(":/kidneyIcon.png"));
 }
 
 PatientRegistration::~PatientRegistration()
