@@ -171,6 +171,35 @@ void Database::insertingAppointmentData(int appoint_id, int doc_id, int patient_
 
 }
 
+void Database::loadSocialSecurityNumbers()
+{
+    QSqlQuery q;
+    if(q.exec("SELECT * FROM patient"))
+    {
+        while(q.next())
+        {
+            SocialSecurityNumbers.append(q.value(6).toString().toInt());
+        }
+    }
+}
+
+void Database::loadStatus()
+{
+    QSqlQuery q;
+    if(q.exec("SELECT * FROM patient"))
+    {
+        while(q.next())
+        {
+            StatusList.append(q.value(5).toString().toInt());
+        }
+    }
+}
+
+void Database::EditPatientRecord()
+{
+
+}
+
 bool Database::addPatientRecord(QString firstName, QString lastName, QString phoneNumber, QString email, int status, QString socialSecurityNumber, QString dateOfBirth, QString gender, QString address, QString district, QString patientStatus, int bloodPressure, int heartRate, int pulse, float bloodSugar, float weight, bool diabetesType1, bool diabetesType2, bool eyeDamage, int yearsWithDiabetes, int yearsWithHypertension, bool urinatingProblems, QString bloodType, QString urineLeukocytes, QString urineNitrite, QString urineProtein, QString urinePH, bool urineBlood, QString urineSG, QString urineKetones, QString urineGlucose, QString urineBilirubin)
 {
     /*

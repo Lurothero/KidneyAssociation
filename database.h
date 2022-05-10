@@ -21,7 +21,6 @@ class Database
 public:
     Database();
 
-
     //Create Database functions here
     int loginUser(QString user, QString pass);//We are not concern about hiding data at this time
     void addDoctorInformation(QString FirstName, QString LastName, QString phoneNumber, QString emailAddress);
@@ -33,11 +32,17 @@ public:
     void deleteDoctorInformation(int row);
     void indexingDoctorData();
     void insertingAppointmentData(int appoint_id, int doc_id, int patient_id, QString description, float cost, QString date);
+    void loadSocialSecurityNumbers();
+    void loadStatus();
+    void EditPatientRecord();
     QList<QString> docRecord;
     QList<QString>docIds;
     QList<QString>patientIds;
     QList<QString>appointRecord;
     QList<QString>AppointDescription;
+    QList<int>SocialSecurityNumbers;
+    QList<int>StatusList;
+
     int currentID = 0;
 
     bool addPatientRecord(QString firstName, QString lastName, QString phoneNumber,

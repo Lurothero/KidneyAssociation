@@ -28,7 +28,7 @@ void PatientRegistration::addRecord()
             QString phoneNumber = ui->PhoneEdit->text();
             QString email = ui->Email_Edit->text();
             int status  = -1;//WARNING WHERE STATUS COMES FROM???
-            QString socialSecurityNumber  =  "BLANK";//Doesnt Exist
+            QString socialSecurityNumber  = ui->SSNEdit->text();//
             QString dateOfBirth  = ui->DOBEdit->text();
             QString gender  = ui->GenderCombo->currentText();
             QString address  = ui->Address_Text_Box->toPlainText();

@@ -14,6 +14,9 @@ class PatientForm : public QDialog
 public:
     explicit PatientForm(QWidget *parent = nullptr);
     ~PatientForm();
+    void loadDistrictList();
+    void loadPatientStatus();
+
 
 private:
     Ui::PatientForm *ui;
