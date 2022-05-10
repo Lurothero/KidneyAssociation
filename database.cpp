@@ -200,49 +200,89 @@ void Database::EditPatientRecord()
 
 }
 
-bool Database::addPatientRecord(QString firstName, QString lastName, QString phoneNumber, QString email, int status, QString socialSecurityNumber, QString dateOfBirth, QString gender, QString address, QString district, QString patientStatus, int bloodPressure, int heartRate, int pulse, float bloodSugar, float weight, bool diabetesType1, bool diabetesType2, bool eyeDamage, int yearsWithDiabetes, int yearsWithHypertension, bool urinatingProblems, QString bloodType, QString urineLeukocytes, QString urineNitrite, QString urineProtein, QString urinePH, bool urineBlood, QString urineSG, QString urineKetones, QString urineGlucose, QString urineBilirubin)
+bool Database::addPatientRecord(QString firstName, QString lastName, QString phoneNumber, QString email, int status, QString socialSecurityNumber, QString dateOfBirth, QString gender, QString address, QString district, QString patientStatus, int bloodPressure, int heartRate, float bloodSugar, float weight, bool diabetesType1, bool diabetesType2, bool eyeDamage, int yearsWithDiabetes, int yearsWithHypertension, bool urinatingProblems, QString urinatingProblem_Description, QString bloodType, QString urineLeukocytes, QString urineNitrite, QString urineProtein, QString urinePH, bool urineBlood, QString urineSG, QString urineKetones, QString urineGlucose, QString urineBilirubin)
+
 {
-    /*
 
-            firstName
-            lastName
-            phoneNumber
+    //Inserting everything
 
-            email
-            status
-            socialSecurityNumber
-
-            dateOfBirth
-            gender
-            address
-
-            district
-            patientStatus
-            bloodPressure
-
-            heartRate
-            pulse,  bloodSugar
-            weight
-
-            diabetesType1
-            diabetesType2
-            eyeDamage,
-            yearsWithDiabetes
-            yearsWithHypertension
-            urinatingProblems
-            bloodType
-            urineLeukocytes
-            urineNitrite
-            urineProtein
-            urinePH
-            urineBlood
-            urineSG
-            urineKetones
-            urineGlucose
-            urineBilirubin
+    QSqlQuery q;
+    //Binding all 31 arguments
 
 
-*/
+    q.prepare("INSERT INTO patient( `First_name`, `Last_name`, `Phone_number`, `Email`, `Status`, `SocialSecurityNumber`, `Date_of_birth`, `Gender`, `Address`, `District`, `Patient_status`, `Blood_pressure`, `Heart_rate`, `Blood_sugar`, `Weight`, `Diabetes_type1`, `Diabetes_type2`, `Eye_damage`, `Years_with_diabetes`, `Years_with_hypertension`, `Urinating_problems`, `Urinating_problems_description`, `BloodType_id`) "
+              "VALUES"
+               "(:firstName,:lastName,:phoneNumber,:email,:status,:ssn,:dob,:gender,:addr,:district,:patientStatus,:pressure,:rate,:sugar,:weight,:diabetesType1,:diabetesType2,:eyeDamage,:yearsWithDiabetes,:yearsWithHypertension,:UrineProblem,:UrineProblemDescription,:bloodTypeID)"
+                );
+
+    q.bindValue(":firstName",firstName);
+    q.bindValue(":lastName",lastName);
+    q.bindValue(":phoneNumber",phoneNumber);
+    q.bindValue(":email",email);
+    q.bindValue(":status",status);
+    q.bindValue(":ssn",socialSecurityNumber);
+    q.bindValue(":dob",dateOfBirth);
+    q.bindValue(":gender",gender);
+    q.bindValue(":addr",address);
+    q.bindValue(":district",district);
+    q.bindValue(":patientStatus",patientStatus);
+    q.bindValue(":pressure",bloodPressure);
+    q.bindValue(":rate",heartRate);
+    q.bindValue(":sugar",bloodSugar);
+    q.bindValue(":weight",weight);
+    q.bindValue(":diabetesType1",diabetesType1);
+    q.bindValue(":diabetesType2",diabetesType2);
+    q.bindValue(":eyeDamage",eyeDamage);
+    q.bindValue(":yearsWithDiabetes",yearsWithDiabetes);
+    q.bindValue(":yearsWithHypertension",yearsWithHypertension);
+    q.bindValue(":UrineProblem",urinatingProblems);
+    q.bindValue(":UrineProblemDescription",urinatingProblem_Description);
+    q.bindValue(":bloodTypeID",bloodType);
+
+
+    q.exec();
+
+
+    if(!q.lastError().text().isEmpty()){
+
+        qDebug() << "An error had occured during patient insert!";
+
+        qDebug() << q.lastError().text();
+        return false;
+
+    }
+
+
+
+
+    q.prepare("INSERT INTO urinesampleinfo (`Urine_leukocytes`, `Urine_nitrite`, `Urine_protein`, `Urine_ph`, `Urine_blood`, `Urine_sg`, `Urine_ketones`, `Glucose`, `Urine_bilirubin`)"
+              "VALUES"
+              "(:urineLeukocytes,:urineNitrite,:urineProtein,:urinePH,:urineBlood,:urineSG,:urineKetones,:urineGlucose,:urineBilirubin)");
+
+
+
+    q.bindValue(":urineLeukocytes",urineLeukocytes);
+    q.bindValue(":urineNitrite",urineNitrite);
+    q.bindValue(":urineProtein",urineProtein);
+    q.bindValue(":urinePH",urinePH);
+    q.bindValue(":urineBlood",urineBlood);
+    q.bindValue(":urineSG",urineSG);
+    q.bindValue(":urineKetones",urineKetones);
+    q.bindValue(":urineGlucose",urineGlucose);
+    q.bindValue(":urineBilirubin",urineBilirubin);
+
+    q.exec();
+
+    if(!q.lastError().text().isEmpty()){
+
+        qDebug() << "An error had occured during urinesampleinfo insert!";
+
+        qDebug() << q.lastError().text();
+        return false;
+
+    }
+return true;
+
 }
 
 

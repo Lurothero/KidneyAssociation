@@ -45,6 +45,8 @@ public:
 
     int currentID = 0;
 
+
+
     bool addPatientRecord(QString firstName, QString lastName, QString phoneNumber,
                           QString email, int status, QString socialSecurityNumber,
                           QString dateOfBirth, QString gender, QString address,
@@ -52,10 +54,10 @@ public:
                           int heartRate, float bloodSugar, float weight,
                           bool diabetesType1, bool diabetesType2, bool eyeDamage,
                           int yearsWithDiabetes, int yearsWithHypertension, bool urinatingProblems,
+                          QString urinatingProblem_Description,
                           QString bloodType, QString urineLeukocytes, QString urineNitrite,
                           QString urineProtein, QString urinePH, bool urineBlood, QString urineSG,
                           QString urineKetones, QString urineGlucose, QString urineBilirubin);
-
 
 private:
     UserLibrary* UserLib;
