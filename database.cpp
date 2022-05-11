@@ -351,6 +351,41 @@ bool Database::addPatientRecord(QString firstName, QString lastName, QString pho
         return false;
 
     }
+
+    q.prepare("SELECT UrineSampleInfo_id FROM `urinesampleinfo` ORDER BY UrineSampleInfo_id DESC LIMIT 1");
+    q.exec();
+    if(!q.lastError().text().isEmpty()){
+
+        qDebug() << "An error had occured during grabbing Urine ID!";
+
+        qDebug() << q.lastError().text();
+        return false;
+
+    }
+    q.next();
+
+    int id = q.value("UrineSampleInfo_id").toInt();
+
+    qDebug() << id;
+    qDebug() << q.lastInsertId().toString();
+
+
+
+    q.prepare("UPDATE patient,urinesampleinfo SET patient.UrineSampleInfo_id = :id WHERE urinesampleinfo.UrineSampleInfo_id = :id");
+    q.bindValue(":id",id);
+    q.exec();
+
+    if(!q.lastError().text().isEmpty()){
+
+        qDebug() << "An error had occured during patient update!";
+
+        qDebug() << q.lastError().text();
+        return false;
+
+    }
+
+
+
 return true;
 
 }
