@@ -257,6 +257,9 @@ QPushButton:hover
     background-color: white;
 }</string>
               </property>
+              <property name="inputMask">
+               <string>999-9999</string>
+              </property>
              </widget>
             </widget>
            </item>
@@ -446,6 +449,9 @@ QPushButton:hover
     color: black;
     background-color: white;
 }</string>
+              </property>
+              <property name="inputMask">
+               <string>999999999</string>
               </property>
              </widget>
             </widget>
@@ -694,6 +700,9 @@ QPushButton:hover
     background-color: white;
 }</string>
               </property>
+              <property name="inputMask">
+               <string>d09</string>
+              </property>
              </widget>
             </widget>
            </item>
@@ -746,6 +755,9 @@ QPushButton:hover
     background-color: white;
 }</string>
               </property>
+              <property name="inputMask">
+               <string>b.999</string>
+              </property>
              </widget>
             </widget>
            </item>
@@ -776,6 +788,9 @@ QPushButton:hover
     color: black;
     background-color: white;
 }</string>
+              </property>
+              <property name="inputMask">
+               <string>9.9</string>
               </property>
              </widget>
             </widget>
@@ -848,6 +863,9 @@ QPushButton:hover
     background-color: white;
 }</string>
               </property>
+              <property name="inputMask">
+               <string>09</string>
+              </property>
              </widget>
             </widget>
            </item>
@@ -878,6 +896,9 @@ QPushButton:hover
     color: black;
     background-color: white;
 }</string>
+              </property>
+              <property name="inputMask">
+               <string>9.9</string>
               </property>
              </widget>
             </widget>
@@ -910,6 +931,9 @@ QPushButton:hover
     background-color: white;
 }</string>
               </property>
+              <property name="inputMask">
+               <string>9.9</string>
+              </property>
              </widget>
             </widget>
            </item>
@@ -940,6 +964,9 @@ QPushButton:hover
     color: black;
     background-color: white;
 }</string>
+              </property>
+              <property name="inputMask">
+               <string>009</string>
               </property>
              </widget>
             </widget>
@@ -987,6 +1014,9 @@ QPushButton:hover
     background-color: white;
 }</string>
               </property>
+              <property name="inputMask">
+               <string>0.9</string>
+              </property>
              </widget>
             </widget>
            </item>
@@ -1017,6 +1047,9 @@ QPushButton:hover
     color: black;
     background-color: white;
 }</string>
+              </property>
+              <property name="inputMask">
+               <string>b.999</string>
               </property>
              </widget>
             </widget>
@@ -1139,6 +1172,9 @@ QPushButton:hover
     background-color: white;
 }</string>
               </property>
+              <property name="inputMask">
+               <string>d99</string>
+              </property>
              </widget>
             </widget>
            </item>
@@ -1170,6 +1206,9 @@ QPushButton:hover
     background-color: white;
 }</string>
               </property>
+              <property name="inputMask">
+               <string>d99</string>
+              </property>
              </widget>
             </widget>
            </item>
@@ -1200,6 +1239,9 @@ QPushButton:hover
     color: black;
     background-color: white;
 }</string>
+              </property>
+              <property name="inputMask">
+               <string>d99</string>
               </property>
              </widget>
             </widget>

@@ -35,22 +35,32 @@ void PatientRegistration::addRecord()
 {
     //Call the database to add record!
 
-   // db.addPatientRecord();
-    //What records do we need?
+
+
             QString firstName = ui->FNameEdit->text();
             QString lastName = ui->LNameEdit->text();
-            QString phoneNumber = ui->PhoneEdit->text();
-            QString email = ui->Email_Edit->text();
-            int status  = ui->PatientStatus_Combo->currentIndex();
-            QString socialSecurityNumber  =  ui->patient_ssn_Box->text();
-            QString dateOfBirth  = ui->DOB_Date_Edit->date().toString("yyyy-dd-MM");
 
-            qDebug() << dateOfBirth;
+
+            QString phoneNumber = ui->PhoneEdit->text();
+            bool isPhoneValid = ui->PhoneEdit->hasAcceptableInput();
+
+            QString email = ui->Email_Edit->text();
+
+
+            int status  = ui->PatientStatus_Combo->currentIndex();
+
+
+            QString socialSecurityNumber  =  ui->patient_ssn_Box->text();
+            bool isSSNValid = ui->patient_ssn_Box->hasAcceptableInput();
+
+
+            QString dateOfBirth  = ui->DOB_Date_Edit->date().toString("yyyy-dd-MM");
 
             QString gender  = ui->GenderCombo->currentText();
             QString address  = ui->Address_Text_Box->toPlainText();
             QString district  = ui->DistrictCombo->currentText();
             QString patientStatus  =  ui->PatientStatus_Combo->currentText();
+
             int bloodPressure  = ui->BloodPressureEdit->text().toInt();
             int heartRate  = ui->HeartRateEdit->text().toInt();
             float bloodSugar  = ui->SugarEdit->text().toFloat();
@@ -61,6 +71,7 @@ void PatientRegistration::addRecord()
             int yearsWithDiabetes  = ui->DiabetesYearsEdit->text().toInt();
             int yearsWithHypertension  = ui->HyperYears_Edit->text().toInt();
             bool urinatingProblems  = ui->UrineProblemCheck->isChecked();
+
             QString urineProblemDescription = ui->UrineProblemEdit->toPlainText();
             QString bloodType  = ui->bloodtypeCombo->currentText();
             QString urineLeukocytes  = ui->Urine_LeukocytesEdit->text();
@@ -73,8 +84,232 @@ void PatientRegistration::addRecord()
             QString urineGlucose  = ui->UrineGlucoseEdit->text();
             QString urineBilirubin  = ui->UrineBilEdit->text();
 
-            qDebug() << "Called add patient";
 
+            //TRY FIRST NAME
+            try {
+
+                int sizeLimit = 20;
+                QRegularExpression re("[a-zA-Z]");
+                QRegularExpressionMatch match = re.match(firstName);
+
+
+
+                if (firstName.isEmpty()){
+                    throw(QString(tr("First name field is blank!")));
+                }
+
+                if(!match.hasMatch()){
+
+                    throw(QString(tr("First name contains invalid characters! Please only use Letters!")));
+
+                }
+
+                if(firstName.length() > sizeLimit){
+
+                     throw(QString(tr("First name field has too many characters! Contains %1 characters, limit %2 ").arg(firstName.length(),sizeLimit)));
+
+
+                }
+
+            }  catch (QString invalidString) {
+
+               QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
+               return;
+            }
+
+
+            //TRY LAST NAME
+            try {
+
+                int sizeLimit = 20;
+                QRegularExpression re("[a-zA-Z]");
+                QRegularExpressionMatch match = re.match(lastName);
+
+
+
+                if (lastName.isEmpty()){
+                    throw(QString(tr("First name field is blank!")));
+                }
+
+                if(!match.hasMatch()){
+
+                    throw(QString(tr("First name contains invalid characters! Please only use Letters!")));
+
+                }
+
+                if(lastName.length() > sizeLimit){
+
+                     throw(QString(tr("First name field has too many characters! Contains %1 characters, limit %2 ").arg(lastName.length(),sizeLimit)));
+
+
+                }
+
+            }  catch (QString invalidString) {
+
+               QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
+               return;
+            }
+
+            //TRY PHONE
+            try {
+                if (phoneNumber.isEmpty()){
+                    throw(QString(tr("Telephone number field is blank!")));
+                }
+
+                if (!isPhoneValid){
+
+                    throw(QString(tr("Telephone number is invalid!")));
+                }
+
+            }  catch (QString invalidString) {
+
+                QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
+                return;
+            }
+
+            //TRY EMAIL
+            try {
+
+                int sizeLimit = 60;
+                QRegularExpression re("^([a-zA-Z][\\w\\_\\.]{6,15})\\@([a-zA-Z0-9.-]+)\\.([a-zA-Z]{2,4})$");
+                QRegularExpressionMatch match = re.match(email);
+
+
+
+                if (email.isEmpty()){
+                    throw(QString(tr("Email field is blank!")));
+                }
+
+                if(!match.hasMatch()){
+
+                    throw(QString(tr("Email contains invalid characters!")));
+
+                }
+
+                if(email.length() > sizeLimit){
+
+                     throw(QString(tr("Email field has too many characters! Contains %1 characters, limit %2 ").arg(email.length(),sizeLimit)));
+
+
+                }
+
+            }  catch (QString invalidString) {
+
+                QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
+                return;
+            }
+
+
+            //TRY DOB
+
+            try {
+
+
+
+
+                if(ui->DOB_Date_Edit->date() > QDate::currentDate()){
+                    throw(QString(tr("This patient cannot be born in the future!")));
+
+
+                }
+
+
+
+            }  catch (QString invalidString) {
+
+                QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
+                return;
+            }
+
+
+            //TRY SOCIAL
+            try {
+
+                if (socialSecurityNumber.isEmpty()){
+                    throw(QString(tr("Social Security Number field empty!")));
+                }
+
+                if (!isSSNValid){
+
+                    throw(QString(tr("Social Security Number field has invalid inputs!")));
+
+                }
+
+            }  catch (QString invalidString) {
+                QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
+                return;
+            }
+
+               //TRY ADDRESS
+            try {
+
+                int sizeLimit = 50;
+                QRegularExpression re("[a-zA-Z0-9]");
+                QRegularExpressionMatch match = re.match(address);
+
+
+
+                if (address.isEmpty()){
+                    throw(QString(tr("Address field is blank!")));
+                }
+
+                if(!match.hasMatch()){
+
+                    throw(QString(tr("Address contains invalid characters! Please only use Letters!")));
+
+                }
+
+                if(address.length() > sizeLimit){
+
+                     throw(QString(tr("Address field has too many characters! Contains %1 characters, limit %2 ").arg(address.length(),sizeLimit)));
+
+
+                }
+
+            }  catch (QString invalidString) {
+
+               QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
+               return;
+            }
+
+
+
+            //TRY BLOODPRESSURE
+         try {
+
+             int sizeLimit = 50;
+             QRegularExpression re("[a-zA-Z0-9]");
+             QRegularExpressionMatch match = re.match(address);
+
+
+
+             if (address.isEmpty()){
+                 throw(QString(tr("Address field is blank!")));
+             }
+
+             if(!match.hasMatch()){
+
+                 throw(QString(tr("Address contains invalid characters! Please only use Letters!")));
+
+             }
+
+             if(address.length() > sizeLimit){
+
+                  throw(QString(tr("Address field has too many characters! Contains %1 characters, limit %2 ").arg(address.length(),sizeLimit)));
+
+
+             }
+
+         }  catch (QString invalidString) {
+
+            QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
+            return;
+         }
+
+
+
+
+         qDebug() << "Called add patient";
             db.addPatientRecord(firstName,
                                 lastName,
                                 phoneNumber,
