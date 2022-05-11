@@ -46,22 +46,29 @@ void DoctorContact::on_AddRecord_BTN_clicked()
 {
     Database docDatabase;
 
-    if(ui->FirstName_LineEdit->text() == " ")
+    if(ui->FirstName_LineEdit->text().isEmpty() && ui->LastName_LineEdit->text().isEmpty()
+             && ui->Phone_LineEdit->text().isEmpty() && ui->Email_LineEdit->text().isEmpty())
+    {
+         QMessageBox::warning(this,tr("Warning"),tr("All fields can't be empty"));
+         return;
+    }
+
+    if(ui->FirstName_LineEdit->text().isEmpty())
       {
             QMessageBox::warning(this,tr("Warning"),tr("FirstName can't be empty"));
             return;
       }
-      else if(ui->LastName_LineEdit->text() == " ")
+      else if(ui->LastName_LineEdit->text().isEmpty())
       {
             QMessageBox::warning(this,tr("Warning"),tr("LastName can't be empty"));
             return;
       }
-      else if(ui->Phone_LineEdit->text() == " ")
+      else if(ui->Phone_LineEdit->text().isEmpty())
       {
             QMessageBox::warning(this,tr("Warning"),tr("Phone Number can't be empty"));
             return;
       }
-      else if(ui->Email_LineEdit->text() == " ")
+      else if(ui->Email_LineEdit->text().isEmpty())
       {
             QMessageBox::warning(this,tr("Warning"),tr("Email Address can't be empty"));
             return;
@@ -82,17 +89,12 @@ void DoctorContact::on_AddRecord_BTN_clicked()
            ui->Phone_LineEdit->clear();
            ui->Email_LineEdit->clear();
 
-
-           //qDebug() << "List of records " <<doctorData << "\n";
+            //Reload records after inserting
+           loadRecords();
        }
 
 
-       if(ui->FirstName_LineEdit->text() == " " && ui->LastName_LineEdit->text() == " "
-                && ui->Phone_LineEdit->text() == " " && ui->Email_LineEdit->text() == " ")
-       {
-            QMessageBox::warning(this,tr("Warning"),tr("All fields can't be empty"));
-            return;
-       }
+
 
 
     qDebug() << "Button Clicked";
@@ -117,8 +119,11 @@ void DoctorContact::on_DeleteRecord_BTN_clicked()
     }
     tokenizeList.clear();
 
+    //Reload records
+     loadRecords();
 }
 
+//May become obsolete
 void DoctorContact::on_Refresh_BTN_clicked()
 {
     DoctorContact * docForm = new DoctorContact();

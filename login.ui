@@ -188,6 +188,12 @@ PasswordTool
      <property name="contextMenuPolicy">
       <enum>Qt::PreventContextMenu</enum>
      </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter your username here&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
      <property name="autoFillBackground">
       <bool>false</bool>
      </property>
@@ -209,6 +215,9 @@ PasswordTool
        <width>451</width>
        <height>31</height>
       </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter your password here&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="text">
       <string/>
@@ -302,7 +311,7 @@ PasswordTool
      <x>0</x>
      <y>0</y>
      <width>727</width>
-     <height>34</height>
+     <height>33</height>
     </rect>
    </property>
   </widget>
