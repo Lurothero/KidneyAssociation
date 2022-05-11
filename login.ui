@@ -172,6 +172,9 @@ PasswordTool
      <property name="text">
       <string>Login</string>
      </property>
+     <property name="shortcut">
+      <string>Return</string>
+     </property>
     </widget>
     <widget class="QLineEdit" name="UsernameEdit">
      <property name="geometry">
