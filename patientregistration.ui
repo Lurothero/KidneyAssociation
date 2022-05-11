@@ -422,6 +422,9 @@ QPushButton:hover
     background-color: white;
 }</string>
               </property>
+              <property name="inputMask">
+               <string>0009</string>
+              </property>
              </widget>
             </widget>
            </item>
@@ -516,6 +519,9 @@ QPushButton:hover
     color: black;
     background-color: white;
 }</string>
+                 </property>
+                 <property name="inputMask">
+                  <string>009</string>
                  </property>
                 </widget>
                </widget>
@@ -898,7 +904,7 @@ QPushButton:hover
 }</string>
               </property>
               <property name="inputMask">
-               <string>9.9</string>
+               <string>09.9</string>
               </property>
              </widget>
             </widget>
