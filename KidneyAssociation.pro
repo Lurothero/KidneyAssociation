@@ -66,3 +66,8 @@ FORMS += \
 
 RESOURCES += \
     resource.qrc
+
+TRANSLATIONS += \
+    kidney_association_en.ts \
+    kidney_association_es.ts
+

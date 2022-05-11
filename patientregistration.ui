@@ -73,8 +73,8 @@ QMessageBox
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1212</width>
-        <height>1212</height>
+        <width>1218</width>
+        <height>1218</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -711,7 +711,7 @@ QPushButton:hover
 }</string>
              </property>
              <property name="text">
-              <string>Eye Damage Due to DM</string>
+              <string>Has Eye Damage Due to Diabeties?</string>
              </property>
             </widget>
            </item>
@@ -733,6 +733,12 @@ QPushButton:hover
               </property>
              </widget>
              <widget class="QLineEdit" name="Urine_SG_Edit">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Values: 1.005-1.030&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="whatsThis">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A urine concentration test measures the ability of the kidneys to conserve or excrete water.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -761,6 +767,9 @@ QPushButton:hover
               </property>
              </widget>
              <widget class="QLineEdit" name="UrineBilEdit">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range 0.3 - 1.0 mg/dL&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -829,6 +838,9 @@ QPushButton:hover
               </property>
              </widget>
              <widget class="QLineEdit" name="UrineProteinEdit">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal range: 0 - 14 mg/dL&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -857,6 +869,9 @@ QPushButton:hover
               </property>
              </widget>
              <widget class="QLineEdit" name="Urine_PH_Edit">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal range:&lt;span style=&quot; font-weight:700;&quot;/&gt;4.6 - 8.0 pH&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -881,10 +896,13 @@ QPushButton:hover
 }</string>
               </property>
               <property name="text">
-               <string>Urine-Keytones:</string>
+               <string>Urine-Ketones</string>
               </property>
              </widget>
              <widget class="QLineEdit" name="Urine_KeytonesEdit">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range : &amp;lt; 0.6 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -909,10 +927,13 @@ QPushButton:hover
 }</string>
               </property>
               <property name="text">
-               <string>Urine-Leukocytes:</string>
+               <string>Urine-Leukocytes</string>
               </property>
              </widget>
              <widget class="QLineEdit" name="Urine_LeukocytesEdit">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range: 0-5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -952,10 +973,13 @@ QPushButton:hover
 }</string>
               </property>
               <property name="text">
-               <string>Urine-Glucose:</string>
+               <string>Urine-Glucose</string>
               </property>
              </widget>
              <widget class="QLineEdit" name="UrineGlucoseEdit">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range: 0 - 0.8 mmol/L&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -980,10 +1004,13 @@ QPushButton:hover
 }</string>
               </property>
               <property name="text">
-               <string>Urine-Nitrite:</string>
+               <string>Urine-Nitrite</string>
               </property>
              </widget>
              <widget class="QLineEdit" name="UrineNitriteEdit">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range : 1.003 - 1.030&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -1102,6 +1129,9 @@ QPushButton:hover
               </property>
              </widget>
              <widget class="QLineEdit" name="BloodPressureEdit">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter systoldic&lt;span style=&quot; font-weight:700;&quot;/&gt;pressure&lt;span style=&quot; font-weight:700;&quot;/&gt;of Patient&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -1130,6 +1160,9 @@ QPushButton:hover
               </property>
              </widget>
              <widget class="QLineEdit" name="HeartRateEdit">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Patient's heart beats per minute&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {
@@ -1158,6 +1191,9 @@ QPushButton:hover
               </property>
              </widget>
              <widget class="QLineEdit" name="SugarEdit">
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The patient current blood sugar level.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {

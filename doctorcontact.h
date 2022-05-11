@@ -27,7 +27,6 @@ private slots:
     void on_AddRecord_BTN_clicked();
     void indexConversion();
     void on_DeleteRecord_BTN_clicked();
-    void on_Refresh_BTN_clicked();
 
 private:
     Ui::DoctorContact *ui;
