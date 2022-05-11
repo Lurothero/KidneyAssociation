@@ -73,13 +73,8 @@ QMessageBox
        <rect>
         <x>0</x>
         <y>0</y>
-
         <width>1212</width>
         <height>1212</height>
-
-        <width>1218</width>
-        <height>1218</height>
-
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -255,34 +250,6 @@ QPushButton:hover
               </property>
              </widget>
              <widget class="QLineEdit" name="PhoneEdit">
-              <property name="styleSheet">
-               <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-              </property>
-             </widget>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSplitter" name="splitter_77">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <widget class="QLabel" name="SSNLabel">
-              <property name="styleSheet">
-               <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-              </property>
-              <property name="text">
-               <string>Social Security Number</string>
-              </property>
-             </widget>
-             <widget class="QLineEdit" name="SSNEdit">
               <property name="styleSheet">
                <string notr="true">QLineEdit
 {

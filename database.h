@@ -34,14 +34,20 @@ public:
     void insertingAppointmentData(int appoint_id, int doc_id, int patient_id, QString description, float cost, QString date);
     void loadSocialSecurityNumbers();
     void loadStatus();
-    void EditPatientRecord();
+    void loadPatientBloodType();
+    void loadDistrictList();
+    void EditPatientRecord(int SSN,QString FName, QString LName, QString phoneNumber, QString DOB);
+    void selectedSSN(int SSN);
+    QString FirstName,LastName,PhoneNumber,DOB;
     QList<QString> docRecord;
     QList<QString>docIds;
     QList<QString>patientIds;
     QList<QString>appointRecord;
     QList<QString>AppointDescription;
-    QList<int>SocialSecurityNumbers;
-    QList<int>StatusList;
+    QList<QString>patientLocations;
+    QList<QString>SocialSecurityNumbers;
+    QList<QString>StatusList;
+    QList<QString>patientBloodTypes;
 
     int currentID = 0;
 

@@ -116,7 +116,7 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="splitter_9">
+    <widget class="QSplitter" name="StatusSplitter">
      <property name="geometry">
       <rect>
        <x>280</x>
@@ -128,7 +128,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="StatusLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -140,7 +140,7 @@ QMessageBox
        <string>Patient Status:</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_4">
+     <widget class="QComboBox" name="StatusCombo">
       <property name="styleSheet">
        <string notr="true">QComboBox
 {
@@ -150,7 +150,7 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="splitter_7">
+    <widget class="QSplitter" name="AddressSplitter">
      <property name="geometry">
       <rect>
        <x>280</x>
@@ -162,7 +162,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="FNameLabel_5">
+     <widget class="QLabel" name="AddressLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -174,7 +174,7 @@ QMessageBox
        <string>Address:</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="FNameEdit_5">
+     <widget class="QLineEdit" name="AddressEdit">
       <property name="styleSheet">
        <string notr="true">QLineEdit
 {
@@ -184,7 +184,7 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="splitter_6">
+    <widget class="QSplitter" name="DOBSplitter">
      <property name="geometry">
       <rect>
        <x>280</x>
@@ -196,7 +196,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="FNameLabel_4">
+     <widget class="QLabel" name="DOB_Label">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -208,7 +208,7 @@ QMessageBox
        <string>Date of Birth:</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="FNameEdit_4">
+     <widget class="QLineEdit" name="DOB_Edit">
       <property name="styleSheet">
        <string notr="true">QLineEdit
 {
@@ -286,7 +286,7 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="splitter_8">
+    <widget class="QSplitter" name="DistrictSplitter">
      <property name="geometry">
       <rect>
        <x>280</x>
@@ -298,7 +298,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="DistrictLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -310,7 +310,7 @@ QMessageBox
        <string>District:</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_3">
+     <widget class="QComboBox" name="DistrictCombo">
       <property name="styleSheet">
        <string notr="true">QComboBox
 {
