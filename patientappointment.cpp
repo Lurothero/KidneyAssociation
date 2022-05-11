@@ -7,6 +7,7 @@ PatientAppointment::PatientAppointment(QWidget *parent) :
 {
     ui->setupUi(this);
 
+
     setWindowTitle("Kidney's Association");
     this->setWindowIcon(QIcon(":/kidneyIcon.png"));
 }

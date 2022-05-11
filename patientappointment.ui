@@ -198,8 +198,8 @@ QPushButton:hover
     <rect>
      <x>220</x>
      <y>350</y>
-     <width>411</width>
-     <height>33</height>
+     <width>452</width>
+     <height>36</height>
     </rect>
    </property>
    <property name="orientation">
