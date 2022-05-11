@@ -273,38 +273,162 @@ void PatientRegistration::addRecord()
             }
 
 
-
             //TRY BLOODPRESSURE
          try {
 
-             int sizeLimit = 50;
-             QRegularExpression re("[a-zA-Z0-9]");
-             QRegularExpressionMatch match = re.match(address);
 
-
-
-             if (address.isEmpty()){
-                 throw(QString(tr("Address field is blank!")));
+             if (ui->BloodPressureEdit->text().isEmpty()){
+                 throw(QString(tr("Blood Pressure field is blank!")));
              }
 
-             if(!match.hasMatch()){
+             if(bloodPressure < 0){
 
-                 throw(QString(tr("Address contains invalid characters! Please only use Letters!")));
 
+                 throw(QString(tr("Blood pressure cannot be less than 0!")));
              }
 
-             if(address.length() > sizeLimit){
-
-                  throw(QString(tr("Address field has too many characters! Contains %1 characters, limit %2 ").arg(address.length(),sizeLimit)));
+             if(bloodPressure >= 500){
 
 
+                 throw(QString(tr("Blood pressure is out of bounds!")));
              }
+
+
+
 
          }  catch (QString invalidString) {
 
             QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
             return;
          }
+
+
+            //TRY HEARTRATE
+         try {
+
+
+             if (ui->HeartRateEdit->text().isEmpty()){
+                 throw(QString(tr("Heart rate field is blank!")));
+             }
+
+             if(heartRate < 0){
+
+
+                 throw(QString(tr("Heart rate cannot be less than 0!")));
+             }
+
+             if(heartRate >= 500){
+
+
+                 throw(QString(tr("Heart rate is out of bounds!")));
+             }
+
+
+
+
+         }  catch (QString invalidString) {
+
+            QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
+            return;
+         }
+
+
+
+
+            //TRY BLOODSUGAR
+         try {
+
+
+             if (ui->SugarEdit->text().isEmpty()){
+                 throw(QString(tr("Blood sugar field is blank!")));
+             }
+
+             if(bloodSugar < 0){
+
+
+                 throw(QString(tr("Blood sugar cannot be less than 0!")));
+             }
+
+             if(bloodSugar >= 3000){
+
+
+                 throw(QString(tr("Blood sugar is out of bounds!")));
+             }
+
+
+
+
+         }  catch (QString invalidString) {
+
+            QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
+            return;
+         }
+
+
+
+
+            //TRY WEIGHT
+         try {
+
+
+             if (ui->weigthEdit->text().isEmpty()){
+                 throw(QString(tr("Weight field is empty!")));
+             }
+
+             if(weight < 0){
+
+
+                 throw(QString(tr("Weight cannot be less than 0!")));
+             }
+
+             if(weight >= 1000){
+
+
+                 throw(QString(tr("Weight is out of bounds!")));
+             }
+
+
+
+
+         }  catch (QString invalidString) {
+
+            QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
+            return;
+         }
+
+
+            //TRY YEARS_DIABET
+         try {
+
+
+             if (ui->DiabetesYearsEdit->text().isEmpty()){
+                 throw(QString(tr("Years with Diabetes field is empty!")));
+             }
+
+             if(yearsWithDiabetes < 0){
+
+
+                 throw(QString(tr("Years cannot be less than 0!")));
+             }
+
+             if(yearsWithDiabetes >= 150){
+
+
+                 throw(QString(tr("Years is out of bounds!")));
+             }
+
+
+
+
+         }  catch (QString invalidString) {
+
+            QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
+            return;
+         }
+
+
+
+
 
 
 
