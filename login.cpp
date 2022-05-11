@@ -82,7 +82,7 @@ void login::validateLoginCredentials()
         mainMenu->show();
         mainMenu->displayDeskMenu();
 
-        //this->close();
+        this->close();
         break;
     }
 
@@ -94,6 +94,7 @@ void login::validateLoginCredentials()
         HomeMenu * mainMenu = new HomeMenu();
         mainMenu->show();
         mainMenu->displayDoctorMenu();
+        this->close();
         break;
     }
 

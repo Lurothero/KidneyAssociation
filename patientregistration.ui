@@ -73,8 +73,8 @@ QMessageBox
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1218</width>
-        <height>1218</height>
+        <width>1212</width>
+        <height>1212</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -169,7 +169,7 @@ QPushButton:hover
             <x>10</x>
             <y>10</y>
             <width>311</width>
-            <height>311</height>
+            <height>321</height>
            </rect>
           </property>
           <property name="title">
@@ -274,7 +274,7 @@ QPushButton:hover
 }</string>
               </property>
               <property name="text">
-               <string>Email</string>
+               <string>Email:</string>
               </property>
              </widget>
              <widget class="QLineEdit" name="Email_Edit">
@@ -408,7 +408,7 @@ QPushButton:hover
 }</string>
               </property>
               <property name="text">
-               <string>Weigh(lb)</string>
+               <string>Weight(lb)</string>
               </property>
              </widget>
              <widget class="QLineEdit" name="weigthEdit">
@@ -456,7 +456,7 @@ QPushButton:hover
           <property name="geometry">
            <rect>
             <x>10</x>
-            <y>360</y>
+            <y>400</y>
             <width>335</width>
             <height>129</height>
            </rect>

@@ -102,7 +102,7 @@ QMessageBox
       <string>Print Record</string>
      </property>
     </widget>
-    <widget class="QSplitter" name="splitter_5">
+    <widget class="QSplitter" name="CostSplitter">
      <property name="geometry">
       <rect>
        <x>190</x>
@@ -157,7 +157,7 @@ QMessageBox
       <string>Add Record</string>
      </property>
     </widget>
-    <widget class="QSplitter" name="splitter_2">
+    <widget class="QSplitter" name="AppointIDSplitter">
      <property name="geometry">
       <rect>
        <x>190</x>
@@ -191,7 +191,7 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="splitter_3">
+    <widget class="QSplitter" name="PatientIDSplitter">
      <property name="geometry">
       <rect>
        <x>190</x>
@@ -225,7 +225,7 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="splitter_4">
+    <widget class="QSplitter" name="TreatmentSplitter">
      <property name="geometry">
       <rect>
        <x>196</x>
@@ -259,7 +259,7 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="splitter">
+    <widget class="QSplitter" name="DocIDSplitter">
      <property name="geometry">
       <rect>
        <x>192</x>
@@ -293,7 +293,7 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="splitter_6">
+    <widget class="QSplitter" name="DateSplitter">
      <property name="geometry">
       <rect>
        <x>190</x>

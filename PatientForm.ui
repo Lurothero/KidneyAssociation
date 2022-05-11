@@ -116,19 +116,19 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="splitter_9">
+    <widget class="QSplitter" name="StatusSplitter">
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>380</y>
-       <width>221</width>
+       <y>340</y>
+       <width>241</width>
        <height>30</height>
       </rect>
      </property>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="StatusLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -140,7 +140,7 @@ QMessageBox
        <string>Patient Status:</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_4">
+     <widget class="QComboBox" name="StatusCombo">
       <property name="styleSheet">
        <string notr="true">QComboBox
 {
@@ -150,11 +150,11 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="splitter_7">
+    <widget class="QSplitter" name="AddressSplitter">
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>240</y>
+       <y>190</y>
        <width>411</width>
        <height>29</height>
       </rect>
@@ -162,7 +162,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="FNameLabel_5">
+     <widget class="QLabel" name="AddressLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -174,7 +174,7 @@ QMessageBox
        <string>Address:</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="FNameEdit_5">
+     <widget class="QLineEdit" name="AddressEdit">
       <property name="styleSheet">
        <string notr="true">QLineEdit
 {
@@ -184,11 +184,11 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="splitter_6">
+    <widget class="QSplitter" name="DOBSplitter">
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>290</y>
+       <y>240</y>
        <width>411</width>
        <height>29</height>
       </rect>
@@ -196,7 +196,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="FNameLabel_4">
+     <widget class="QLabel" name="DOB_Label">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -208,7 +208,7 @@ QMessageBox
        <string>Date of Birth:</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="FNameEdit_4">
+     <widget class="QLineEdit" name="DOB_Edit">
       <property name="styleSheet">
        <string notr="true">QLineEdit
 {
@@ -222,7 +222,7 @@ QMessageBox
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>190</y>
+       <y>140</y>
        <width>411</width>
        <height>29</height>
       </rect>
@@ -286,11 +286,11 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="splitter_8">
+    <widget class="QSplitter" name="DistrictSplitter">
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>340</y>
+       <y>290</y>
        <width>211</width>
        <height>30</height>
       </rect>
@@ -298,7 +298,7 @@ QMessageBox
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="DistrictLabel">
       <property name="styleSheet">
        <string notr="true">QLabel
 {
@@ -310,7 +310,7 @@ QMessageBox
        <string>District:</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_3">
+     <widget class="QComboBox" name="DistrictCombo">
       <property name="styleSheet">
        <string notr="true">QComboBox
 {
@@ -324,7 +324,7 @@ QMessageBox
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>140</y>
+       <y>10</y>
        <width>411</width>
        <height>30</height>
       </rect>
@@ -358,7 +358,7 @@ QMessageBox
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>430</y>
+       <y>380</y>
        <width>221</width>
        <height>30</height>
       </rect>
@@ -388,39 +388,47 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="SearchSplitter">
+    <widget class="QPushButton" name="EditRecord_BTN">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>10</y>
-       <width>411</width>
-       <height>30</height>
+       <x>30</x>
+       <y>470</y>
+       <width>211</width>
+       <height>31</height>
       </rect>
      </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
+}</string>
      </property>
-     <widget class="QLabel" name="SearchLabel">
-      <property name="styleSheet">
-       <string notr="true">QLabel
+     <property name="text">
+      <string>Edit Record</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="RemoveReocord_BTN">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>480</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
 {
-    color: black;
-    background-color: white;
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
 }</string>
-      </property>
-      <property name="text">
-       <string>Search:</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="SearchCombo">
-      <property name="styleSheet">
-       <string notr="true">QComboBox
-{
-    color: black;
-    background-color: white;
-}</string>
-      </property>
-     </widget>
+     </property>
+     <property name="text">
+      <string>Remove Record</string>
+     </property>
     </widget>
    </widget>
   </widget>

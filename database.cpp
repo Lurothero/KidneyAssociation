@@ -10,7 +10,7 @@ Database::Database()
 
     //setting connection credentials
     db.setHostName("127.0.0.1");
-    db.setUserName("root");
+    db.setUserName("jahmur");
     db.setPassword("mysql");
     db.setDatabaseName("guiproject");
 
@@ -171,7 +171,107 @@ void Database::insertingAppointmentData(int appoint_id, int doc_id, int patient_
 
 }
 
+void Database::loadSocialSecurityNumbers()
+{
+    QSqlQuery q;
+    if(q.exec("SELECT * FROM patient"))
+    {
+        while(q.next())
+        {
+            SocialSecurityNumbers.append(q.value(6).toString());
+        }
+    }
+}
+
+void Database::loadStatus()
+{
+    QSqlQuery q;
+    if(q.exec("SELECT * FROM patient"))
+    {
+        while(q.next())
+        {
+            StatusList.append(q.value(5).toString());
+        }
+    }
+}
+
+void Database::loadPatientBloodType()
+{
+    QSqlQuery q;
+    if(q.exec("SELECT * FROM patient"))
+    {
+        while(q.next())
+        {
+            patientBloodTypes.append(q.value(24).toString());
+        }
+    }
+}
+
+void Database::loadDistrictList()
+{
+    QSqlQuery q;
+    if(q.exec("SELECT * FROM patient"))
+    {
+        while(q.next())
+        {
+            patientLocations.append(q.value(10).toString());
+        }
+    }
+}
+
+void Database::EditPatientRecord(int SSN, QString FName, QString LName, QString phoneNumber, QString DOB)
+{
+  QSqlQuery q;
+  q.prepare("UPDATE patient SET First_name = :Fname, Last_name = :Lname, Phone_number = :phoneNumber, Date_of_birth = :DOB"
+            "WHERE SocialSecurityNumber = :SSN");
+  q.bindValue(":FName",FName);
+  q.bindValue(":LName",LName);
+  q.bindValue(":phoneNumber",phoneNumber);
+  q.bindValue(":DOB",DOB);
+  q.bindValue(":SSN",SSN);
+  q.exec();
+
+  if(!q.exec())
+      qDebug() << "Nothing was edited in patient database";
+}
+
+void Database::selectedSSN(int SSN)
+{
+  QSqlQuery q;
+//  q.prepare("SELECT First_name, Last_name, Phone_number,Date_of_birth FROM patient WHERE SocialSecurityNumber = :SSN");
+//  q.bindValue(":SSN",SSN);
+//  q.exec();
+
+//  FirstName = q.value(1).toString();
+//  LastName = q.value(2).toString();
+//  PhoneNumber = q.value(3).toString();
+//  DOB = q.value(6).toString();
+
+  if(q.exec("SELECT First_name, Last_name, Phone_number,Date_of_birth FROM patient WHERE SocialSecurityNumber = :SSN"))
+  {
+      q.bindValue(":SSN",SSN);
+      q.first();
+     while(q.next())
+     {
+         FirstName = q.value(1).toString();
+         LastName = q.value(2).toString();
+         PhoneNumber = q.value(3).toString();
+         DOB = q.value(6).toString();
+     }
+  }
+
+  if(!q.exec())
+      qDebug() << "Social Security row wasn't selected";
+
+
+  qDebug() << FirstName << "\n";
+  qDebug() << LastName << "\n";
+  qDebug() << PhoneNumber << "\n";
+  qDebug() << DOB << "\n";
+}
+
 bool Database::addPatientRecord(QString firstName, QString lastName, QString phoneNumber, QString email, int status, QString socialSecurityNumber, QString dateOfBirth, QString gender, QString address, QString district, QString patientStatus, int bloodPressure, int heartRate, float bloodSugar, float weight, bool diabetesType1, bool diabetesType2, bool eyeDamage, int yearsWithDiabetes, int yearsWithHypertension, bool urinatingProblems, QString urinatingProblem_Description, QString bloodType, QString urineLeukocytes, QString urineNitrite, QString urineProtein, QString urinePH, bool urineBlood, QString urineSG, QString urineKetones, QString urineGlucose, QString urineBilirubin)
+
 {
 
     //Inserting everything
