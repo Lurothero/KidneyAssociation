@@ -293,40 +293,6 @@ QMessageBox
       </property>
      </widget>
     </widget>
-    <widget class="QSplitter" name="DateSplitter">
-     <property name="geometry">
-      <rect>
-       <x>190</x>
-       <y>430</y>
-       <width>371</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <widget class="QLabel" name="AppointDateLabel">
-      <property name="styleSheet">
-       <string notr="true">QLabel
-{
-    color: black;
-    background-color: white;
-}</string>
-      </property>
-      <property name="text">
-       <string>Appointment date:</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="AppointDateEdit">
-      <property name="styleSheet">
-       <string notr="true">QLineEdit
-{
-    color: black;
-    background-color: white;
-}</string>
-      </property>
-     </widget>
-    </widget>
     <widget class="QPushButton" name="GenerateReport_BTN">
      <property name="geometry">
       <rect>
@@ -347,6 +313,43 @@ QMessageBox
      <property name="text">
       <string>Generate Report</string>
      </property>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>192</x>
+       <y>430</y>
+       <width>403</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="AppointDateLabel">
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+    color: black;
+    background-color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Appointment date:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="AppointDate">
+        <property name="styleSheet">
+         <string notr="true">QDateEdit
+{
+    color: black;
+    background-color: white;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
   </widget>

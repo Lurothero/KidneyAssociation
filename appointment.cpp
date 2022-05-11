@@ -9,6 +9,8 @@ Appointment::Appointment(QWidget *parent) :
     loadDoctorIds();
     loadPatientIds();
 
+    ui->AppointDate->setDisplayFormat(QString("dd-MMMM-yyyy"));
+
     connect(ui->PrintRecord_BTN, SIGNAL(clicked()),this,SLOT(printAppointment));
 
     setWindowTitle("Kidney's Association");
@@ -50,13 +52,13 @@ void Appointment::on_AddRecord_BTN_clicked()
     id = ui->AppointIDEdit->text().toInt();
     cost = ui->AppointCostEdit->text().toFloat();
     db.insertingAppointmentData(id,ui->DocIDCombo->currentText().toInt(),ui->PatientIDCombo->currentText().toInt(),
-                                 ui->DescriptEdit->toPlainText(),cost,ui->AppointDateEdit->text());
+                                 ui->DescriptEdit->toPlainText(),cost,ui->AppointDate->date().toString("yyyy-dd-MM"));
 
     QMessageBox::information(this,tr("Appointment"),tr("Appointment was added successfully"));
 
     ui->AppointIDEdit->clear();
     ui->AppointCostEdit->clear();
-    ui->AppointDateEdit->clear();
+    //ui->AppointDateEdit->clear();
 }
 
 
