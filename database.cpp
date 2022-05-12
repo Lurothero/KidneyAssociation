@@ -219,15 +219,16 @@ void Database::loadDistrictList()
     }
 }
 
-void Database::EditPatientRecord(int SSN, QString FName, QString LName, QString phoneNumber, QString DOB)
+void Database::EditPatientRecord(int SSN, QString FName, QString LName, QString phoneNumber, QString DOB, QString Address)
 {
   QSqlQuery q;
-  q.prepare("UPDATE patient SET First_name = :Fname, Last_name = :Lname, Phone_number = :phoneNumber, Date_of_birth = :DOB"
-            "WHERE SocialSecurityNumber = :SSN");
+  q.prepare("UPDATE patient SET First_name = ':FName', Last_name = ':LName', Phone_number = ':phoneNumber', Date_of_birth = ':DOB', Address = ':address'"
+            "WHERE SocialSecurityNumber = ':SSN'");
   q.bindValue(":FName",FName);
   q.bindValue(":LName",LName);
   q.bindValue(":phoneNumber",phoneNumber);
   q.bindValue(":DOB",DOB);
+  q.bindValue(":address",Address);
   q.bindValue(":SSN",SSN);
   q.exec();
 
@@ -238,27 +239,30 @@ void Database::EditPatientRecord(int SSN, QString FName, QString LName, QString 
 void Database::selectedSSN(int SSN)
 {
   QSqlQuery q;
-//  q.prepare("SELECT First_name, Last_name, Phone_number,Date_of_birth FROM patient WHERE SocialSecurityNumber = :SSN");
-//  q.bindValue(":SSN",SSN);
-//  q.exec();
+  q.prepare("SELECT First_name, Last_name, Phone_number,Date_of_birth, Address FROM patient WHERE SocialSecurityNumber = :SSN");
+  q.bindValue(":SSN",SSN);
+  q.exec();
 
-//  FirstName = q.value(1).toString();
-//  LastName = q.value(2).toString();
-//  PhoneNumber = q.value(3).toString();
-//  DOB = q.value(6).toString();
+  q.next();
+  FirstName = q.value(0).toString();
+  LastName = q.value(1).toString();
+  PhoneNumber = q.value(2).toString();
+  DOB = q.value(3).toString();
+  Address = q.value(4).toString();
 
-  if(q.exec("SELECT First_name, Last_name, Phone_number,Date_of_birth FROM patient WHERE SocialSecurityNumber = :SSN"))
-  {
-      q.bindValue(":SSN",SSN);
-      q.first();
-     while(q.next())
-     {
-         FirstName = q.value(1).toString();
-         LastName = q.value(2).toString();
-         PhoneNumber = q.value(3).toString();
-         DOB = q.value(6).toString();
-     }
-  }
+
+//  if(q.exec("SELECT First_name, Last_name, Phone_number,Date_of_birth FROM patient WHERE SocialSecurityNumber = :SSN"))
+//  {
+//      q.bindValue(":SSN",SSN);
+//      q.first();
+//     while(q.next())
+//     {
+//         FirstName = q.value(1).toString();
+//         LastName = q.value(2).toString();
+//         PhoneNumber = q.value(3).toString();
+//         DOB = q.value(6).toString();
+//     }
+//  }
 
   if(!q.exec())
       qDebug() << "Social Security row wasn't selected";
