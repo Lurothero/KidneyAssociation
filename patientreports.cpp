@@ -41,7 +41,6 @@ PatientReports::~PatientReports()
 
 void PatientReports::generateDeceasedPatientsReport()
 {
-
     patientReportsDisplay * chartDisplay = new patientReportsDisplay(this);
 
     //graph of male and female deceased patients with a specific blood type------------------------GRAPH1
@@ -267,6 +266,7 @@ void PatientReports::generateDeceasedPatientsReport()
     qDebug()<< "Toledo female count " << female_toledoresident << " and male is  "  << male_toledoresident;
 
 
+    qDebug()<<"step 1";
     //graph of the numbers of year frequencies deceased patients have had diabetes---------------------GRAPH3
     vector<int>years;
     vector<int>frequencies;
@@ -280,21 +280,38 @@ void PatientReports::generateDeceasedPatientsReport()
     }
     //list of years and their frequencies to which they occur are saved
 
+    qDebug()<<"step 2";
     QPieSeries *seriesYearsWithDiabetes= new QPieSeries();
 
-    for(int i = 0; i < years.size(); i++){
-        if(years[i] == 0){
-            continue;
-        }else{
-            seriesYearsWithDiabetes->append(QString::number(years[i]), frequencies[i]);
+    int check = 0;
+    try{
+        for(int i = 0; i < years.size(); i++){
+            if(years[i] == 0){
+                continue;
+            }else{
+                check++;
+                seriesYearsWithDiabetes->append(QString::number(years[i]), frequencies[i]);
+            }
         }
+    }catch(...){
+        qDebug()<<"error occured at line 295 in patientreports.cpp";
     }
 
-    QPieSlice *sliceYearsWithDiabetes = seriesYearsWithDiabetes->slices().at(0);
-    sliceYearsWithDiabetes->setExploded();
-    sliceYearsWithDiabetes->setLabelVisible();
-    sliceYearsWithDiabetes->setPen(QPen(Qt::red, 2));
-    sliceYearsWithDiabetes->setBrush(Qt::red);
+    qDebug()<<"step 3";
+    try{
+        if(check != 0){
+            QPieSlice *sliceYearsWithDiabetes = seriesYearsWithDiabetes->slices().at(0);
+            sliceYearsWithDiabetes->setExploded();
+            sliceYearsWithDiabetes->setLabelVisible();
+            sliceYearsWithDiabetes->setPen(QPen(Qt::red, 2));
+            sliceYearsWithDiabetes->setBrush(Qt::red);
+        }
+    }catch(...){
+        qDebug()<<"error occured";
+    }
+
+
+    qDebug()<<"step break";
 
     QChart *chartYearsWithDiabetes = new QChart();
     chartYearsWithDiabetes->addSeries(seriesYearsWithDiabetes);
@@ -311,6 +328,7 @@ void PatientReports::generateDeceasedPatientsReport()
     years.clear();
     frequencies.clear();
 
+    qDebug()<<"step 4";
     QSqlQuery yearsWithHypertension("SELECT patient.Years_with_hypertension, COUNT(patient.Years_with_hypertension)AS Frequency FROM patient WHERE patient.Patient_status = 'Deceased' GROUP BY patient.Years_with_hypertension ORDER BY COUNT(patient.Years_with_hypertension) DESC;");
     col_1 = yearsWithHypertension.record().indexOf("Years_with_hypertension");
     col_2 = yearsWithHypertension.record().indexOf("Frequency");
@@ -322,19 +340,32 @@ void PatientReports::generateDeceasedPatientsReport()
 
     QPieSeries *seriesYearsWithHypertension = new QPieSeries();
 
-    for(int i = 0; i < years.size(); i++){
-        if(years[i] == 0){
-            continue;
-        }else{
-            seriesYearsWithHypertension->append(QString::number(years[i]), frequencies[i]);
+    check = 0;
+    qDebug()<<"step 5";
+    try{
+        for(int i = 0; i < years.size(); i++){
+            if(years[i] == 0){
+                continue;
+            }else{
+                check++;
+                seriesYearsWithHypertension->append(QString::number(years[i]), frequencies[i]);
+            }
         }
+    }catch(...){
+        qDebug()<<"error occured at line 339 in patientreports.cpp";
     }
 
-    QPieSlice *sliceYearsWithHypertension = seriesYearsWithHypertension->slices().at(0);
-    sliceYearsWithHypertension->setExploded();
-    sliceYearsWithHypertension->setLabelVisible();
-    sliceYearsWithHypertension->setPen(QPen(Qt::red, 2));
-    sliceYearsWithHypertension->setBrush(Qt::red);
+    try{
+        if(check != 0){
+            QPieSlice *sliceYearsWithHypertension = seriesYearsWithHypertension->slices().at(0);
+            sliceYearsWithHypertension->setExploded();
+            sliceYearsWithHypertension->setLabelVisible();
+            sliceYearsWithHypertension->setPen(QPen(Qt::red, 2));
+            sliceYearsWithHypertension->setBrush(Qt::red);
+        }
+    }catch(...){
+        qDebug()<<"error on line 367 in patientreports.cpp";
+    }
 
     QChart *chartYearsWithHypertension = new QChart();
     chartYearsWithHypertension->addSeries(seriesYearsWithHypertension);
@@ -632,19 +663,28 @@ void PatientReports::generatePatientsOnTreatmentReport()
 
     QPieSeries *seriesYearsWithDiabetes= new QPieSeries();
 
+    int check = 0;
+
     for(int i = 0; i < years.size(); i++){
         if(years[i] == 0){
             continue;
         }else{
+            check++;
             seriesYearsWithDiabetes->append(QString::number(years[i]), frequencies[i]);
         }
     }
 
-    QPieSlice *sliceYearsWithDiabetes = seriesYearsWithDiabetes->slices().at(0);
-    sliceYearsWithDiabetes->setExploded();
-    sliceYearsWithDiabetes->setLabelVisible();
-    sliceYearsWithDiabetes->setPen(QPen(Qt::red, 2));
-    sliceYearsWithDiabetes->setBrush(Qt::red);
+    try{
+        if(check != 0){
+            QPieSlice *sliceYearsWithDiabetes = seriesYearsWithDiabetes->slices().at(0);
+            sliceYearsWithDiabetes->setExploded();
+            sliceYearsWithDiabetes->setLabelVisible();
+            sliceYearsWithDiabetes->setPen(QPen(Qt::red, 2));
+            sliceYearsWithDiabetes->setBrush(Qt::red);
+        }
+    }catch(...){
+        qDebug()<<"error on line 686 in patientreports.cpp";
+    }
 
     QChart *chartYearsWithDiabetes = new QChart();
     chartYearsWithDiabetes->addSeries(seriesYearsWithDiabetes);
@@ -672,19 +712,28 @@ void PatientReports::generatePatientsOnTreatmentReport()
 
     QPieSeries *seriesYearsWithHypertension = new QPieSeries();
 
+    check = 0;
+
     for(int i = 0; i < years.size(); i++){
         if(years[i] == 0){
             continue;
         }else{
+            check++;
             seriesYearsWithHypertension->append(QString::number(years[i]), frequencies[i]);
         }
     }
 
-    QPieSlice *sliceYearsWithHypertension = seriesYearsWithHypertension->slices().at(0);
-    sliceYearsWithHypertension->setExploded();
-    sliceYearsWithHypertension->setLabelVisible();
-    sliceYearsWithHypertension->setPen(QPen(Qt::red, 2));
-    sliceYearsWithHypertension->setBrush(Qt::red);
+    try{
+        if(check != 0){
+            QPieSlice *sliceYearsWithHypertension = seriesYearsWithHypertension->slices().at(0);
+            sliceYearsWithHypertension->setExploded();
+            sliceYearsWithHypertension->setLabelVisible();
+            sliceYearsWithHypertension->setPen(QPen(Qt::red, 2));
+            sliceYearsWithHypertension->setBrush(Qt::red);
+        }
+    }catch(...){
+        qDebug()<<"error on line 735 in patientreports.cpp";
+    }
 
     QChart *chartYearsWithHypertension = new QChart();
     chartYearsWithHypertension->addSeries(seriesYearsWithHypertension);
@@ -981,19 +1030,28 @@ void PatientReports::generatePatientsNeedingBloodReport()
 
     QPieSeries *seriesYearsWithDiabetes= new QPieSeries();
 
+    int check = 0;
+
     for(int i = 0; i < years.size(); i++){
         if(years[i] == 0){
             continue;
         }else{
+            check++;
             seriesYearsWithDiabetes->append(QString::number(years[i]), frequencies[i]);
         }
     }
 
-    QPieSlice *sliceYearsWithDiabetes = seriesYearsWithDiabetes->slices().at(0);
-    sliceYearsWithDiabetes->setExploded();
-    sliceYearsWithDiabetes->setLabelVisible();
-    sliceYearsWithDiabetes->setPen(QPen(Qt::red, 2));
-    sliceYearsWithDiabetes->setBrush(Qt::red);
+    try{
+        if(check != 0){
+            QPieSlice *sliceYearsWithDiabetes = seriesYearsWithDiabetes->slices().at(0);
+            sliceYearsWithDiabetes->setExploded();
+            sliceYearsWithDiabetes->setLabelVisible();
+            sliceYearsWithDiabetes->setPen(QPen(Qt::red, 2));
+            sliceYearsWithDiabetes->setBrush(Qt::red);
+        }
+    }catch(...){
+        qDebug()<<"error on line 1053 in patientreports.cpp";
+    }
 
     QChart *chartYearsWithDiabetes = new QChart();
     chartYearsWithDiabetes->addSeries(seriesYearsWithDiabetes);
@@ -1021,19 +1079,27 @@ void PatientReports::generatePatientsNeedingBloodReport()
 
     QPieSeries *seriesYearsWithHypertension = new QPieSeries();
 
+    check = 0;
     for(int i = 0; i < years.size(); i++){
         if(years[i] == 0){
             continue;
         }else{
+            check++;
             seriesYearsWithHypertension->append(QString::number(years[i]), frequencies[i]);
         }
     }
 
-    QPieSlice *sliceYearsWithHypertension = seriesYearsWithHypertension->slices().at(0);
-    sliceYearsWithHypertension->setExploded();
-    sliceYearsWithHypertension->setLabelVisible();
-    sliceYearsWithHypertension->setPen(QPen(Qt::red, 2));
-    sliceYearsWithHypertension->setBrush(Qt::red);
+    try{
+        if(check != 0){
+            QPieSlice *sliceYearsWithHypertension = seriesYearsWithHypertension->slices().at(0);
+            sliceYearsWithHypertension->setExploded();
+            sliceYearsWithHypertension->setLabelVisible();
+            sliceYearsWithHypertension->setPen(QPen(Qt::red, 2));
+            sliceYearsWithHypertension->setBrush(Qt::red);
+        }
+    }catch(...){
+        qDebug()<< "error on line 1101 in patientreports.cpp";
+    }
 
     QChart *chartYearsWithHypertension = new QChart();
     chartYearsWithHypertension->addSeries(seriesYearsWithHypertension);

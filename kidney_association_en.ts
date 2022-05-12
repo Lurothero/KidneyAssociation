@@ -476,453 +476,453 @@
     <message>
         <location filename="patientregistration.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">Dialog</translation>
+        <translation>Dialog</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="132"/>
         <source>New Registration</source>
-        <translation type="unfinished"></translation>
+        <translation>New Registration</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="163"/>
         <source>Add Record</source>
-        <translation type="unfinished">Add Record</translation>
+        <translation>Add Record</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="176"/>
         <source>Patient Personal Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Patient Personal Information</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="193"/>
         <source>First Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>First Name:</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="221"/>
         <source>Last Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Last Name:</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="249"/>
         <source>Telephone #:</source>
-        <translation type="unfinished"></translation>
+        <translation>Telephone #:</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="261"/>
         <source>999-9999</source>
-        <translation type="unfinished"></translation>
+        <translation>999-9999</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="280"/>
         <source>Email:</source>
-        <translation type="unfinished"></translation>
+        <translation>Email:</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="308"/>
         <source>Date of Birth:</source>
-        <translation type="unfinished"></translation>
+        <translation>Date of Birth:</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="328"/>
         <source>Gender:</source>
-        <translation type="unfinished"></translation>
+        <translation>Gender:</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="341"/>
         <source>Female</source>
-        <translation type="unfinished"></translation>
+        <translation>Female</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="346"/>
         <source>Male</source>
-        <translation type="unfinished"></translation>
+        <translation>Male</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="366"/>
         <source>Patient Status:</source>
-        <translation type="unfinished"></translation>
+        <translation>Patient Status:</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="379"/>
         <source>In need of Blood</source>
-        <translation type="unfinished"></translation>
+        <translation>In need of Blood</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="384"/>
         <source>On Treatment</source>
-        <translation type="unfinished"></translation>
+        <translation>On Treatment</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="389"/>
         <source>Deceased</source>
-        <translation type="unfinished"></translation>
+        <translation>Deceased</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="394"/>
         <source>New Patient</source>
-        <translation type="unfinished"></translation>
+        <translation>New Patient</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="414"/>
         <source>Weight(lb)</source>
-        <translation type="unfinished"></translation>
+        <translation>Weight(lb)</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="426"/>
         <source>0009</source>
-        <translation type="unfinished"></translation>
+        <translation>0009</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="445"/>
         <source>Social Security Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Social Security Number</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="457"/>
         <source>999999999</source>
-        <translation type="unfinished"></translation>
+        <translation>999999999</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="474"/>
         <source>Risk Factors</source>
-        <translation type="unfinished"></translation>
+        <translation>Risk Factors</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="480"/>
         <source>HyperTension</source>
-        <translation type="unfinished"></translation>
+        <translation>Hypertension</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="494"/>
         <source>Hypertension</source>
-        <translation type="unfinished"></translation>
+        <translation>Hypertension</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="512"/>
         <source>Years w/ Hypertension</source>
-        <translation type="unfinished"></translation>
+        <translation>Years with Hypertension</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="524"/>
         <location filename="patientregistration.ui" line="975"/>
         <source>009</source>
-        <translation type="unfinished"></translation>
+        <translation>009</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="544"/>
         <source>Patient Residences</source>
-        <translation type="unfinished"></translation>
+        <translation>Patient Residences</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="561"/>
         <source>District:</source>
-        <translation type="unfinished"></translation>
+        <translation>District:</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="574"/>
         <source>Orange Walk</source>
-        <translation type="unfinished"></translation>
+        <translation>Orange Walk</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="579"/>
         <source>Cayo</source>
-        <translation type="unfinished"></translation>
+        <translation>Cayo</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="584"/>
         <source>Belize</source>
-        <translation type="unfinished"></translation>
+        <translation>Belize</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="589"/>
         <source>Stann Creek</source>
-        <translation type="unfinished"></translation>
+        <translation>Stann Creek</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="594"/>
         <source>Toledo</source>
-        <translation type="unfinished"></translation>
+        <translation>Toledo</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="599"/>
         <source>Corozal</source>
-        <translation type="unfinished"></translation>
+        <translation>Corozal</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="604"/>
         <source>Other</source>
-        <translation type="unfinished"></translation>
+        <translation>Other</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="624"/>
         <source>Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Address</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="650"/>
         <source>Diabetes</source>
-        <translation type="unfinished"></translation>
+        <translation>Diabetes</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="667"/>
         <source>Diabetes Type 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Diabetes Type 1</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="679"/>
         <source>Diabetes Type 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Diabetes Type 2</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="698"/>
         <source>Years w/ Diabetes</source>
-        <translation type="unfinished"></translation>
+        <translation>Years with Diabetes</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="710"/>
         <source>d09</source>
-        <translation type="unfinished"></translation>
+        <translation>d09</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="718"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;diabetic macular edema&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;diabetic macular edema&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="729"/>
         <source>Has Eye Damage Due to Diabeties?</source>
-        <translation type="unfinished"></translation>
+        <translation>Has Eye Damage Due to Diabetes?</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="897"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal range:&lt;span style=&quot; font-weight:700;&quot;/&gt;4.6 - 8.0 pH&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal range:&lt;span style=&quot; font-weight:700;&quot;/&gt;4.6 - 8.0 pH&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="907"/>
         <source>09.9</source>
-        <translation type="unfinished"></translation>
+        <translation>09.9</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="926"/>
         <source>Urine-Ketones</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine-Ketones</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="931"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range : &amp;lt; 0.6 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range : &amp;lt; 0.6 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="960"/>
         <source>Urine-Leukocytes</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine-Leukocytes</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="965"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range: 0-5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range: 0-5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1009"/>
         <source>Urine-Glucose</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine-Glucose</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1014"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range: 0 - 0.8 mmol/L&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range: 0 - 0.8 mmol/L&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1024"/>
         <source>0.9</source>
-        <translation type="unfinished"></translation>
+        <translation>0.9</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1043"/>
         <source>Urine-Nitrite</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine-Nitrite</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1048"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range : 1.003 - 1.030&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range : 1.003 - 1.030&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1240"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The patient current blood sugar level.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The patient current blood sugar level.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="747"/>
         <source>Urine-SG(Specific Gravity):</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine-SG(Specific Gravity):</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="752"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Values: 1.005-1.030&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Values: 1.005-1.030&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="755"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A urine concentration test measures the ability of the kidneys to conserve or excrete water.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A urine concentration test measures the ability of the kidneys to conserve or excrete water.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="765"/>
         <location filename="patientregistration.ui" line="1058"/>
         <source>b.999</source>
-        <translation type="unfinished"></translation>
+        <translation>b.999</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="784"/>
         <source>Urine-Bilirubin</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine-Bilirubin</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="789"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range 0.3 - 1.0 mg/dL&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal Range 0.3 - 1.0 mg/dL&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="799"/>
         <location filename="patientregistration.ui" line="941"/>
         <source>9.9</source>
-        <translation type="unfinished"></translation>
+        <translation>9.9</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="818"/>
         <source>Problem Urinating?</source>
-        <translation type="unfinished"></translation>
+        <translation>Problem Urinating?</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="830"/>
         <source>Urine Problem Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine Problem Description</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="858"/>
         <source>Urine-Protein</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine-Protein</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="863"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal range: 0 - 14 mg/dL&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Normal range: 0 - 14 mg/dL&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="873"/>
         <source>09</source>
-        <translation type="unfinished"></translation>
+        <translation>09</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="892"/>
         <source>Urine-PH:</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine-PH:</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="991"/>
         <source>Urine-Blood</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine-Blood</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1075"/>
         <source>Blood Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Blood Information</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1088"/>
         <location filename="patientregistration.ui" line="1106"/>
         <source>Blood Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Blood Type</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1112"/>
         <source>A-</source>
-        <translation type="unfinished"></translation>
+        <translation>A-</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1117"/>
         <source>A+</source>
-        <translation type="unfinished"></translation>
+        <translation>A+</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1122"/>
         <source>AB-</source>
-        <translation type="unfinished"></translation>
+        <translation>AB-</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1127"/>
         <source>AB+</source>
-        <translation type="unfinished"></translation>
+        <translation>AB+</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1132"/>
         <source>B-</source>
-        <translation type="unfinished"></translation>
+        <translation>B-</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1137"/>
         <source>B+</source>
-        <translation type="unfinished"></translation>
+        <translation>B+</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1142"/>
         <source>O-</source>
-        <translation type="unfinished"></translation>
+        <translation>O-</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1147"/>
         <source>O+</source>
-        <translation type="unfinished"></translation>
+        <translation>O+</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1167"/>
         <source>Blood Pressure</source>
-        <translation type="unfinished"></translation>
+        <translation>Blood Pressure</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1172"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter systoldic&lt;span style=&quot; font-weight:700;&quot;/&gt;pressure&lt;span style=&quot; font-weight:700;&quot;/&gt;of Patient&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter systolic&lt;span style=&quot; font-weight:700;&quot;/&gt;pressure&lt;span style=&quot; font-weight:700;&quot;/&gt;of Patient&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1182"/>
         <location filename="patientregistration.ui" line="1216"/>
         <location filename="patientregistration.ui" line="1250"/>
         <source>d99</source>
-        <translation type="unfinished"></translation>
+        <translation>d99</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1201"/>
         <source>Heart Rate:</source>
-        <translation type="unfinished"></translation>
+        <translation>Heart Rate:</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1206"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Patient&apos;s heart beats per minute&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Patient&apos;s heart beats per minute&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="patientregistration.ui" line="1235"/>
         <source>Blood Sugar</source>
-        <translation type="unfinished"></translation>
+        <translation>Blood Sugar</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="101"/>
         <source>First name field is blank!</source>
-        <translation type="unfinished"></translation>
+        <translation>First name field is blank!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="106"/>
         <source>First name contains invalid characters! Please only use Letters!</source>
-        <translation type="unfinished"></translation>
+        <translation>First name contains invalid characters! Please only use Letters!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="112"/>
         <source>First name field has too many characters! Contains %1 characters, limit %2 </source>
-        <translation type="unfinished"></translation>
+        <translation>First name field has too many characters! Contains %1 characters, limit %2 </translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="119"/>
@@ -948,282 +948,282 @@
         <location filename="patientregistration.cpp" line="648"/>
         <location filename="patientregistration.cpp" line="665"/>
         <source>Error while performing request</source>
-        <translation type="unfinished"></translation>
+        <translation>Error while performing request</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="134"/>
         <source>Last name field is blank!</source>
-        <translation type="unfinished"></translation>
+        <translation>Last name field is blank!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="139"/>
         <source>Last name contains invalid characters! Please only use Letters!</source>
-        <translation type="unfinished"></translation>
+        <translation>Last name contains invalid characters! Please only use Letters!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="145"/>
         <source>Last name field has too many characters! Contains %1 characters, limit %2 </source>
-        <translation type="unfinished"></translation>
+        <translation>Last name field has too many characters! Contains %1 characters, limit %2 </translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="159"/>
         <source>Telephone number field is blank!</source>
-        <translation type="unfinished"></translation>
+        <translation>Telephone number field is blank!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="164"/>
         <source>Telephone number is invalid!</source>
-        <translation type="unfinished"></translation>
+        <translation>Telephone number is invalid!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="183"/>
         <source>Email field is blank!</source>
-        <translation type="unfinished"></translation>
+        <translation>Email field is blank!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="188"/>
         <source>Email contains invalid characters!</source>
-        <translation type="unfinished"></translation>
+        <translation>Email contains invalid characters!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="194"/>
         <source>Email field has too many characters! Contains %1 characters, limit %2 </source>
-        <translation type="unfinished"></translation>
+        <translation>Email field has too many characters! Contains %1 characters, limit %2 </translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="213"/>
         <source>This patient cannot be born in the future!</source>
-        <translation type="unfinished"></translation>
+        <translation>This patient cannot be born in the future!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="231"/>
         <source>Weight field is empty!</source>
-        <translation type="unfinished"></translation>
+        <translation>Weight field is empty!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="237"/>
         <source>Weight cannot be less than 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Weight cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="243"/>
         <source>Weight is out of bounds!</source>
-        <translation type="unfinished"></translation>
+        <translation>Weight is out of bounds!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="260"/>
         <source>Social Security Number field empty!</source>
-        <translation type="unfinished"></translation>
+        <translation>Social Security Number field empty!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="265"/>
         <source>Social Security Number field has invalid inputs!</source>
-        <translation type="unfinished"></translation>
+        <translation>Social Security Number field has invalid inputs!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="284"/>
         <source>Address field is blank!</source>
-        <translation type="unfinished"></translation>
+        <translation>Address field is blank!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="289"/>
         <source>Address contains invalid characters! Please only use Letters!</source>
-        <translation type="unfinished"></translation>
+        <translation>Address contains invalid characters! Please only use Letters!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="295"/>
         <source>Address field has too many characters! Contains %1 characters, limit %2 </source>
-        <translation type="unfinished"></translation>
+        <translation>Address field has too many characters! Contains %1 characters, limit %2 </translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="313"/>
         <source>Blood Pressure field is blank!</source>
-        <translation type="unfinished"></translation>
+        <translation>Blood Pressure field is blank!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="319"/>
         <source>Blood pressure cannot be less than 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Blood pressure cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="325"/>
         <source>Blood pressure is out of bounds!</source>
-        <translation type="unfinished"></translation>
+        <translation>Blood pressure is out of bounds!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="343"/>
         <source>Heart rate field is blank!</source>
-        <translation type="unfinished"></translation>
+        <translation>Heart rate field is blank!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="349"/>
         <source>Heart rate cannot be less than 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Heart rate cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="355"/>
         <source>Heart rate is out of bounds!</source>
-        <translation type="unfinished"></translation>
+        <translation>Heart rate is out of bounds!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="373"/>
         <source>Blood sugar field is blank!</source>
-        <translation type="unfinished"></translation>
+        <translation>Blood sugar field is blank!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="379"/>
         <source>Blood sugar cannot be less than 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Blood sugar cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="385"/>
         <source>Blood sugar is out of bounds!</source>
-        <translation type="unfinished"></translation>
+        <translation>Blood sugar is out of bounds!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="403"/>
         <source>Years with hypertension field cannot be empty!</source>
-        <translation type="unfinished"></translation>
+        <translation>Years with hypertension field cannot be empty!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="410"/>
         <source>Years with hypertension cannot be less than 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Years with hypertension cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="416"/>
         <source>Years with hypertension is out of bounds!</source>
-        <translation type="unfinished"></translation>
+        <translation>Years with hypertension is out of bounds!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="434"/>
         <source>Years with Diabetes field is empty!</source>
-        <translation type="unfinished"></translation>
+        <translation>Years with Diabetes field is empty!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="442"/>
         <source>Years with Diabetes cannot be less than 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Years with Diabetes cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="448"/>
         <source>Years with Diabetes is out of bounds! Limit is 150</source>
-        <translation type="unfinished"></translation>
+        <translation>Years with Diabetes is out of bounds! Limit is 150</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="466"/>
         <source>Urine Specific Gravity field is empty!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine Specific Gravity field is empty!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="471"/>
         <source>Urine Specific Gravity field cannot be less than 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine Specific Gravity field cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="487"/>
         <source>Urine Bilirubin field is empty!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine Bilirubin field is empty!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="492"/>
         <source>Urine Bilirubin field cannot be less than 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine Bilirubin field cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="516"/>
         <source>Urine problem description is empty!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine problem description is empty!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="521"/>
         <source>Urine problem description contains invalid characters! Please only use Letters!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine problem description contains invalid characters! Please only use Letters!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="527"/>
         <source>Urine problem description field has too many characters! Contains %1 characters, limit %2 </source>
-        <translation type="unfinished"></translation>
+        <translation>Urine problem description field has too many characters! Contains %1 characters, limit %2 </translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="543"/>
         <source>Urine Protein field is empty!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine Protein field is empty!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="548"/>
         <source>Urine Protein field cannot be less than 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine Protein field cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="563"/>
         <source>Urine Ph field is empty!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine pH field is empty!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="568"/>
         <source>Urine pH field cannot be less than 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine pH field cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="573"/>
         <source>Urine pH field cannot be greater than 14!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine pH field cannot be greater than 14!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="587"/>
         <source>Urine Ketones field is empty!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine Ketones field is empty!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="592"/>
         <source>Urine Ketones field cannot be less than 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine Ketones field cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="613"/>
         <source>Leukocytes field contains invalid characters! Please only use numbers!</source>
-        <translation type="unfinished"></translation>
+        <translation>Leukocytes field contains invalid characters! Please only use numbers!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="619"/>
         <source>Leukocytes cannot be less that 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Leukocytes cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="636"/>
         <source>Urine Glucose field is empty!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine Glucose field is empty!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="641"/>
         <source>Urine Glucose field cannot be less than 0!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine Glucose field cannot be less than 0!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="659"/>
         <source>Urine Nitrite field is empty!</source>
-        <translation type="unfinished"></translation>
+        <translation>Urine Nitrite field is empty!</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="712"/>
         <source>Operation Success</source>
-        <translation type="unfinished"></translation>
+        <translation>Operation Success</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="712"/>
         <source>The record has successfully been inserted.</source>
-        <translation type="unfinished"></translation>
+        <translation>The record has successfully been inserted.</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="714"/>
         <source>Operation Failure</source>
-        <translation type="unfinished"></translation>
+        <translation>Operation Failure</translation>
     </message>
     <message>
         <location filename="patientregistration.cpp" line="714"/>
         <source>Internal error had occured, failed to insert record.</source>
-        <translation type="unfinished"></translation>
+        <translation>Internal error had occurred, failed to insert record.</translation>
     </message>
 </context>
 <context>
@@ -1363,62 +1363,62 @@
         <location filename="add_user.ui" line="14"/>
         <location filename="add_user.ui" line="80"/>
         <source>Add User</source>
-        <translation type="unfinished">Add User</translation>
+        <translation>Add User</translation>
     </message>
     <message>
         <location filename="add_user.ui" line="62"/>
         <source>password</source>
-        <translation type="unfinished">password</translation>
+        <translation>password</translation>
     </message>
     <message>
         <location filename="add_user.ui" line="69"/>
         <source>repeat password...</source>
-        <translation type="unfinished">repeat password...</translation>
+        <translation>repeat password...</translation>
     </message>
     <message>
         <location filename="add_user.ui" line="87"/>
         <source>Cancel</source>
-        <translation type="unfinished">Cancel</translation>
+        <translation>Cancel</translation>
     </message>
     <message>
         <location filename="add_user.ui" line="114"/>
         <source>user level...</source>
-        <translation type="unfinished"></translation>
+        <translation>user level...</translation>
     </message>
     <message>
         <location filename="add_user.ui" line="121"/>
         <source>Admin</source>
-        <translation type="unfinished"></translation>
+        <translation>Admin</translation>
     </message>
     <message>
         <location filename="add_user.ui" line="126"/>
         <source>Desk Employee</source>
-        <translation type="unfinished"></translation>
+        <translation>Desk Employee</translation>
     </message>
     <message>
         <location filename="add_user.ui" line="131"/>
         <source>Doctor</source>
-        <translation type="unfinished"></translation>
+        <translation>Doctor</translation>
     </message>
     <message>
         <location filename="add_user.ui" line="150"/>
         <source>first name...</source>
-        <translation type="unfinished"></translation>
+        <translation>first name...</translation>
     </message>
     <message>
         <location filename="add_user.ui" line="157"/>
         <source>last name...</source>
-        <translation type="unfinished"></translation>
+        <translation>last name...</translation>
     </message>
     <message>
         <location filename="add_user.ui" line="168"/>
         <source>phone number...</source>
-        <translation type="unfinished"></translation>
+        <translation>phone number...</translation>
     </message>
     <message>
         <location filename="add_user.ui" line="175"/>
         <source>email...</source>
-        <translation type="unfinished"></translation>
+        <translation>email...</translation>
     </message>
 </context>
 <context>
