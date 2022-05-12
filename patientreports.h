@@ -3,6 +3,8 @@
 
 #include <QDialog>
 
+class patientReportsDisplay;
+
 namespace Ui {
 class PatientReports;
 }
@@ -14,6 +16,11 @@ class PatientReports : public QDialog
 public:
     explicit PatientReports(QWidget *parent = nullptr);
     ~PatientReports();
+
+public slots:
+    void generateDeceasedPatientsReport();
+    void generatePatientsOnTreatmentReport();
+    void generatePatientsNeedingBloodReport();
 
 private:
     Ui::PatientReports *ui;

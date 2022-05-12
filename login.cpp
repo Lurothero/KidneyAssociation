@@ -14,7 +14,7 @@ login::login(QWidget *parent) :
     //Validate what is currently entered!
     connect(ui->loginButton,SIGNAL(clicked()),this,SLOT(validateLoginCredentials()));
 
-    setWindowTitle("Kidney's Association");
+    setWindowTitle(tr("Kidney's Association"));
     this->setWindowIcon(QIcon(":/kidneyIcon.png"));
 
 }

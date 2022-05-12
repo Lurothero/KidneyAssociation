@@ -127,6 +127,9 @@ QMessageBox
       </property>
      </widget>
      <widget class="QLineEdit" name="AppointCostEdit">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The price of services and fees&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="styleSheet">
        <string notr="true">QLineEdit
 {
@@ -182,6 +185,9 @@ QMessageBox
       </property>
      </widget>
      <widget class="QLineEdit" name="AppointIDEdit">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Generate a unique appointment ID for each patient&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="styleSheet">
        <string notr="true">QLineEdit
 {
@@ -216,6 +222,9 @@ QMessageBox
       </property>
      </widget>
      <widget class="QComboBox" name="PatientIDCombo">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select patient for the doctor to see&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="styleSheet">
        <string notr="true">QComboBox
 {
@@ -250,6 +259,9 @@ QMessageBox
       </property>
      </widget>
      <widget class="QTextEdit" name="DescriptEdit">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter the patient treatment perscribed by the doctor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="styleSheet">
        <string notr="true">QTextEdit
 {
@@ -284,6 +296,9 @@ QMessageBox
       </property>
      </widget>
      <widget class="QComboBox" name="DocIDCombo">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select a doctor to assign a patient&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="styleSheet">
        <string notr="true">QComboBox
 {
@@ -314,7 +329,7 @@ QMessageBox
       <string>Generate Report</string>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>192</x>

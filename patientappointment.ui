@@ -85,6 +85,9 @@ QMessageBox
     </property>
    </widget>
    <widget class="QLineEdit" name="ID_LineEdit">
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter an existing appointment ID&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">QLineEdit
 {
@@ -122,6 +125,9 @@ QMessageBox
     </property>
    </widget>
    <widget class="QLineEdit" name="Doctor_LineEdit">
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter patient doctor's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">QLineEdit
 {
@@ -184,6 +190,9 @@ QPushButton:hover
     </property>
    </widget>
    <widget class="QLineEdit" name="PatientEdit">
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Patient's first and last name&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">QLineEdit
 {
@@ -199,7 +208,7 @@ QPushButton:hover
      <x>220</x>
      <y>350</y>
      <width>452</width>
-     <height>36</height>
+     <height>33</height>
     </rect>
    </property>
    <property name="orientation">
@@ -252,6 +261,9 @@ QPushButton:hover
     </property>
    </widget>
    <widget class="QComboBox" name="SocialCombo">
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter the patient's social security number&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">QComboBox
 {
@@ -314,6 +326,9 @@ QPushButton:hover
     </property>
    </widget>
    <widget class="QComboBox" name="TreatmentCombo">
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select a treatment option.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
     <property name="styleSheet">
      <string notr="true">QComboBox
 {
