@@ -324,13 +324,13 @@ QPushButton:hover
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
      <x>690</x>
-     <y>90</y>
-     <width>169</width>
-     <height>381</height>
+     <y>47</y>
+     <width>159</width>
+     <height>421</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -356,6 +356,28 @@ QPushButton:hover
       </property>
       <property name="text">
        <string>Reports</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="translateButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 15px;
+}
+
+QPushButton:hover
+{
+   color: #D1D2D2;
+   border-radius: 15px;
+   background: #426a78;
+}</string>
+      </property>
+      <property name="text">
+       <string>Translate</string>
       </property>
      </widget>
     </item>
@@ -386,6 +408,14 @@ QPushButton:hover
     </item>
    </layout>
   </widget>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+E</string>
+   </property>
+  </action>
  </widget>
  <resources>
   <include location="resource.qrc"/>

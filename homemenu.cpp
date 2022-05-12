@@ -33,6 +33,8 @@ HomeMenu::HomeMenu(QWidget *parent) :
 
     setWindowTitle("Kidney's Association");
     this->setWindowIcon(QIcon(":/kidneyIcon.png"));
+
+
 }
 
 HomeMenu::~HomeMenu()
@@ -115,5 +117,42 @@ void HomeMenu::on_LogOutButton_clicked()
    login * loginScreen = new login(this);
    loginScreen->show();
    this->hide();
+}
+
+
+void HomeMenu::on_translateButton_clicked()
+{
+    //QTranslator t;
+    QStringList languages;
+    languages << "English" << "Spanish";
+
+
+    QString lang = QInputDialog::getItem(this,"Select Language", "Language",languages);
+
+    if(lang == "English")
+    {
+       appTranslator.load(":/kidney_association_en.qm");
+       QMessageBox::information(this,tr("Translation"),tr("Translated to english"));
+    }
+    else if(lang == "Spanish")
+    {
+        appTranslator.load(":/kidney_association_es.qm");
+        QMessageBox::information(this,tr("Translation"),tr("Translated to spanish"));
+    }
+    else
+    {
+
+    }
+
+    if(lang != "English")
+    {
+      qApp->installTranslator(&appTranslator);
+    }
+    else if(lang != "Spanish")
+    {
+        qApp->installTranslator(&appTranslator);
+    }
+
+    ui->retranslateUi(this);
 }
 

@@ -6,5 +6,8 @@
         <file>keys.png</file>
         <file>kidneyIcon.png</file>
         <file>maleDoc.png</file>
+        <file>kidney_association_en.qm</file>
+        <file>kidney_association_es.qm</file>
     </qresource>
+    <qresource prefix="/Language"/>
 </RCC>

@@ -58,7 +58,6 @@ void Appointment::on_AddRecord_BTN_clicked()
 
     ui->AppointIDEdit->clear();
     ui->AppointCostEdit->clear();
-    //ui->AppointDateEdit->clear();
 }
 
 

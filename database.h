@@ -36,9 +36,9 @@ public:
     void loadStatus();
     void loadPatientBloodType();
     void loadDistrictList();
-    void EditPatientRecord(int SSN,QString FName, QString LName, QString phoneNumber, QString DOB);
+    void EditPatientRecord(int SSN,QString FName, QString LName, QString phoneNumber, QString DOB, QString Address);
     void selectedSSN(int SSN);
-    QString FirstName,LastName,PhoneNumber,DOB;
+    QString FirstName,LastName,PhoneNumber,DOB,Address;
     QList<QString> docRecord;
     QList<QString>docIds;
     QList<QString>patientIds;

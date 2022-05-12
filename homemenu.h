@@ -15,6 +15,9 @@
 #include "patientreports.h"
 #include "Patientform.h"
 #include "login.h"
+#include <QTranslator>
+#include <QInputDialog>
+
 
 namespace Ui {
 class HomeMenu;
@@ -49,10 +52,13 @@ private slots:
     void on_patientRecButton_clicked();
     void on_LogOutButton_clicked();
 
+    void on_translateButton_clicked();
+
 private:
     Ui::HomeMenu *ui;
     QLCDNumber * clock; // private object created for lcd widget
     QLabel * dateLabel;
+    QTranslator appTranslator;
 };
 
 #endif // HOMEMENU_H
