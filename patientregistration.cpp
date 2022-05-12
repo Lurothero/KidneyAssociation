@@ -1,3 +1,13 @@
+/*
+ * Name: Jahmur Lopez, Tadeo Bennett, Rene Allen, Carolee Saunders
+ * Class: Graphical User Interface
+ * Title: Kidney Association
+ * Due Date: 12/05/2022
+ * Due Time: 7:30 am for deliverables and 12:30 to 1:00 for presentation
+ * Lectures: Thiana Vasquez, Jason Reyes & Vernelle Sylvester
+ * Class Section: 1
+*/
+
 #include "patientregistration.h"
 #include "ui_patientregistration.h"
 
@@ -84,38 +94,35 @@ void PatientRegistration::addRecord()
     QString urineGlucose  = ui->UrineGlucoseEdit->text();
     QString urineBilirubin  = ui->UrineBilEdit->text();
 
-
-
-
-
     //TRY FIRST NAME
     try {
 
-        int sizeLimit = 20;
+        int sizeLimit = 20; // limits the size of character
         QRegularExpression re("[a-zA-Z]");
-        QRegularExpressionMatch match = re.match(firstName);
+        QRegularExpressionMatch match = re.match(firstName); // stores the first name
 
 
 
         if (firstName.isEmpty()){
-            throw(QString(tr("First name field is blank!")));
+            throw(QString(tr("First name field is blank!"))); // throws an exception handing
         }
 
         if(!match.hasMatch()){
-
+            // throws an exception handing
             throw(QString(tr("First name contains invalid characters! Please only use Letters!")));
 
         }
 
         if(firstName.length() > sizeLimit){
-
+            // throws an exception handing
             throw(QString(tr("First name field has too many characters! Contains %1 characters, limit %2 ").arg(firstName.length()).arg(sizeLimit)));
 
 
         }
 
-    }  catch (QString invalidString) {
+    }  catch (QString invalidString) { // catches an exception handling
 
+        // notify the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -124,24 +131,26 @@ void PatientRegistration::addRecord()
     //TRY LAST NAME
     try {
 
-        int sizeLimit = 20;
+        int sizeLimit = 20; // limits the size of character
         QRegularExpression re("[a-zA-Z]");
-        QRegularExpressionMatch match = re.match(lastName);
+        QRegularExpressionMatch match = re.match(lastName); // stores the last name
 
 
 
-        if (lastName.isEmpty()){
+        if (lastName.isEmpty()){ // throws an expection handling
             throw(QString(tr("Last name field is blank!")));
         }
 
         if(!match.hasMatch()){
 
+            // throws an expection handling
             throw(QString(tr("Last name contains invalid characters! Please only use Letters!")));
 
         }
 
         if(lastName.length() > sizeLimit){
 
+            // throws an expection handling
             throw(QString(tr("Last name field has too many characters! Contains %1 characters, limit %2 ").arg(lastName.length()).arg(sizeLimit)));
 
 
@@ -149,6 +158,7 @@ void PatientRegistration::addRecord()
 
     }  catch (QString invalidString) {
 
+        // notifies the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -156,16 +166,18 @@ void PatientRegistration::addRecord()
     //TRY PHONE
     try {
         if (phoneNumber.isEmpty()){
+            // throws an expection handling
             throw(QString(tr("Telephone number field is blank!")));
         }
 
         if (!isPhoneValid){
-
+            // throws an expection handling
             throw(QString(tr("Telephone number is invalid!")));
         }
 
-    }  catch (QString invalidString) {
+    }  catch (QString invalidString) { // catches exception handling
 
+        // notifies the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -173,31 +185,32 @@ void PatientRegistration::addRecord()
     //TRY EMAIL
     try {
 
-        int sizeLimit = 60;
+        int sizeLimit = 60; // size limit for the email address
         QRegularExpression re("^([a-zA-Z][\\w\\_\\.]{6,15})\\@([a-zA-Z0-9.-]+)\\.([a-zA-Z]{2,4})$");
-        QRegularExpressionMatch match = re.match(email);
-
-
+        QRegularExpressionMatch match = re.match(email); // stores the email
 
         if (email.isEmpty()){
+            // throws an expection handling
             throw(QString(tr("Email field is blank!")));
         }
 
         if(!match.hasMatch()){
 
+            // throws an expection handling
             throw(QString(tr("Email contains invalid characters!")));
 
         }
 
         if(email.length() > sizeLimit){
 
-            throw(QString(tr("Email field has too many characters! Contains %1 characters, limit %2 ").arg(email.length()).arg(sizeLimit)));
-
+            // throws an expection handling
+            throw(QString(tr("Email field has too many characters! Contains %1 characters, limit %2 ").arg(email.length()).arg(sizeLimit)))
 
         }
 
     }  catch (QString invalidString) {
 
+        // throws an expection handling
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -206,19 +219,17 @@ void PatientRegistration::addRecord()
     //TRY DOB
     try {
 
-
-
-
         if(ui->DOB_Date_Edit->date() > QDate::currentDate()){
-            throw(QString(tr("This patient cannot be born in the future!")));
-
+            // throws an expection handling
+            throw(QString(tr("This patient cannot be born in the future!")))
 
         }
 
 
 
-    }  catch (QString invalidString) {
+    }  catch (QString invalidString) { // catches an exception handling
 
+        // throws an expection handling
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -227,26 +238,24 @@ void PatientRegistration::addRecord()
     try {
 
 
-        if (ui->weigthEdit->text().isEmpty()){
+        if (ui->weigthEdit->text().isEmpty()){ // throws an expection handling
             throw(QString(tr("Weight field is empty!")));
         }
 
         if(weight < 0){
-
-
+            // throws an expection handling
             throw(QString(tr("Weight cannot be less than 0!")));
         }
 
         if(weight >= 1000){
-
-
+            // throws an expection handling
             throw(QString(tr("Weight is out of bounds!")));
         }
 
 
 
 
-    }  catch (QString invalidString) {
+    }  catch (QString invalidString) { // catches exception handling
 
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
@@ -257,11 +266,12 @@ void PatientRegistration::addRecord()
     try {
 
         if (socialSecurityNumber.isEmpty()){
+            // throws an expection handling
             throw(QString(tr("Social Security Number field empty!")));
         }
 
         if (!isSSNValid){
-
+            // throws an expection handling
             throw(QString(tr("Social Security Number field has invalid inputs!")));
 
         }
@@ -274,32 +284,31 @@ void PatientRegistration::addRecord()
     //TRY ADDRESS
     try {
 
-        int sizeLimit = 50;
+        int sizeLimit = 50; // sets a limit for an address
         QRegularExpression re("[a-zA-Z0-9]");
-        QRegularExpressionMatch match = re.match(address);
+        QRegularExpressionMatch match = re.match(address); // stores the address
 
 
 
         if (address.isEmpty()){
+            // throws an expection handling
             throw(QString(tr("Address field is blank!")));
         }
 
         if(!match.hasMatch()){
-
+            // throws an expection handling
             throw(QString(tr("Address contains invalid characters! Please only use Letters!")));
 
         }
 
         if(address.length() > sizeLimit){
-
+             // throws an expection handling
             throw(QString(tr("Address field has too many characters! Contains %1 characters, limit %2 ").arg(address.length()).arg(sizeLimit)));
-
-
 
         }
 
     }  catch (QString invalidString) {
-
+        // notify the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -310,18 +319,19 @@ void PatientRegistration::addRecord()
 
 
         if (ui->BloodPressureEdit->text().isEmpty()){
+            // throws an expection handling
             throw(QString(tr("Blood Pressure field is blank!")));
         }
 
         if(bloodPressure < 0){
 
-
+            // throws an expection handling
             throw(QString(tr("Blood pressure cannot be less than 0!")));
         }
 
         if(bloodPressure >= 500){
 
-
+            // throws an expection handling
             throw(QString(tr("Blood pressure is out of bounds!")));
         }
 
@@ -329,7 +339,7 @@ void PatientRegistration::addRecord()
 
 
     }  catch (QString invalidString) {
-
+        // notify the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -340,18 +350,19 @@ void PatientRegistration::addRecord()
 
 
         if (ui->HeartRateEdit->text().isEmpty()){
+            // throws an expection handling
             throw(QString(tr("Heart rate field is blank!")));
         }
 
         if(heartRate < 0){
 
-
+            // throws an expection handling
             throw(QString(tr("Heart rate cannot be less than 0!")));
         }
 
         if(heartRate >= 500){
 
-
+            // throws an expection handling
             throw(QString(tr("Heart rate is out of bounds!")));
         }
 
@@ -360,6 +371,7 @@ void PatientRegistration::addRecord()
 
     }  catch (QString invalidString) {
 
+        // notifies the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -370,18 +382,17 @@ void PatientRegistration::addRecord()
 
 
         if (ui->SugarEdit->text().isEmpty()){
+            // throws an expection handling
             throw(QString(tr("Blood sugar field is blank!")));
         }
 
         if(bloodSugar < 0){
-
-
+            // throws an expection handling
             throw(QString(tr("Blood sugar cannot be less than 0!")));
         }
 
         if(bloodSugar >= 3000){
-
-
+            // throws an expection handling
             throw(QString(tr("Blood sugar is out of bounds!")));
         }
 
@@ -390,6 +401,7 @@ void PatientRegistration::addRecord()
 
     }  catch (QString invalidString) {
 
+        // notify the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -399,28 +411,24 @@ void PatientRegistration::addRecord()
     try {
 
         if(ui->hyper_CheckBox->isChecked() && ui->HyperYears_Edit->text().isEmpty()){
-
+            // throws an expection handling
             throw(QString(tr("Years with hypertension field cannot be empty!")));
         }
 
 
         if(yearsWithHypertension < 0){
-
-
+            // throws an expection handling
             throw(QString(tr("Years with hypertension cannot be less than 0!")));
         }
 
         if(yearsWithHypertension >= 150){
-
-
+            // throws an expection handling
             throw(QString(tr("Years with hypertension is out of bounds!")));
         }
 
-
-
-
     }  catch (QString invalidString) {
 
+        // notifies the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -431,20 +439,19 @@ void PatientRegistration::addRecord()
 
 
         if (ui->DiabetesYearsEdit->text().isEmpty()){
+            // throws an expection handling
             throw(QString(tr("Years with Diabetes field is empty!")));
         }
 
 
 
         if(yearsWithDiabetes < 0){
-
-
+            // throws an expection handling
             throw(QString(tr("Years with Diabetes cannot be less than 0!")));
         }
 
         if(yearsWithDiabetes >= 150){
-
-
+            // throws an expection handling
             throw(QString(tr("Years with Diabetes is out of bounds! Limit is 150")));
         }
 
@@ -453,6 +460,7 @@ void PatientRegistration::addRecord()
 
     }  catch (QString invalidString) {
 
+        // notifies the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -463,11 +471,12 @@ void PatientRegistration::addRecord()
 
 
         if( ui->Urine_SG_Edit->text().remove(".").isEmpty()){
+            // throws an expection handling
             throw(QString(tr("Urine Specific Gravity field is empty!")));
         }
 
         if (urineSG.toFloat() < 0.0){
-
+            // throws an expection handling
             throw(QString(tr("Urine Specific Gravity field cannot be less than 0!")));
         }
 
@@ -475,6 +484,7 @@ void PatientRegistration::addRecord()
 
     }   catch (QString invalidString) {
 
+        // notifies the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -484,18 +494,18 @@ void PatientRegistration::addRecord()
     try {
 
         if(ui->UrineBilEdit->text().remove(".").isEmpty()){
+            // throws an expection handling
             throw(QString(tr("Urine Bilirubin field is empty!")));
         }
 
         if (urineBilirubin.toFloat() < 0.0){
-
+            // throws an expection handling
             throw(QString(tr("Urine Bilirubin field cannot be less than 0!")));
         }
 
-
-
     }   catch (QString invalidString) {
 
+        // notifies the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -512,25 +522,25 @@ void PatientRegistration::addRecord()
 
 
         if(ui->UrineProblemCheck->isChecked() && urineProblemDescription.length() == 0){
-
+            // throws an expection handling
             throw(QString(tr("Urine problem description is empty!")));
         }
 
         if(!match.hasMatch() && urineProblemDescription.length()!= 0){
-
+            // throws an expection handling
             throw(QString(tr("Urine problem description contains invalid characters! Please only use Letters!")));
 
         }
 
         if(urineProblemDescription.length() > sizeLimit){
-
+            // throws an expection handling
             throw(QString(tr("Urine problem description field has too many characters! Contains %1 characters, limit %2 ").arg(urineProblemDescription.length()).arg(sizeLimit)));
-
 
         }
 
     }  catch (QString invalidString) {
 
+        // notifies the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -540,16 +550,18 @@ void PatientRegistration::addRecord()
     try {
 
         if(ui->UrineProteinEdit->text().isEmpty()){
+            // throws an expection handling
             throw(QString(tr("Urine Protein field is empty!")));
         }
 
         if (urineProtein.toInt() < 0){
-
+            // throws an expection handling
             throw(QString(tr("Urine Protein field cannot be less than 0!")));
         }
 
     }   catch (QString invalidString) {
 
+        // notifies the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -560,42 +572,43 @@ void PatientRegistration::addRecord()
     try {
 
         if(ui->Urine_PH_Edit->text().remove(".").isEmpty()){
+            // throws an expection handling
             throw(QString(tr("Urine Ph field is empty!")));
         }
 
         if (urinePH.toFloat() < 0.0){
-
+            // throws an expection handling
             throw(QString(tr("Urine pH field cannot be less than 0!")));
         }
 
         if (urinePH.toFloat() > 14.0){
-
+            // throws an expection handling
             throw(QString(tr("Urine pH field cannot be greater than 14!")));
         }
 
 
     }   catch (QString invalidString) {
-
+        // throws an expection handling
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
 
     //TRY Ketones
     try {
-
+        // throws an expection handling
         if(ui->Urine_KeytonesEdit->text().remove(".").isEmpty()){
             throw(QString(tr("Urine Ketones field is empty!")));
         }
 
         if (urineSG.toFloat() < 0.0){
-
+            // throws an expection handling
             throw(QString(tr("Urine Ketones field cannot be less than 0!")));
         }
 
 
 
     }   catch (QString invalidString) {
-
+        // notifies the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -610,12 +623,14 @@ void PatientRegistration::addRecord()
 
         if(!match.hasMatch()){
 
+            // throws an expection handling
             throw(QString(tr("Leukocytes field contains invalid characters! Please only use numbers!")));
 
         }
 
         if(urineLeukocytes.toInt() < 0){
 
+            // throws an expection handling
             throw(QString(tr("Leukocytes cannot be less that 0!")));
 
 
@@ -623,6 +638,7 @@ void PatientRegistration::addRecord()
 
     }  catch (QString invalidString) {
 
+        // notifies the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -632,12 +648,14 @@ void PatientRegistration::addRecord()
     //TRY Glucose
     try {
 
+        // throws an expection handling
         if(ui->UrineGlucoseEdit->text().remove(".").isEmpty()){
             throw(QString(tr("Urine Glucose field is empty!")));
         }
 
         if (urineGlucose.toFloat() < 0.0){
 
+            // throws an expection handling
             throw(QString(tr("Urine Glucose field cannot be less than 0!")));
         }
 
@@ -645,6 +663,7 @@ void PatientRegistration::addRecord()
 
     }   catch (QString invalidString) {
 
+        // throws an expection handling
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
@@ -654,6 +673,7 @@ void PatientRegistration::addRecord()
     //TRY Nitrite
     try {
 
+        // throws an expection handling
         if (ui->UrineNitriteEdit->text().remove(".").isEmpty()){
 
             throw(QString(tr("Urine Nitrite field is empty!")));
@@ -662,17 +682,14 @@ void PatientRegistration::addRecord()
 
     }  catch (QString invalidString) {
 
+        // notifies the user
         QMessageBox::warning(this,tr("Error while performing request"),invalidString,QMessageBox::Ok);
         return;
     }
 
 
-
-
-
-
     qDebug() << "Called add patient";
-    bool success = db.addPatientRecord(firstName,
+    bool success = db.addPatientRecord(firstName, // adds the patient record
                         lastName,
                         phoneNumber,
                         email,
@@ -721,6 +738,7 @@ void PatientRegistration::toggleHypertention()
 
     if (ui->hyper_CheckBox->isChecked()){
 
+        // display description
         ui->Hypertention_Splitter->show();
 
     }else{
@@ -737,6 +755,7 @@ void PatientRegistration::toggleUrineProblemDescription()
 
     if (ui->UrineProblemCheck->isChecked()){
 
+        // display description box
         ui->UrineProblemEdit->show();
         ui->UrineProblemLabel-> show();
 
