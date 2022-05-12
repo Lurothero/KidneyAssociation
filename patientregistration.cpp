@@ -565,12 +565,12 @@ void PatientRegistration::addRecord()
 
         if (urinePH.toFloat() < 0.0){
 
-            throw(QString(tr("Urine Protein field cannot be less than 0!")));
+            throw(QString(tr("Urine pH field cannot be less than 0!")));
         }
 
         if (urinePH.toFloat() > 14.0){
 
-            throw(QString(tr("Urine Protein field cannot be greater than 14!")));
+            throw(QString(tr("Urine pH field cannot be greater than 14!")));
         }
 
 

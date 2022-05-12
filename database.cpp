@@ -322,7 +322,23 @@ bool Database::addPatientRecord(QString firstName, QString lastName, QString pho
 
     }
 
+    q.prepare("SELECT LAST_INSERT_ID()");
 
+    q.exec();
+
+    if(!q.lastError().text().isEmpty()){
+
+        qDebug() << "An error had occured during LAST_INSERT_RETURN!";
+
+        qDebug() << q.lastError().text();
+        return false;
+
+    }
+    q.next();
+
+    int id_patient = q.value(0).toInt();
+
+    qDebug() << id_patient;
 
 
     q.prepare("INSERT INTO urinesampleinfo (`Urine_leukocytes`, `Urine_nitrite`, `Urine_protein`, `Urine_ph`, `Urine_blood`, `Urine_sg`, `Urine_ketones`, `Glucose`, `Urine_bilirubin`)"
@@ -352,11 +368,13 @@ bool Database::addPatientRecord(QString firstName, QString lastName, QString pho
 
     }
 
-    q.prepare("SELECT UrineSampleInfo_id FROM `urinesampleinfo` ORDER BY UrineSampleInfo_id DESC LIMIT 1");
+    q.prepare("SELECT LAST_INSERT_ID()");
+
     q.exec();
+
     if(!q.lastError().text().isEmpty()){
 
-        qDebug() << "An error had occured during grabbing Urine ID!";
+        qDebug() << "An error had occured during LAST_INSERT_RETURN!";
 
         qDebug() << q.lastError().text();
         return false;
@@ -364,25 +382,50 @@ bool Database::addPatientRecord(QString firstName, QString lastName, QString pho
     }
     q.next();
 
-    int id = q.value("UrineSampleInfo_id").toInt();
+    int id_urineSampleInfo = q.value(0).toInt();
 
-    qDebug() << id;
-
-
+    qDebug() << id_urineSampleInfo;
 
 
-    q.prepare("UPDATE patient,urinesampleinfo SET patient.UrineSampleInfo_id = :id WHERE urinesampleinfo.UrineSampleInfo_id = :id");
-    q.bindValue(":id",id);
-    q.exec();
+        //Now that we have the last saved ID, we can add it to
+        q.prepare("UPDATE patient SET UrineSampleInfo_id = :sampleID  WHERE Patient_id = :patientID");
+        q.bindValue(":sampleID",id_urineSampleInfo);
+        q.bindValue(":patientID",id_patient);
 
-    if(!q.lastError().text().isEmpty()){
 
-        qDebug() << "An error had occured during patient update!";
+        q.exec();
 
-        qDebug() << q.lastError().text();
-        return false;
 
-    }
+        if(!q.lastError().text().isEmpty()){
+
+            qDebug() << "An error had occured during Patient UPDATE!";
+
+            qDebug() << q.lastError().text();
+            return false;
+
+        }
+
+
+        //Update Urine table
+        q.prepare("UPDATE urinesampleinfo SET PatientID = :patientID WHERE UrineSampleInfo_id = :sampleID");
+        q.bindValue(":sampleID",id_urineSampleInfo);
+        q.bindValue(":patientID",id_patient);
+
+
+        q.exec();
+
+
+        if(!q.lastError().text().isEmpty()){
+
+            qDebug() << "An error had occured during Patient UPDATE!";
+
+            qDebug() << q.lastError().text();
+            return false;
+
+        }
+
+
+
 
 
 
