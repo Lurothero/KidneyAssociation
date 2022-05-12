@@ -367,7 +367,7 @@ bool Database::addPatientRecord(QString firstName, QString lastName, QString pho
     int id = q.value("UrineSampleInfo_id").toInt();
 
     qDebug() << id;
-    qDebug() << q.lastInsertId().toString();
+
 
 
 
