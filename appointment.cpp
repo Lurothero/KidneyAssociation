@@ -1,3 +1,13 @@
+/*
+ * Name: Jahmur Lopez, Tadeo Bennett, Rene Allen, Carolee Saunders
+ * Class: Graphical User Interface
+ * Title: Kidney Association
+ * Due Date: 12/05/2022
+ * Due Time: 7:30 am for deliverables and 12:30 to 1:00 for presentation
+ * Lectures: Thiana Vasquez, Jason Reyes & Vernelle Sylvester
+ * Class Section: 1
+*/
+
 #include "appointment.h"
 #include "ui_appointment.h"
 
@@ -9,10 +19,11 @@ Appointment::Appointment(QWidget *parent) :
     loadDoctorIds();
     loadPatientIds();
 
-    ui->AppointDate->setDisplayFormat(QString("dd-MMMM-yyyy"));
+    ui->AppointDate->setDisplayFormat(QString("dd-MMMM-yyyy")); // sets the display format to day-month-year
 
+
+    // connect function to print all appointment records
     connect(ui->PrintRecord_BTN, SIGNAL(clicked()),this,SLOT(printAppointment));
-
     setWindowTitle("Kidney's Association");
     this->setWindowIcon(QIcon(":/kidneyIcon.png"));
 }
@@ -30,32 +41,33 @@ int Appointment::getAppointmentID()
 void Appointment::loadDoctorIds()
 {
     Database db;
-    db.loadDoctorIds();
-    ui->DocIDCombo->addItems(db.docIds);
+    db.loadDoctorIds(); // call function to prepare doctor IDs
+    ui->DocIDCombo->addItems(db.docIds); // adds vector to the combo box
 }
 
 void Appointment::loadPatientIds()
 {
     Database db;
-    db.loadPatientIds();
-    ui->PatientIDCombo->addItems(db.patientIds);
+    db.loadPatientIds(); // call function to prepare patient IDs
+    ui->PatientIDCombo->addItems(db.patientIds); // adds vector to the combo box
 }
 
 void Appointment::on_AddRecord_BTN_clicked()
 {
     Database db;
-    stringstream intConverter;
-    stringstream floatConverter;
+    stringstream intConverter; // converting a string to an integer
+    stringstream floatConverter; // converting a string to a float
     int id;
     float cost;
 
-    id = ui->AppointIDEdit->text().toInt();
-    cost = ui->AppointCostEdit->text().toFloat();
+    id = ui->AppointIDEdit->text().toInt(); // stores appointment ID
+    cost = ui->AppointCostEdit->text().toFloat(); // stores appointment cost
     db.insertingAppointmentData(id,ui->DocIDCombo->currentText().toInt(),ui->PatientIDCombo->currentText().toInt(),
                                  ui->DescriptEdit->toPlainText(),cost,ui->AppointDate->date().toString("yyyy-dd-MM"));
 
-    QMessageBox::information(this,tr("Appointment"),tr("Appointment was added successfully"));
+    QMessageBox::information(this,tr("Appointment"),tr("Appointment was added successfully")); // display message that appointment was added
 
+    // clear text Edits after the records were added
     ui->AppointIDEdit->clear();
     ui->AppointCostEdit->clear();
 }

@@ -1,3 +1,13 @@
+/*
+ * Name: Jahmur Lopez, Tadeo Bennett, Rene Allen, Carolee Saunders
+ * Class: Graphical User Interface
+ * Title: Kidney Association
+ * Due Date: 12/05/2022
+ * Due Time: 7:30 am for deliverables and 12:30 to 1:00 for presentation
+ * Lectures: Thiana Vasquez, Jason Reyes & Vernelle Sylvester
+ * Class Section: 1
+*/
+
 #include "Patientform.h"
 #include "ui_Patientform.h"
 
@@ -23,6 +33,7 @@ PatientForm::~PatientForm()
 
 void PatientForm::loadDistrictList()
 {
+  // loads list of districts selected from the patient
   Database db;
   db.loadDistrictList();
   ui->DistrictCombo->addItems(db.patientLocations);
@@ -30,6 +41,7 @@ void PatientForm::loadDistrictList()
 
 void PatientForm::loadPatientStatus()
 {
+    // loads all patient stutus
   Database db;
   db.loadStatus();
   ui->StatusCombo->addItems(db.StatusList);
@@ -37,6 +49,7 @@ void PatientForm::loadPatientStatus()
 
 void PatientForm::loadsBloodTypes()
 {
+  // loads all blood type from patient selected
   Database db;
   db.loadPatientBloodType();
   ui->BTypeCombo->addItems(db.patientBloodTypes);
@@ -44,6 +57,7 @@ void PatientForm::loadsBloodTypes()
 
 void PatientForm::loadPatientSSNs()
 {
+  // loads all SSN from the database
   Database db;
   db.loadSocialSecurityNumbers();
   ui->SSNCombo->addItems(db.SocialSecurityNumbers);
@@ -52,8 +66,9 @@ void PatientForm::loadPatientSSNs()
 void PatientForm::loadSelectedInformation()
 {
     Database db;
-   if(!ui->SSNCombo->currentText().isNull())
+   if(!ui->SSNCombo->currentText().isNull()) // checks if the current item is selected
    {
+       // loads first name, last name, phone number and DOB to the text fields
       db.selectedSSN(ui->SSNCombo->currentText().toInt());
       ui->FNameEdit->setText(db.FirstName);
       ui->LNameEdit->setText(db.LastName);
@@ -64,6 +79,7 @@ void PatientForm::loadSelectedInformation()
 
 void PatientForm::on_EditRecord_BTN_clicked()
 {
+   // update the edited information to the database
    Database db;
    db.EditPatientRecord(ui->SSNCombo->currentText().toInt(),ui->FNameEdit->text(), ui->LNameEdit->text(), ui->PhoneEdit->text(),ui->DOB_Edit->text(),ui->AddressEdit->text());
 
@@ -73,6 +89,7 @@ void PatientForm::on_EditRecord_BTN_clicked()
 
 void PatientForm::on_SSNCombo_activated(int index)
 {
+
     Database db;
    if(!ui->SSNCombo->currentText().isNull())
    {

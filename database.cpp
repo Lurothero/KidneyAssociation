@@ -1,3 +1,13 @@
+/*
+ * Name: Jahmur Lopez, Tadeo Bennett, Rene Allen, Carolee Saunders
+ * Class: Graphical User Interface
+ * Title: Kidney Association
+ * Due Date: 12/05/2022
+ * Due Time: 7:30 am for deliverables and 12:30 to 1:00 for presentation
+ * Lectures: Thiana Vasquez, Jason Reyes & Vernelle Sylvester
+ * Class Section: 1
+*/
+
 #include "database.h"
 #include "homemenu.h"
 
@@ -28,6 +38,8 @@ Database::Database()
 
 int Database::loginUser(QString user, QString pass)
 {
+
+    // creates query to selected a specific user from the user table in the database
 
     QSqlQuery q;
     q.prepare("SELECT userlevel_id FROM user WHERE User_name = :user AND Password = :pass ;");
@@ -97,38 +109,41 @@ void Database::loadDoctorInformation()
 
 void Database::loadDoctorIds()
 {
+  // Sql query to load all doctor IDs from the doctor table in the database
   QSqlQuery q;
 
   if(q.exec("SELECT * FROM doctor"))
   {
-     while(q.next())
+     while(q.next()) // looping through each record
      {
-         docIds.append(q.value(0).toString());
+         docIds.append(q.value(0).toString()); // adds record to vector
      }
   }
 }
 
 void Database::loadPatientIds()
 {
+    // Sql query to load all patient IDs from the doctor table in the database
     QSqlQuery q;
     if(q.exec("SELECT * FROM patient"))
     {
-        while(q.next())
+        while(q.next()) // looping through each record
         {
-           patientIds.append(q.value(0).toString());
+           patientIds.append(q.value(0).toString()); // adds record to vector
         }
     }
 }
 
 void Database::loadAppointmentRecords()
 {
+    // Sql query to load all appointment records from the doctor table in the database
   QSqlQuery q;
   if(q.exec("SELECT * FROM appointment"))
   {
-      while(q.next())
+      while(q.next()) // looping through each record
       {
           appointRecord.append(q.value(0).toString() + " " + q.value(1).toString() + " " + q.value(2).toString() + " " + q.value(3).toString() + " "
-                               + q.value(4).toString() + " "+ q.value(5).toString());
+                               + q.value(4).toString() + " "+ q.value(5).toString()); // adds record to vector
       }
   }
 }

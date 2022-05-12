@@ -1,3 +1,13 @@
+/*
+ * Name: Jahmur Lopez, Tadeo Bennett, Rene Allen, Carolee Saunders
+ * Class: Graphical User Interface
+ * Title: Kidney Association
+ * Due Date: 12/05/2022
+ * Due Time: 7:30 am for deliverables and 12:30 to 1:00 for presentation
+ * Lectures: Thiana Vasquez, Jason Reyes & Vernelle Sylvester
+ * Class Section: 1
+*/
+
 #ifndef DATABASE_H
 #define DATABASE_H
 
@@ -21,8 +31,8 @@ class Database
 public:
     Database();
 
-    //Create Database functions here
-    int loginUser(QString user, QString pass);//We are not concern about hiding data at this time
+    // Functions created to login user, loading doctor information and so on from the database
+    int loginUser(QString user, QString pass);
     void addDoctorInformation(QString FirstName, QString LastName, QString phoneNumber, QString emailAddress);
     void loadDoctorInformation();
     void loadDoctorIds();
@@ -37,8 +47,10 @@ public:
     void loadPatientBloodType();
     void loadDistrictList();
     void EditPatientRecord(int SSN,QString FName, QString LName, QString phoneNumber, QString DOB, QString Address);
-    void selectedSSN(int SSN);
+    void selectedSSN(int SSN); // selects SSN from combobox
     QString FirstName,LastName,PhoneNumber,DOB,Address;
+
+    // Vectors to store a list of doctor Ids, records, social security and so on
     QList<QString> docRecord;
     QList<QString>docIds;
     QList<QString>patientIds;

@@ -1,3 +1,13 @@
+/*
+ * Name: Jahmur Lopez, Tadeo Bennett, Rene Allen, Carolee Saunders
+ * Class: Graphical User Interface
+ * Title: Kidney Association
+ * Due Date: 12/05/2022
+ * Due Time: 7:30 am for deliverables and 12:30 to 1:00 for presentation
+ * Lectures: Thiana Vasquez, Jason Reyes & Vernelle Sylvester
+ * Class Section: 1
+*/
+
 #ifndef PATIENTREGISTRATION_H
 #define PATIENTREGISTRATION_H
 
@@ -17,9 +27,9 @@ public:
     ~PatientRegistration();
 
 private slots:
-    void addRecord();
-    void toggleHypertention();
-    void toggleUrineProblemDescription();
+    void addRecord(); // adding patient records
+    void toggleHypertention(); // switching to viewing of text box to descripe more details
+    void toggleUrineProblemDescription(); // switching to viewing of text box to descripe more details
 
 private:
     Ui::PatientRegistration *ui;

@@ -1,3 +1,13 @@
+/*
+ * Name: Jahmur Lopez, Tadeo Bennett, Rene Allen, Carolee Saunders
+ * Class: Graphical User Interface
+ * Title: Kidney Association
+ * Due Date: 12/05/2022
+ * Due Time: 7:30 am for deliverables and 12:30 to 1:00 for presentation
+ * Lectures: Thiana Vasquez, Jason Reyes & Vernelle Sylvester
+ * Class Section: 1
+*/
+
 #include "patient.h"
 
 Patient::Patient()
@@ -51,33 +61,32 @@ Patient::Patient(QString firstName, QString lastName, QString phoneNumber, QStri
 
 QString Patient::getSSN()
 {
-    return socialSecurityNumber;
+    return socialSecurityNumber; // returns the social security number
 }
 
 QString Patient::getDOB()
 {
-
-        return dateOfBirth;
+    return dateOfBirth; // returns the date of borth
 }
 
 QString Patient::getGender()
 {
-return gender;
+    return gender; // returns the gender
 }
 
 QString Patient::getAddress()
 {
-return address;
+   return address; // returns the street address
 }
 
 QString Patient::getDistrict()
 {
-    return district;
+    return district; // returns the selected district
 }
 
 QString Patient::getPatientStatus()
 {
-    return patientStatus;
+    return patientStatus; // returns the patient status
 }
 
 int Patient::getBloodPressure()
